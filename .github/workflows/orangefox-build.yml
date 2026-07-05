@@ -1,0 +1,199 @@
+name: OrangeFox R12 - Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      MANIFEST_BRANCH:
+        description: 'OrangeFox manifest branch'
+        required: true
+        default: '12.1'
+        type: choice
+        options:
+          - 12.1
+      BUILD_TARGET:
+        description: 'Build target'
+        required: true
+        default: 'recovery'
+        type: choice
+        options:
+          - recovery
+          - boot
+          - vendorboot
+      FIX_SCREEN_OFFSETS:
+        description: 'Set TW_Y_OFFSET=115, TW_H_OFFSET=-115'
+        required: true
+        default: 'yes'
+        type: choice
+        options:
+          - 'yes'
+          - 'no'
+      FIX_SERVICES:
+        description: 'Uncomment mobicore/keymaster/gatekeeper/cryptoeng services'
+        required: true
+        default: 'yes'
+        type: choice
+        options:
+          - 'yes'
+          - 'no'
+
+env:
+  DEVICE: spaced
+  DEVICE_PATH: device/realme/spaced
+  FOX_DIR: ${GITHUB_WORKSPACE}/fox_12.1
+
+jobs:
+  build:
+    name: Build OrangeFox R12 for spaced
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout device tree
+        uses: actions/checkout@v4
+        with:
+          path: device_tree
+          ref: ${{ github.ref_name }}
+
+      - name: Clean up runner
+        uses: rokibhasansagar/slimhub_actions@main
+
+      - name: Setup swap
+        uses: pierotofy/set-swap-space@master
+        with:
+          swap-size-gb: 12
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y git-core gnupg flex bison build-essential zip curl zlib1g-dev \
+            gcc-multilib g++-multilib libc6-dev-i386 libncurses5 lib32ncurses5-dev x11proto-core-dev \
+            libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig \
+            python3 python3-pip cpio
+
+      - name: Setup repo
+        run: |
+          mkdir -p ~/bin
+          curl -s https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+          chmod a+x ~/bin/repo
+          echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Configure git
+        run: |
+          git config --global user.name "OrangeFox Builder"
+          git config --global user.email "builder@orangefox.tech"
+
+      - name: Sync OrangeFox sources (12.1)
+        run: |
+          git clone https://gitlab.com/OrangeFox/sync.git ${GITHUB_WORKSPACE}/sync
+          cd ${GITHUB_WORKSPACE}/sync
+          ./orangefox_sync.sh --branch ${{ github.event.inputs.MANIFEST_BRANCH }} --path ${FOX_DIR}
+
+      - name: Place device tree
+        run: |
+          mkdir -p ${FOX_DIR}/${DEVICE_PATH}
+          cp -a ${GITHUB_WORKSPACE}/device_tree/* ${FOX_DIR}/${DEVICE_PATH}/
+          cp -a ${GITHUB_WORKSPACE}/device_tree/.git ${FOX_DIR}/${DEVICE_PATH}/ 2>/dev/null || true
+          echo "Device tree placed at ${FOX_DIR}/${DEVICE_PATH}"
+
+      - name: Apply fixes
+        run: |
+          cd ${FOX_DIR}/${DEVICE_PATH}
+
+          if [ "${{ github.event.inputs.FIX_SCREEN_OFFSETS }}" = "yes" ]; then
+            echo "=== Applying screen offset fix ==="
+            sed -i 's/^TW_Y_OFFSET := 0/TW_Y_OFFSET := 115/' BoardConfig.mk
+            sed -i 's/^TW_H_OFFSET := 0/TW_H_OFFSET := -115/' BoardConfig.mk
+            grep -n 'TW_[YH]_OFFSET' BoardConfig.mk
+          fi
+
+          if [ "${{ github.event.inputs.FIX_SERVICES }}" = "yes" ]; then
+            echo "=== Uncommenting FBE services in init.recovery.mt6781.rc ==="
+            python3 -c "
+import re
+with open('recovery/root/init.recovery.mt6781.rc', 'r') as f:
+    content = f.read()
+
+# Services to uncomment (by name)
+services = [
+    'service mobicore',
+    'service hal_cryptoeng_oppo',
+    'service keymaster-4-0',
+    'service gatekeeper-1-0',
+]
+
+# Also uncomment the on-property blocks that start/stop these services
+on_props = [
+    'on property:hwservicemanager.ready=true',
+    'on property:ro.crypto.state=unsupported',
+    'on property:ro.crypto.state=unencrypted',
+    'on property:twrp.decrypt.done=true',
+]
+
+lines = content.split('\n')
+result = []
+in_block = False
+block_active = False
+
+for line in lines:
+    stripped = line.lstrip()
+    # Check if line starts a service we want
+    is_target = any(stripped.startswith(s) for s in services)
+    is_on_prop = any(stripped.startswith(s) for s in on_props)
+    is_service_line = any(stripped.startswith(s) for s in services + on_props)
+
+    if is_target or is_on_prop:
+        in_block = True
+        block_active = True
+        # Uncomment the line (remove '# ' prefix)
+        result.append(line.replace('# ', '', 1) if line.startswith('# ') else line)
+    elif in_block and block_active:
+        # Inside a target block — uncomment continuation lines (indented # lines)
+        if line.startswith('#     ') or line.startswith('#       '):
+            result.append(line.replace('# ', '', 1) if line.startswith('# ') else line)
+        elif line.startswith('#   '):
+            result.append(line.replace('# ', '', 1) if line.startswith('# ') else line)
+        elif line.startswith('# ') and (stripped.startswith('stop ') or stripped.startswith('start ')):
+            result.append(line.replace('# ', '', 1) if line.startswith('# ') else line)
+        else:
+            # End of block
+            in_block = False
+            block_active = False
+            result.append(line)
+    else:
+        result.append(line)
+
+with open('recovery/root/init.recovery.mt6781.rc', 'w') as f:
+    f.write('\n'.join(result))
+"
+            echo "Services uncommented. Changed lines:"
+            grep -n '^service \|^on property:' recovery/root/init.recovery.mt6781.rc
+          fi
+
+      - name: Build OrangeFox
+        run: |
+          cd ${FOX_DIR}
+          export ALLOW_MISSING_DEPENDENCIES=true
+          export LC_ALL="C"
+          source build/envsetup.sh
+          lunch twrp_${DEVICE}-eng
+          mka adbd ${{ github.event.inputs.BUILD_TARGET }}image
+
+      - name: List build artifacts
+        run: |
+          echo "=== Build output ==="
+          find ${FOX_DIR}/out/target/product/${DEVICE} -maxdepth 1 -name "OrangeFox*" -o -name "recovery*" -o -name "*recovery*" 2>/dev/null | head -20
+          ls -lh ${FOX_DIR}/out/target/product/${DEVICE}/OrangeFox*.img 2>/dev/null || \
+          ls -lh ${FOX_DIR}/out/target/product/${DEVICE}/recovery*.img 2>/dev/null || \
+          echo "No recovery image found in output directory"
+          ls -lh ${FOX_DIR}/out/target/product/${DEVICE}/OrangeFox*.zip 2>/dev/null || \
+          echo "No zip found"
+
+      - name: Upload recovery image
+        uses: actions/upload-artifact@v4
+        with:
+          name: OrangeFox-R12-spaced
+          path: |
+            ${FOX_DIR}/out/target/product/${DEVICE}/OrangeFox*.img
+            ${FOX_DIR}/out/target/product/${DEVICE}/OrangeFox*.zip
+            ${FOX_DIR}/out/target/product/${DEVICE}/recovery*.img
+          if-no-files-found: warn
