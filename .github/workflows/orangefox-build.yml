@@ -39,7 +39,8 @@ on:
 env:
   DEVICE: spaced
   DEVICE_PATH: device/realme/spaced
-  FOX_DIR: ${GITHUB_WORKSPACE}/fox_12.1
+  FOX_BRANCH: fox_${{ github.event.inputs.MANIFEST_BRANCH }}
+  FOX_DIR: ${GITHUB_WORKSPACE}/${FOX_BRANCH}
 
 jobs:
   build:
@@ -116,7 +117,6 @@ with open('recovery/root/init.recovery.mt6781.rc', 'r') as f:
 # Services to uncomment (by name)
 services = [
     'service mobicore',
-    'service hal_cryptoeng_oppo',
     'service keymaster-4-0',
     'service gatekeeper-1-0',
 ]
