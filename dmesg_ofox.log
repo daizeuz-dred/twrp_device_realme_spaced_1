@@ -1,0 +1,1770 @@
+[    4.599058] SELinux:  policy capability cgroup_seclabel=0
+[    4.599059] SELinux:  policy capability nnp_nosuid_transition=1
+[    4.699884] audit: type=1403 audit(1783345287.720:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    4.738015] oplus_custome_sync_work is called
+[    4.738032] oplus_custome_sync_work: file /dev/block/by-name/oplus_custom is no exit
+[    4.858079] mtk-msdc externdevice: mmc0: clock 0Hz busmode 2 powermode 0 cs 0 Vdd 0 width 1 timing 0
+[    4.860405] mmc0: [SDLOCK] sdcard is unlocked on suspend and set auto_unlock = true. 
+[    4.938021] [sensor_devinfo] read_oplus_custom 432 : failed to open file /dev/block/by-name/oplus_custom 00000000b35c0786 -1
+[    4.938023] [sensor_devinfo] sensor_read_oplus_custom 492 : read_oplus_custom error = -1
+[    4.938026] [sensor_devinfo] sensor_devinfo_work 1274 : try 7
+[    4.969660] audit: type=1400 audit(1783345287.980:3): avc:  denied  { write } for  pid=1 comm="init" name="kernel_init_done" dev="sysfs" ino=19467 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    4.969665] audit: type=1400 audit(1783345287.980:4): avc:  denied  { open } for  pid=1 comm="init" path="/sys/module/musb_hdrc/parameters/kernel_init_done" dev="sysfs" ino=19467 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    4.998516] audit: type=1400 audit(1783345288.020:5): avc:  denied  { sys_nice } for  pid=384 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=1
+[    5.003315] get prop 4 is not supported in batt
+[    5.003553] [fgauge_read_current] final current=7254 (ratio=1000)
+[    5.003764] [fgauge_read_current] final current=7254 (ratio=1000)
+[    5.113644] bootmode: 0x2 boottype: 0x2
+[    5.113653] cannot find "androidboot.usbconfig="
+[    5.114350] file system registered
+[    5.116179] Mass Storage Function, version: 2009/09/11
+[    5.116182] LUN: removable file: (no medium)
+[    5.117644] audit: type=1400 audit(1783345288.120:6): avc:  denied  { mounton } for  pid=1 comm="init" path="/dev/usb-ffs/adb" dev="functionfs" ino=12095 scontext=u:r:init:s0 tcontext=u:object_r:functionfs:s0 tclass=dir permissive=1
+[    5.117687] ffs_data_put(): freeing
+[    5.118409] audit: type=1400 audit(1783345288.140:7): avc:  denied  { entrypoint } for  pid=396 comm="init" path="/system/bin/logd" dev="rootfs" ino=8301 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.119132] audit: type=1400 audit(1783345288.140:8): avc:  denied  { map } for  pid=396 comm="logd" path="/system/bin/logd" dev="rootfs" ino=8301 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.119145] audit: type=1400 audit(1783345288.140:9): avc:  denied  { read } for  pid=396 comm="logd" path="/system/bin/logd" dev="rootfs" ino=8301 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.119160] audit: type=1400 audit(1783345288.140:10): avc:  denied  { execute } for  pid=396 comm="logd" path="/system/bin/logd" dev="rootfs" ino=8301 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.119632] audit: type=1400 audit(1783345288.140:11): avc:  denied  { getattr } for  pid=396 comm="logd" path="/system/bin/logd" dev="rootfs" ino=8301 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.119744] [OPLUS_CHG][oplus_set_otg_switch_status]: otg switch[1]
+[    5.119770] audit: type=1400 audit(1783345288.140:12): avc:  denied  { read } for  pid=396 comm="logd" name="bin" dev="rootfs" ino=8196 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+[    5.119793] ///PD dbg info 42d
+[    5.119795] <    5.119>TCPC-TYPEC:typec_new_role: DRP
+[    5.119874] audit: type=1400 audit(1783345288.140:13): avc:  denied  { open } for  pid=396 comm="logd" path="/system/lib64/libbase.so" dev="rootfs" ino=11396 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.124353] binder: 398:398 ioctl 40046210 7fdb5b4a04 returned -22
+[    5.125543] audit: type=1400 audit(1783345288.140:14): avc:  denied  { create } for  pid=398 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+[    5.125557] audit: type=1400 audit(1783345288.140:15): avc:  denied  { bind } for  pid=398 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+[    5.141303] binder: 399:399 ioctl 40046210 7febc354d4 returned -22
+[    5.166147] binder: 397:397 ioctl 40046210 7fcb8f2d34 returned -22
+[    5.170204] binder: 400:400 ioctl 40046210 7fee82b124 returned -22
+[    5.178042] ///PD dbg info 166d
+[    5.178046] <    5.119>TCPC-TYPEC:** ErrorRecovery\x0a<    5.145>TCPC-TYPEC:** Unattached.SNK\x0a<    5.145>TCPC-TCPC:Alert:0x0001, Mask:0x1067f\x0a<
+[    5.178048] 5.146>TCPC-TYPEC:[CC_Alert] 15/15
+[    5.178370] binder: 406:406 ioctl 40046210 7fd299b6c4 returned -22
+[    5.178544] binder: 400:400 ioctl 40046210 7fee82a644 returned -22
+[    5.179059] aw87319_speaker_cfg_loaded: failed to read aw87319_spk.bin
+[    5.179593] cfg80211: failed to load regulatory.db
+[    5.213172] original_level:1200 value_a:239 value_b:2065 level_temp:37 remapped_level:803
+[    5.213177] leds lcd-backlight: [Light] Set lcd-backlight directlyT:5.213,  B:1200 L:803,  L:3 H:64    
+[    5.213179] mt6370: _gate_ic_backlight_set, 803
+[    5.213181] mt6370: mt6370_pmu_reg_a3, 9
+[    5.281091] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.288564] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.379217] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.386742] EXT4-fs (dm-4): mounted filesystem without journal. Opts: 
+[    5.478974] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.484774] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    5.485102] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    5.558832] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.565649] EXT4-fs (dm-2): mounted filesystem without journal. Opts: 
+[    5.646047] Perf order domain is not ready!
+[    5.646192] Perf order domain is not ready!
+[    5.646365] Perf order domain is not ready!
+[    5.698908] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.704647] erofs: (device dm-3): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    5.704664] erofs: (device dm-3): mounted with opts: , root inode @ nid 41.
+[    5.758020] oplus_custome_sync_work is called
+[    5.759716] opluscustom_read OPLUS_CUSTOM partition is illegal nMagicNum1:0x0!
+[    5.759717] opluscustom_read OPLUS_CUSTOM partition with error config magic number nMagicNum2:0x0!
+[    5.759718] oplus_custome_sync_work:rc = 0
+[    5.884752] EXT4-fs (sdc17): mounted filesystem with ordered data mode. Opts: 
+[    5.884962] SELinux:  Context u:object_r:persist_data_file:s0 is not valid (left unmapped).
+[    5.979453] [sensor_devinfo] read_oplus_custom 477 : read success = 336
+[    5.979461] [sensor_devinfo] sensor_read_oplus_custom 527 : acc[-61,69,-124],gyro[23,-19,4],ps[0,0,316,0,0,0],als[896], bar[0]
+[    5.979463] [sensorHub] scp power down, we can not access scp
+[    5.979466] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    5.979467] [sensorHub] scp power down, we can not access scp
+[    5.979469] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    5.979471] [sensorHub] scp power down, we can not access scp
+[    5.979473] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    5.979475] [sensorHub] scp power down, we can not access scp
+[    5.979476] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    5.979478] [sensorHub] scp power down, we can not access scp
+[    5.979480] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    5.979482] [sensorHub] scp power down, we can not access scp
+[    5.979484] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    5.979485] [sensorHub] scp power down, we can not access scp
+[    5.979487] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    5.979490] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 5
+[    6.021287] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.025389] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.025403] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    6.025650] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.030172] erofs: (device dm-3): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.030181] erofs: (device dm-3): mounted with opts: , root inode @ nid 41.
+[    6.184090] [fgauge_read_current] final current=3730 (ratio=1000)
+[    6.184308] [fgauge_read_current] final current=3730 (ratio=1000)
+[    6.184696] [fgauge_read_current] final current=5026 (ratio=1000)
+[    6.184919] [fgauge_read_current] final current=5026 (ratio=1000)
+[    6.360781] [drm:mtk_drm_gem_create] cookie = 0000000022223908 dma_addr = 0x00000000fd2d0000 size = 10420224
+[    6.363154] [drm:mtk_drm_gem_create] cookie = 00000000719c3965 dma_addr = 0x00000000fc8e0000 size = 10420224
+[    6.363591] debug for display power status:mtk_output_dsi_enable, = 2, dsi->output_en=1
+[    6.367485] original_level:0 value_a:0 value_b:0 level_temp:0 remapped_level:0
+[    6.367489] leds lcd-backlight: [Light] Set lcd-backlight directlyT:6.367,  B:0 L:0,  L:0 H:0    
+[    6.367491] mt6370: _gate_ic_backlight_set, 0
+[    6.367493] mt6370: mt6370_pmu_reg_a3, 10
+[    6.368077] mt6370: mt6370_pmu_reg_a3, 0
+[    6.368220] mt6370: mt6370_pmu_reg_a0,   bled_en = 0
+[    6.368226] original_level:1200 value_a:239 value_b:2065 level_temp:37 remapped_level:803
+[    6.368228] mt6370: _gate_ic_backlight_set, 803
+[    6.368230] mt6370: mt6370_pmu_reg_a3, 9
+[    6.446891] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.446893] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.446988] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.446989] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.447146] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.447147] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.447243] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.447244] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.449846] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.449847] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.449941] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.449942] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.450093] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.450097] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.450190] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.450191] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.452696] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.452698] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.452796] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.452800] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.452967] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.452968] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.453059] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.453060] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.456487] EXT4-fs (sdc48): mounted filesystem with ordered data mode. Opts: 
+[    6.458471] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.463863] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    6.464103] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.468086] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.468094] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    6.682926] EXT4-fs (sdc16): mounted filesystem with ordered data mode. Opts: discard
+[    6.738008] Perf order domain is not ready!
+[    7.018011] [sensorHub] scp power down, we can not access scp
+[    7.018017] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    7.018019] [sensorHub] scp power down, we can not access scp
+[    7.018022] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    7.018024] [sensorHub] scp power down, we can not access scp
+[    7.018025] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    7.018028] [sensorHub] scp power down, we can not access scp
+[    7.018029] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    7.018031] [sensorHub] scp power down, we can not access scp
+[    7.018033] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    7.018034] [sensorHub] scp power down, we can not access scp
+[    7.018036] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    7.018038] [sensorHub] scp power down, we can not access scp
+[    7.018040] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    7.018042] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 4
+[    7.687034] binder: 405:405 ioctl 40046210 7ff2d7e0f4 returned -22
+[    8.058011] [sensorHub] scp power down, we can not access scp
+[    8.058017] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    8.058019] [sensorHub] scp power down, we can not access scp
+[    8.058021] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    8.058023] [sensorHub] scp power down, we can not access scp
+[    8.058025] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    8.058027] [sensorHub] scp power down, we can not access scp
+[    8.058028] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    8.058030] [sensorHub] scp power down, we can not access scp
+[    8.058032] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    8.058034] [sensorHub] scp power down, we can not access scp
+[    8.058035] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    8.058037] [sensorHub] scp power down, we can not access scp
+[    8.058039] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    8.058042] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 3
+[    8.338006] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[    8.818036] sd 0:0:0:1: [sdb] Synchronizing SCSI cache
+[    8.818202] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[    9.098011] [sensorHub] scp power down, we can not access scp
+[    9.098016] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    9.098018] [sensorHub] scp power down, we can not access scp
+[    9.098021] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    9.098023] [sensorHub] scp power down, we can not access scp
+[    9.098024] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    9.098026] [sensorHub] scp power down, we can not access scp
+[    9.098028] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    9.098029] [sensorHub] scp power down, we can not access scp
+[    9.098031] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    9.098033] [sensorHub] scp power down, we can not access scp
+[    9.098035] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    9.098037] [sensorHub] scp power down, we can not access scp
+[    9.098038] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    9.098041] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 2
+[   10.118031] sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+[   10.126541] regulator regulator.38: regulator ext_pmic2 disable
+[   10.126623] ufshcd-mtk 11270000.ufshci: rs,ret 0,7482 us
+[   10.138012] [sensorHub] scp power down, we can not access scp
+[   10.138018] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[   10.138020] [sensorHub] scp power down, we can not access scp
+[   10.138022] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[   10.138024] [sensorHub] scp power down, we can not access scp
+[   10.138028] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[   10.138031] [sensorHub] scp power down, we can not access scp
+[   10.138035] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[   10.138039] [sensorHub] scp power down, we can not access scp
+[   10.138043] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[   10.138047] [sensorHub] scp power down, we can not access scp
+[   10.138051] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[   10.138056] [sensorHub] scp power down, we can not access scp
+[   10.138060] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[   10.138062] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 1
+[   10.170015] Perf order domain is not ready!
+[   10.179672] read descriptors
+[   10.179676] read strings
+[   10.181238] usb_get_function usb_function name=Function FS Gadget
+[   10.181454] composite_dev_prepare 000000003f70d2f1
+[   10.181481] composite_os_desc_req_prepare 0000000082ea401b
+[   10.181484] [MUSB]musb_gadget_start 2488: musb_gadget_start
+[   10.181503] [MUSB]musb_gadget_pullup 2269: is_on=1, softconnect=0 ++
+[   10.181505] [MUSB]musb_gadget_pullup 2281: is_on=1, softconnect=0 ++
+[   10.181508] [MUSB]musb_pullup 2221: MUSB: gadget pull up 1 start, musb->power:0
+[   10.181509] [MUSB]musb_pullup 2230: MUSB: gadget pull up 1 end
+[   10.181511] [MUSB]musb_gadget_pullup 2295: mt_usb_reconnect() on is_ready begin
+[   10.181513] [MUSB]mt_usb_reconnect 893: [MUSB] USB reconnect
+[   10.181515] [MUSB]issue_connection_work 874: issue work, ops<1>
+[   10.181534] [MUSB]do_connection_work 778: is_host<0>, power<0>, ops<1>
+[   10.181570] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[   10.181572] [MUSB]do_connection_work 840: do nothing, usb_on:0, power:0
+[   11.178118] [SCP] scp_ipi_send: SCP A not ready
+[   11.178131] [SCP] scp_ipi_send: SCP A not ready
+[   11.178142] [SCP] scp_ipi_send: SCP A not ready
+[   11.178153] [SCP] scp_ipi_send: SCP A not ready
+[   11.178164] [SCP] scp_ipi_send: SCP A not ready
+[   11.178176] [SCP] scp_ipi_send: SCP A not ready
+[   11.178187] [SCP] scp_ipi_send: SCP A not ready
+[   11.178199] [SCP] scp_ipi_send: SCP A not ready
+[   11.178210] [SCP] scp_ipi_send: SCP A not ready
+[   11.178222] [SCP] scp_ipi_send: SCP A not ready
+[   11.178233] [SCP] scp_ipi_send: SCP A not ready
+[   11.178235] [sensorHub] failed cfg data handle:0, cmd:3
+[   11.178241] [sensor_devinfo] sensor_devinfo_work 1305 : send acc config fail
+[   11.178244] [SCP] scp_ipi_send: SCP A not ready
+[   11.178255] [SCP] scp_ipi_send: SCP A not ready
+[   11.178267] [SCP] scp_ipi_send: SCP A not ready
+[   11.178278] [SCP] scp_ipi_send: SCP A not ready
+[   11.178290] [SCP] scp_ipi_send: SCP A not ready
+[   11.178301] [SCP] scp_ipi_send: SCP A not ready
+[   11.178312] [SCP] scp_ipi_send: SCP A not ready
+[   11.178324] [SCP] scp_ipi_send: SCP A not ready
+[   11.178335] [SCP] scp_ipi_send: SCP A not ready
+[   11.178347] [SCP] scp_ipi_send: SCP A not ready
+[   11.178358] [SCP] scp_ipi_send: SCP A not ready
+[   11.178359] [sensorHub] failed cfg data handle:3, cmd:3
+[   11.178361] [sensor_devinfo] sensor_devinfo_work 1319 : send gyro config fail
+[   11.178365] [SCP] scp_ipi_send: SCP A not ready
+[   11.178376] [SCP] scp_ipi_send: SCP A not ready
+[   11.178388] [SCP] scp_ipi_send: SCP A not ready
+[   11.178399] [SCP] scp_ipi_send: SCP A not ready
+[   11.178411] [SCP] scp_ipi_send: SCP A not ready
+[   11.178422] [SCP] scp_ipi_send: SCP A not ready
+[   11.178433] [SCP] scp_ipi_send: SCP A not ready
+[   11.178445] [SCP] scp_ipi_send: SCP A not ready
+[   11.178456] [SCP] scp_ipi_send: SCP A not ready
+[   11.178467] [SCP] scp_ipi_send: SCP A not ready
+[   11.178479] [SCP] scp_ipi_send: SCP A not ready
+[   11.178479] [sensorHub] failed cfg data handle:7, cmd:3
+[   11.178482] [sensor_devinfo] sensor_devinfo_work 1331 : send ps config fail
+[   11.178485] [SCP] scp_ipi_send: SCP A not ready
+[   11.178496] [SCP] scp_ipi_send: SCP A not ready
+[   11.178508] [SCP] scp_ipi_send: SCP A not ready
+[   11.178519] [SCP] scp_ipi_send: SCP A not ready
+[   11.178531] [SCP] scp_ipi_send: SCP A not ready
+[   11.178542] [SCP] scp_ipi_send: SCP A not ready
+[   11.178553] [SCP] scp_ipi_send: SCP A not ready
+[   11.178565] [SCP] scp_ipi_send: SCP A not ready
+[   11.178576] [SCP] scp_ipi_send: SCP A not ready
+[   11.178587] [SCP] scp_ipi_send: SCP A not ready
+[   11.178599] [SCP] scp_ipi_send: SCP A not ready
+[   11.178600] [sensorHub] failed cfg data handle:4, cmd:3
+[   11.178602] [sensor_devinfo] sensor_devinfo_work 1341 : send light config fail
+[   11.178604] [sensorHub] invalid handle 98
+[   11.178606] [sensor_devinfo] sensor_devinfo_work 1352 : send light config fail
+[   11.178608] [sensorHub] invalid handle 97
+[   11.178610] [sensor_devinfo] sensor_devinfo_work 1360 : send rear als config fail
+[   11.178613] [SCP] scp_ipi_send: SCP A not ready
+[   11.178624] [SCP] scp_ipi_send: SCP A not ready
+[   11.178636] [SCP] scp_ipi_send: SCP A not ready
+[   11.178647] [SCP] scp_ipi_send: SCP A not ready
+[   11.178659] [SCP] scp_ipi_send: SCP A not ready
+[   11.178670] [SCP] scp_ipi_send: SCP A not ready
+[   11.178681] [SCP] scp_ipi_send: SCP A not ready
+[   11.178693] [SCP] scp_ipi_send: SCP A not ready
+[   11.178704] [SCP] scp_ipi_send: SCP A not ready
+[   11.178715] [SCP] scp_ipi_send: SCP A not ready
+[   11.178727] [SCP] scp_ipi_send: SCP A not ready
+[   11.178728] [sensorHub] failed cfg data handle:5, cmd:3
+[   11.178730] [sensor_devinfo] sensor_devinfo_work 1368 : send baro cali config fail
+[   11.178732] [sensor_devinfo] oplus_als_cali_data_init 983 : call 
+[   11.179015] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/light_1 fail
+[   11.179017] [sensor_devinfo] oplus_als_cali_data_init 1002 : row_coe = 1000
+[   11.179284] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/light_1 fail
+[   11.179285] [sensor_devinfo] oplus_als_cali_data_init 1010 : gold_als_factor = 1001
+[   11.179551] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/rear_cct_1 fail
+[   11.179552] [sensor_devinfo] oplus_als_cali_data_init 1018 : gold_rear_als_factor = 1001
+[   11.179825] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/gsensor_1 fail
+[   11.179826] [sensor_devinfo] get_accgyro_cali_version 961 : gyro_cali_version = 1
+[   11.180090] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/gsensor_1 fail
+[   11.180354] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/rear_cct_1 fail
+[   11.180618] [sensor_devinfo] get_acc_gyro_cali_nv_adapt_q_flag 355 : get cali_nv_adapt_q fail
+[   11.180620] oplus_mag_para_init call
+[   11.180623] [sensor_devinfo] sensor_devinfo_work 1378 : success 
+[   11.218009] delay_init_timerhandler()  now init accdet!
+[   11.221027] accdet_init() done.
+[   11.221077] accdet_init_once() done.
+[   11.538008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   11.538024] ufshpb_init_handler:3096 HPB_INIT_START
+[   11.538028] ufshpb_find_lu_qd:2444 lu 2 queue_depth 32
+[   11.538030] ufshpb_init_lu_constant:2530 ===== From Device Descriptor! =====
+[   11.538032] ufshpb_init_lu_constant:2533 hpb_region_size = 15, hpb_subregion_size = 15
+[   11.538033] ufshpb_init_lu_constant:2534 =====   Constant Values(LU)   =====
+[   11.538035] ufshpb_init_lu_constant:2536 region_unit_size = 16777216, region_mem_size 32768
+[   11.538037] ufshpb_init_lu_constant:2538 subregion_unit_size = 16777216, subregion_mem_size 32768
+[   11.538039] ufshpb_init_lu_constant:2540 lu_num_blocks = 31240192
+[   11.538041] ufshpb_init_lu_constant:2542 regions_per_lu = 7627, subregions_per_lu = 7627
+[   11.538043] ufshpb_init_lu_constant:2544 subregions_per_region = 1
+[   11.538045] ufshpb_init_lu_constant:2547 entries_per_region 4096 shift 12 mask 0xFFF
+[   11.538047] ufshpb_init_lu_constant:2550 entries_per_subregion 4096 shift 12 mask 0xFFF
+[   11.538048] ufshpb_init_lu_constant:2551 mpages_per_subregion : 8
+[   11.538050] ufshpb_init_lu_constant:2552 ===================================\x0a
+[   11.538092] ufshpb_lu_hpb_init:2573 active_region_table bytes: 427112
+[   11.545234] [fg_drv_update_hw_status]=>
+[   11.545247] [fg_update_sw_iavg]diff time:9 iavg:0
+[   11.545251] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   11.545453] [fgauge_read_current] final current=5538 (ratio=1000)
+[   11.545668] [fgauge_read_columb_internal] CAR=-10 r_fg_value=50 car_tune_value=1000
+[   11.546987] [MDRT_ADC] OLD = 0x2745, NOW = 0x27c0, CNT = 0
+[   11.547308] vbat_out_old=39430, vthr=680, T_curr=446, vbat_out=39478
+[   11.547315] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5d7c, adc_result=3948
+[   11.547632] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x17, adc_result=10
+[   11.547835] [fgauge_read_current] final current=6110 (ratio=1000)
+[   11.547836] [CH3_DBG] bat_cur = -6110
+[   11.548153] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ca, adc_result=1077
+[   11.548350] [fgauge_read_current] final current=6210 (ratio=1000)
+[   11.548353] [BattVoltToTemp] 1083 12000 2800 6
+[   11.548354] [force_get_tbat_internal] tbat_precise bat_temperature_val:394
+[   11.548355] [force_get_tbat] t:39 precise:394
+[   11.548356] lbat 0 0 0 0
+[   11.548359] car[-10,246,-246,493,-210, cycle_car:0,ncar:0] c:0 5538 vbat:3948 vbus:94 soc:63 50 gm3:0 0 0 0
+[   11.548567] [fgauge_read_columb_internal] CAR=-10 r_fg_value=50 car_tune_value=1000
+[   11.548672] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -6210, current_1 -6210
+[   11.548782] [fg_get_current_iavg] -6210 0
+[   11.548792] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   11.548794] [fg_nafg_monitor]time:11 nafg_cnt:0, now:11, last_t:0
+[   11.548796] tmp:39 65535 65535 hcar2:493 lcar2:210 time:11 sw_iavg:0 -6210 0 nafg_m:0 0 0
+[   11.549161] mt635x-auxadc mt635x-auxadc: name:VBIF, channel=11, adc_out=0xc74, adc_result=2801
+[   11.549181] [fg_bat_plugout_int_handler]Dig 0 1 1 0x0 0x2
+[   11.549208] [fg_bat_plugout_int_handler]Ana 0 0 1 1 1 0 1 bif:2801
+[   11.549210] 1st chr_zcv:0 pmic_zcv:0 0 pmic_in_zcv:0 swocv:0 zcv_from:0 tmp:0
+[   11.549211] chr_zcv:0 pmic_zcv:0 0 pmic_in_zcv:0 swocv:0 zcv_from:0 tmp:0
+[   11.549446] [iavg_check] iavg:0 cic2:-3684 offset:1296 0x504 0x0 1 0\x0d
+[   11.549665] [fgauge_read_columb_internal] CAR=-10 r_fg_value=50 car_tune_value=1000
+[   11.551289] vbat_out_old=39440, vthr=679, T_curr=452, vbat_out=39489
+[   11.551291] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5d7e, adc_result=3949
+[   11.551497] [fgauge_read_current] final current=6384 (ratio=1000)
+[   11.551605] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -6384, current_1 -6384
+[   11.551712] [fg_get_current_iavg] -6384 0
+[   11.551923] [fgauge_read_current] final current=6590 (ratio=1000)
+[   11.551924] [CH3_DBG] bat_cur = -6590
+[   11.552443] [fgauge_read_current] final current=6590 (ratio=1000)
+[   11.552445] [BattVoltToTemp] 1083 12000 2800 6
+[   11.552446] [force_get_tbat_internal] tbat_precise bat_temperature_val:394
+[   11.552447] [force_get_tbat] t:39 precise:394
+[   11.552459] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   11.552461] GM3log1 11 11 3949 -6384 -6384 0 -36 39 0 1 0 0 0
+[   11.552469] battery_get_boot_mode: boot mode=2
+[   11.552789] GM3log2 11 0 0 0 0 0 0 0 104
+[   11.552792] GM3log3 11 1 39637 -4958 0
+[   11.552793] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   11.552795] GM3log int 11 11 0 0 0 0
+[   11.552796] GM3log phone_state 0 0
+[   11.552796] GM3 car:-10 car_diff:-26
+[   11.597579] ufshpb_table_mempool_init:2301 The number of mctx = 7627. debug_free_table 7627
+[   11.597583] ufshpb_lu_hpb_init:2612 total_subregion_count: 7627
+[   11.599199] ufshpb_create_sysfs:3735 ufshpb creates sysfs lu 2 00000000808376a4 dev->kobj 00000000a293cbaa
+[   11.599217] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hpb_read_disable
+[   11.599222] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: map_cmd_disable
+[   11.599225] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: throttle_map_req
+[   11.599228] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: throttle_pre_req
+[   11.599231] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_min_tr_len
+[   11.599234] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_max_tr_len
+[   11.599236] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: debug
+[   11.599239] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hpb_version
+[   11.599245] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hit_count
+[   11.599248] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: miss_count
+[   11.599251] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: map_req_count
+[   11.599253] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_count
+[   11.599256] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: region_stat_count
+[   11.599259] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: count_reset
+[   11.599261] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: get_info_from_lba
+[   11.599264] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: get_info_from_region
+[   11.599267] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: release
+[   11.599269] ufshpb_create_sysfs:3747 ufshpb_lu2 sysfs adds uevent
+[   11.599273] ufshpb_init:2862 UFSHPB LU 2 working
+[   11.858008] Perf order domain is not ready!
+[   11.858028] [cmdq] g_cmdq_cnt:1 g_cmdq:0 pa:0x000000001022c000
+[   11.858039] [cmdq] cmdq_sec_mtee_setup_context a0:0x1 cmdq_mtee:1
+[   11.858050] [port_lookup_tid] find last_token com, tee id 0
+[   11.858178] [port_lookup_tid] find last_token com, tee id 0
+[   11.858320] [port_lookup_tid] find last_token com, tee id 0
+[   12.018013] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   12.018022] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   12.018031] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   12.018033] GM3log-nint-nafg 11 11 0 0 0 0 0
+[   12.018039] battery_get_boot_mode: boot mode=2
+[   12.018039] mtk_battery boot mode =2
+[   12.018041] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   12.658080] tcpc_event_init_work typec attach new = 0
+[   12.818024] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   12.818030] last full = 0, full = 0
+[   12.819865] vbat_out_old=39710, vthr=680, T_curr=446, vbat_out=39758
+[   12.819867] mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   12.819871] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e23, adc_result=3976
+[   12.821492] vbat_out_old=39730, vthr=680, T_curr=446, vbat_out=39778
+[   12.821493] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e30, adc_result=3978
+[   12.823114] vbat_out_old=39710, vthr=680, T_curr=446, vbat_out=39758
+[   12.823115] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e26, adc_result=3976
+[   12.823316] [fgauge_read_current] final current=3752 (ratio=1000)
+[   12.823529] [fgauge_read_current] final current=3874 (ratio=1000)
+[   12.823752] [fgauge_read_current] final current=3874 (ratio=1000)
+[   12.823752] [CH3_DBG] bat_cur = -3874
+[   12.824068] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4cb, adc_result=1078
+[   12.824293] [fgauge_read_current] final current=3874 (ratio=1000)
+[   12.824297] [BattVoltToTemp] 1081 12000 2800 3
+[   12.824298] [force_get_tbat_internal] tbat_precise bat_temperature_val:396
+[   12.824299] [force_get_tbat] t:39 precise:396
+[   12.824617] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0xc, adc_result=5
+[   12.825056] [fgauge_read_current] final current=3874 (ratio=1000)
+[   12.825277] [fgauge_read_current] final current=3874 (ratio=1000)
+[   12.825666] [fgauge_read_current] final current=3746 (ratio=1000)
+[   12.825877] [fgauge_read_current] final current=3746 (ratio=1000)
+[   12.839807] ufshpb_resume:3133 ufshpb_lu 2 resume. do_workq 0 retry 0
+[   13.138013] Perf order domain is not ready!
+[   14.418024] [SCP] scp_ipi_send: SCP A not ready
+[   14.418027] [sensorHub] scp_ipi_send fail
+[   14.418039] [sensorHub] scp_sensorHub_req_send fail!
+[   14.738008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   15.058031] sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+[   15.059175] ufshpb_suspend:3111 ufshpb_lu 2 goto suspend
+[   15.066574] regulator regulator.38: regulator ext_pmic2 disable
+[   15.066658] ufshcd-mtk 11270000.ufshci: rs,ret 0,7482 us
+[   16.978009] Perf order domain is not ready!
+[   17.074264] Perf order domain is not ready!
+[   17.074271] [wdtk] kick watchdog
+[   17.938014] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   18.098012] Perf order domain is not ready!
+[   21.138009] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   22.018048] [fg_drv_update_hw_status]=>
+[   22.018063] [fg_update_sw_iavg]diff time:20 iavg:0
+[   22.018065] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   22.018293] [fgauge_read_current] final current=3622 (ratio=1000)
+[   22.018506] [fgauge_read_columb_internal] CAR=-22 r_fg_value=50 car_tune_value=1000
+[   22.020236] [MDRT_ADC] OLD = 0x27c0, NOW = 0x282c, CNT = 0
+[   22.020551] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   22.020555] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e21, adc_result=3976
+[   22.020870] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x15, adc_result=9
+[   22.021069] [fgauge_read_current] final current=3608 (ratio=1000)
+[   22.021070] [CH3_DBG] bat_cur = -3608
+[   22.021385] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4cd, adc_result=1080
+[   22.021587] [fgauge_read_current] final current=3608 (ratio=1000)
+[   22.021590] [BattVoltToTemp] 1083 12000 2800 3
+[   22.021591] [force_get_tbat_internal] tbat_precise bat_temperature_val:394
+[   22.021592] [force_get_tbat] t:39 precise:394
+[   22.021593] lbat 0 0 0 0
+[   22.021596] car[-22,246,-246,493,-210, cycle_car:0,ncar:0] c:0 3622 vbat:3976 vbus:85 soc:63 50 gm3:0 0 0 0
+[   22.021800] [fgauge_read_columb_internal] CAR=-22 r_fg_value=50 car_tune_value=1000
+[   22.021907] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -3608, current_1 -3608
+[   22.022020] [fg_get_current_iavg] -3608 0
+[   22.022030] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   22.022031] [fg_nafg_monitor]time:21 nafg_cnt:0, now:21, last_t:0
+[   22.022033] tmp:39 65535 65535 hcar2:493 lcar2:210 time:21 sw_iavg:0 -3608 0 nafg_m:0 0 0
+[   22.022229] [fgauge_read_columb_internal] CAR=-22 r_fg_value=50 car_tune_value=1000
+[   22.023858] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   22.023860] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e26, adc_result=3976
+[   22.024062] [fgauge_read_current] final current=3730 (ratio=1000)
+[   22.024172] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -3730, current_1 -3730
+[   22.024308] [fg_get_current_iavg] -3730 0
+[   22.024516] [fgauge_read_current] final current=3936 (ratio=1000)
+[   22.024517] [CH3_DBG] bat_cur = -3936
+[   22.024832] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4c6, adc_result=1074
+[   22.025038] [fgauge_read_current] final current=3936 (ratio=1000)
+[   22.025039] [BattVoltToTemp] 1077 12000 2800 3
+[   22.025040] [force_get_tbat_internal] tbat_precise bat_temperature_val:401
+[   22.025040] [force_get_tbat] t:40 precise:401
+[   22.025053] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   22.025055] GM3log1 21 22 3976 -3730 -3730 0 -48 40 0 1 0 0 0
+[   22.025059] battery_get_boot_mode: boot mode=2
+[   22.025375] GM3log2 22 0 0 0 0 0 0 0 47
+[   22.025376] GM3log3 22 1 39637 -4958 0
+[   22.025378] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   22.025379] GM3log int 22 21 0 0 0 0
+[   22.025380] GM3log phone_state 0 0
+[   22.025381] GM3 car:-22 car_diff:-26
+[   22.098007] Perf order domain is not ready!
+[   22.498013] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   22.498023] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   22.498039] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   22.498041] GM3log-nint-nafg 21 22 0 0 0 0 0
+[   22.498046] battery_get_boot_mode: boot mode=2
+[   22.498047] mtk_battery boot mode =2
+[   22.498048] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   22.738023] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   22.738028] last full = 0, full = 0
+[   22.740868] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   22.742489] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   22.744110] vbat_out_old=39720, vthr=681, T_curr=440, vbat_out=39766
+[   22.744335] [fgauge_read_current] final current=3806 (ratio=1000)
+[   22.744551] [fgauge_read_current] final current=3806 (ratio=1000)
+[   22.744763] [fgauge_read_current] final current=3806 (ratio=1000)
+[   22.744764] [CH3_DBG] bat_cur = -3806
+[   22.745312] [fgauge_read_current] final current=3844 (ratio=1000)
+[   22.745315] [BattVoltToTemp] 1080 12000 2800 3
+[   22.745315] [force_get_tbat_internal] tbat_precise bat_temperature_val:397
+[   22.745317] [force_get_tbat] t:39 precise:397
+[   22.746014] [fgauge_read_current] final current=3844 (ratio=1000)
+[   22.746228] [fgauge_read_current] final current=3844 (ratio=1000)
+[   22.746593] [fgauge_read_current] final current=3844 (ratio=1000)
+[   22.746806] [fgauge_read_current] final current=3844 (ratio=1000)
+[   23.058013] Perf order domain is not ready!
+[   24.338009] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   24.498034] [SCP] scp_ipi_send: SCP A not ready
+[   24.498036] [sensorHub] scp_ipi_send fail
+[   24.498048] [sensorHub] scp_sensorHub_req_send fail!
+[   27.378012] [GT9896s-ERR][__do_register_ext_module:63] Module [gt9896s-fwu] timeout
+[   27.538008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   28.178012] Perf order domain is not ready!
+[   30.738008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   32.338008] Perf order domain is not ready!
+[   32.498055] [fg_drv_update_hw_status]=>
+[   32.498069] [fg_update_sw_iavg]diff time:30 iavg:0
+[   32.498072] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   32.498295] [fgauge_read_current] final current=3570 (ratio=1000)
+[   32.498517] [fgauge_read_columb_internal] CAR=-32 r_fg_value=50 car_tune_value=1000
+[   32.499832] [MDRT_ADC] OLD = 0x282c, NOW = 0x2886, CNT = 0
+[   32.500149] vbat_out_old=39710, vthr=682, T_curr=434, vbat_out=39755
+[   32.500150] mt635x_auxadc_read_raw: 6 callbacks suppressed
+[   32.500154] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e23, adc_result=3976
+[   32.500532] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0xc, adc_result=5
+[   32.500743] [fgauge_read_current] final current=3638 (ratio=1000)
+[   32.500744] [CH3_DBG] bat_cur = -3638
+[   32.501059] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ce, adc_result=1081
+[   32.501325] [fgauge_read_current] final current=3700 (ratio=1000)
+[   32.501328] [BattVoltToTemp] 1084 12000 2800 3
+[   32.501329] [force_get_tbat_internal] tbat_precise bat_temperature_val:393
+[   32.501330] [force_get_tbat] t:39 precise:393
+[   32.501332] lbat 0 0 0 0
+[   32.501335] car[-32,246,-246,493,-210, cycle_car:0,ncar:0] c:0 3570 vbat:3976 vbus:47 soc:63 50 gm3:0 0 0 0
+[   32.501571] [fgauge_read_columb_internal] CAR=-32 r_fg_value=50 car_tune_value=1000
+[   32.501676] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -3700, current_1 -3700
+[   32.501786] [fg_get_current_iavg] -3700 0
+[   32.501795] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   32.501797] [fg_nafg_monitor]time:32 nafg_cnt:0, now:32, last_t:0
+[   32.501799] tmp:39 65535 65535 hcar2:493 lcar2:210 time:32 sw_iavg:0 -3700 0 nafg_m:0 0 0
+[   32.501996] [fgauge_read_columb_internal] CAR=-32 r_fg_value=50 car_tune_value=1000
+[   32.503623] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   32.503624] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e25, adc_result=3976
+[   32.503825] [fgauge_read_current] final current=3958 (ratio=1000)
+[   32.503934] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -3958, current_1 -3958
+[   32.504044] [fg_get_current_iavg] -3958 0
+[   32.504257] [fgauge_read_current] final current=3958 (ratio=1000)
+[   32.504257] [CH3_DBG] bat_cur = -3958
+[   32.505630] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ce, adc_result=1081
+[   32.505840] [fgauge_read_current] final current=4066 (ratio=1000)
+[   32.505841] [BattVoltToTemp] 1085 12000 2800 4
+[   32.505842] [force_get_tbat_internal] tbat_precise bat_temperature_val:392
+[   32.505843] [force_get_tbat] t:39 precise:392
+[   32.505855] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   32.505857] GM3log1 32 32 3976 -3958 -3958 0 -58 39 0 1 0 0 0
+[   32.505862] battery_get_boot_mode: boot mode=2
+[   32.506198] GM3log2 32 0 0 0 0 0 0 0 47
+[   32.506199] GM3log3 32 1 39637 -4958 0
+[   32.506200] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   32.506201] GM3log int 32 32 0 0 0 0
+[   32.506202] GM3log phone_state 0 0
+[   32.506203] GM3 car:-32 car_diff:-26
+[   32.574275] Perf order domain is not ready!
+[   32.574280] [wdtk] kick watchdog
+[   32.818023] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   32.818028] last full = 0, full = 0
+[   32.819837] vbat_out_old=39730, vthr=682, T_curr=434, vbat_out=39775
+[   32.821465] vbat_out_old=39720, vthr=681, T_curr=440, vbat_out=39766
+[   32.823085] vbat_out_old=39710, vthr=681, T_curr=440, vbat_out=39756
+[   32.978023] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   32.978032] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   32.978041] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   32.978043] GM3log-nint-nafg 32 32 0 0 0 0 0
+[   32.978049] battery_get_boot_mode: boot mode=2
+[   32.978050] mtk_battery boot mode =2
+[   32.978052] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   32.978285] [fgauge_read_current] final current=3700 (ratio=1000)
+[   32.978498] [fgauge_read_current] final current=3700 (ratio=1000)
+[   32.978710] [fgauge_read_current] final current=3700 (ratio=1000)
+[   32.978711] [CH3_DBG] bat_cur = -3700
+[   32.979229] [fgauge_read_current] final current=3700 (ratio=1000)
+[   32.979231] [BattVoltToTemp] 1082 12000 2800 3
+[   32.979232] [force_get_tbat_internal] tbat_precise bat_temperature_val:395
+[   32.979233] [force_get_tbat] t:39 precise:395
+[   32.979934] [fgauge_read_current] final current=3668 (ratio=1000)
+[   32.980145] [fgauge_read_current] final current=3668 (ratio=1000)
+[   32.980513] [fgauge_read_current] final current=3668 (ratio=1000)
+[   32.980725] [fgauge_read_current] final current=3668 (ratio=1000)
+[   33.138012] Perf order domain is not ready!
+[   33.698018] Trustonic TEE: request_send: daemon not connected after 10s, waiting
+[   33.778025] vdram1: disabling
+[   33.778028] regulator regulator.1: mt6358_regulator_disable:VDRAM1 should not be disable.(use_count=0)
+[   33.778029] vdram1: couldn't disable: -1
+[   33.778037] vcore: disabling
+[   33.778039] regulator regulator.2: mt6358_regulator_disable:VCORE should not be disable.(use_count=0)
+[   33.778040] vcore: couldn't disable: -1
+[   33.778050] vproc11: disabling
+[   33.778052] regulator regulator.4: mt6358_regulator_disable:VPROC11 should not be disable.(use_count=0)
+[   33.778053] vproc11: couldn't disable: -1
+[   33.778059] vproc12: disabling
+[   33.778060] regulator regulator.5: mt6358_regulator_disable:VPROC12 should not be disable.(use_count=0)
+[   33.778061] vproc12: couldn't disable: -1
+[   33.778071] vs2: disabling
+[   33.778072] regulator regulator.7: mt6358_regulator_disable:VS2 should not be disable.(use_count=0)
+[   33.778073] vs2: couldn't disable: -1
+[   33.778079] vmodem: disabling
+[   33.778081] regulator regulator.8: mt6358_regulator_disable:VMODEM should not be disable.(use_count=0)
+[   33.778081] vmodem: couldn't disable: -1
+[   33.778087] vs1: disabling
+[   33.778089] regulator regulator.9: mt6358_regulator_disable:VS1 should not be disable.(use_count=0)
+[   33.778089] vs1: couldn't disable: -1
+[   33.778100] vdram2: disabling
+[   33.778102] regulator regulator.10: mt6358_regulator_disable:VDRAM2 should not be disable.(use_count=0)
+[   33.778103] vdram2: couldn't disable: -1
+[   33.778129] vsram_proc11: disabling
+[   33.778131] regulator regulator.18: mt6358_regulator_disable:VSRAM_PROC11 should not be disable.(use_count=0)
+[   33.778132] vsram_proc11: couldn't disable: -1
+[   33.778141] vsram_others: disabling
+[   33.778143] regulator regulator.20: mt6358_regulator_disable:VSRAM_OTHERS should not be disable.(use_count=0)
+[   33.778144] vsram_others: couldn't disable: -1
+[   33.778154] vxo22: disabling
+[   33.778155] regulator regulator.22: mt6358_regulator_disable:VXO22 should not be disable.(use_count=0)
+[   33.778156] vxo22: couldn't disable: -1
+[   33.778165] vaux18: disabling
+[   33.778167] regulator regulator.24: mt6358_regulator_disable:VAUX18 should not be disable.(use_count=0)
+[   33.778168] vaux18: couldn't disable: -1
+[   33.778177] vsram_proc12: disabling
+[   33.778179] regulator regulator.27: mt6358_regulator_disable:VSRAM_PROC12 should not be disable.(use_count=0)
+[   33.778180] vsram_proc12: couldn't disable: -1
+[   33.778211] vaud28: disabling
+[   33.778212] regulator regulator.35: mt6358_regulator_disable:VAUD28 should not be disable.(use_count=0)
+[   33.778213] vaud28: couldn't disable: -1
+[   33.778222] vsram_core: disabling
+[   33.778224] regulator regulator.37: mt6358_regulator_disable:VSRAM_CORE should not be disable.(use_count=0)
+[   33.778225] vsram_core: couldn't disable: -1
+[   33.778231] va09: disabling
+[   33.778233] regulator regulator.38: regulator ext_pmic2 disable
+[   33.778234] regulator regulator.38: pmic_regulator_ext2_disable:VA09 should not be disable.(use_count=0)
+[   33.778235] va09: couldn't disable: -1
+[   33.938008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   34.578037] [SCP] scp_ipi_send: SCP A not ready
+[   34.578039] [sensorHub] scp_ipi_send fail
+[   34.578050] [sensorHub] scp_sensorHub_req_send fail!
+[   37.138009] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   38.098013] Perf order domain is not ready!
+[   40.338008] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   42.578008] Perf order domain is not ready!
+[   42.978059] [fg_drv_update_hw_status]=>
+[   42.978073] [fg_update_sw_iavg]diff time:41 iavg:0
+[   42.978076] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   42.978283] [fgauge_read_current] final current=3654 (ratio=1000)
+[   42.978496] [fgauge_read_columb_internal] CAR=-44 r_fg_value=50 car_tune_value=1000
+[   42.979810] [MDRT_ADC] OLD = 0x2886, NOW = 0x28d0, CNT = 0
+[   42.980127] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   42.980128] mt635x_auxadc_read_raw: 6 callbacks suppressed
+[   42.980132] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e2b, adc_result=3977
+[   42.980447] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x12, adc_result=7
+[   42.980665] [fgauge_read_current] final current=3592 (ratio=1000)
+[   42.980666] [CH3_DBG] bat_cur = -3592
+[   42.980988] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4cf, adc_result=1081
+[   42.981214] [fgauge_read_current] final current=3592 (ratio=1000)
+[   42.981217] [BattVoltToTemp] 1084 12000 2800 3
+[   42.981218] [force_get_tbat_internal] tbat_precise bat_temperature_val:393
+[   42.981219] [force_get_tbat] t:39 precise:393
+[   42.981221] lbat 0 0 0 0
+[   42.981224] car[-44,246,-246,493,-210, cycle_car:0,ncar:0] c:0 3654 vbat:3977 vbus:66 soc:63 50 gm3:0 0 0 0
+[   42.981518] [fgauge_read_columb_internal] CAR=-44 r_fg_value=50 car_tune_value=1000
+[   42.981738] [fg_get_current_iavg] -3669 1
+[   42.981747] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   42.981749] [fg_nafg_monitor]time:42 nafg_cnt:0, now:42, last_t:0
+[   42.981751] tmp:39 65535 65535 hcar2:493 lcar2:210 time:42 sw_iavg:0 -3669 1 nafg_m:0 0 0
+[   42.982006] [fgauge_read_columb_internal] CAR=-44 r_fg_value=50 car_tune_value=1000
+[   42.983648] vbat_out_old=39710, vthr=682, T_curr=434, vbat_out=39755
+[   42.983650] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e23, adc_result=3976
+[   42.983867] [fgauge_read_current] final current=3860 (ratio=1000)
+[   42.984116] [fg_get_current_iavg] -3669 1
+[   42.984328] [fgauge_read_current] final current=3860 (ratio=1000)
+[   42.984329] [CH3_DBG] bat_cur = -3860
+[   42.984644] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ce, adc_result=1081
+[   42.984851] [fgauge_read_current] final current=3860 (ratio=1000)
+[   42.984853] [BattVoltToTemp] 1084 12000 2800 3
+[   42.984853] [force_get_tbat_internal] tbat_precise bat_temperature_val:393
+[   42.984854] [force_get_tbat] t:39 precise:393
+[   42.984867] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   42.984868] GM3log1 42 42 3976 -3860 -3669 0 -70 39 0 1 0 0 0
+[   42.984873] battery_get_boot_mode: boot mode=2
+[   42.985188] GM3log2 42 0 0 0 0 0 0 0 47
+[   42.985189] GM3log3 42 1 39637 -4958 0
+[   42.985190] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   42.985192] GM3log int 42 42 0 0 0 0
+[   42.985192] GM3log phone_state 0 0
+[   42.985193] GM3 car:-44 car_diff:-26
+[   43.058012] Perf order domain is not ready!
+[   43.458013] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   43.458029] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   43.458038] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   43.458040] GM3log-nint-nafg 42 42 0 0 0 0 0
+[   43.458045] battery_get_boot_mode: boot mode=2
+[   43.458045] mtk_battery boot mode =2
+[   43.458047] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   43.538007] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   44.018024] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   44.018029] last full = 0, full = 0
+[   44.019839] vbat_out_old=39710, vthr=682, T_curr=434, vbat_out=39755
+[   44.019841] mt635x_auxadc_read_raw: 1 callbacks suppressed
+[   44.019844] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e24, adc_result=3976
+[   44.021465] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   44.021467] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e27, adc_result=3977
+[   44.023087] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   44.023088] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e2b, adc_result=3977
+[   44.023299] [fgauge_read_current] final current=3768 (ratio=1000)
+[   44.023512] [fgauge_read_current] final current=3768 (ratio=1000)
+[   44.023725] [fgauge_read_current] final current=3768 (ratio=1000)
+[   44.023725] [CH3_DBG] bat_cur = -3768
+[   44.024051] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d0, adc_result=1082
+[   44.024272] [fgauge_read_current] final current=3768 (ratio=1000)
+[   44.024275] [BattVoltToTemp] 1085 12000 2800 3
+[   44.024276] [force_get_tbat_internal] tbat_precise bat_temperature_val:392
+[   44.024277] [force_get_tbat] t:39 precise:392
+[   44.024599] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x16, adc_result=9
+[   44.024681] get prop 4 is not supported in batt
+[   44.024918] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.025129] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.025433] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.025710] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.026075] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.026296] [fgauge_read_current] final current=3828 (ratio=1000)
+[   44.026656] [fgauge_read_current] final current=3714 (ratio=1000)
+[   44.026898] [fgauge_read_current] final current=3714 (ratio=1000)
+[   44.027235] [fgauge_read_current] final current=3714 (ratio=1000)
+[   44.027478] [fgauge_read_current] final current=3714 (ratio=1000)
+[   44.027617] ///PD dbg info 176d
+[   44.027620] <   44.027>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   44.027>TCPC-TCPC:bat_update_work_func Battery Discharging
+[   44.027621] <   44.027>TCPC-PD-ERR:pd_put_tcp_event failed0
+[   44.658026] [SCP] scp_ipi_send: SCP A not ready
+[   44.658029] [sensorHub] scp_ipi_send fail
+[   44.658040] [sensorHub] scp_sensorHub_req_send fail!
+[   48.074284] Perf order domain is not ready!
+[   48.074290] [wdtk] kick watchdog
+[   48.178011] Perf order domain is not ready!
+[   52.818008] Perf order domain is not ready!
+[   53.138011] Perf order domain is not ready!
+[   53.458055] [fg_drv_update_hw_status]=>
+[   53.458076] [fg_update_sw_iavg]diff time:51 iavg:0
+[   53.458078] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   53.458295] [fgauge_read_current] final current=3600 (ratio=1000)
+[   53.458511] [fgauge_read_columb_internal] CAR=-54 r_fg_value=50 car_tune_value=1000
+[   53.459826] [MDRT_ADC] OLD = 0x28d0, NOW = 0x290b, CNT = 0
+[   53.460144] vbat_out_old=39710, vthr=682, T_curr=434, vbat_out=39755
+[   53.460147] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e22, adc_result=3976
+[   53.460462] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0xc, adc_result=5
+[   53.460674] [fgauge_read_current] final current=3676 (ratio=1000)
+[   53.460674] [CH3_DBG] bat_cur = -3676
+[   53.460991] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d1, adc_result=1083
+[   53.461224] [fgauge_read_current] final current=3676 (ratio=1000)
+[   53.461227] [BattVoltToTemp] 1086 12000 2800 3
+[   53.461228] [force_get_tbat_internal] tbat_precise bat_temperature_val:390
+[   53.461229] [force_get_tbat] t:39 precise:390
+[   53.461230] lbat 0 0 0 0
+[   53.461233] car[-54,246,-246,493,-210, cycle_car:0,ncar:0] c:0 3600 vbat:3976 vbus:47 soc:63 50 gm3:0 0 0 0
+[   53.461436] [fgauge_read_columb_internal] CAR=-54 r_fg_value=50 car_tune_value=1000
+[   53.461655] [fg_get_current_iavg] -3643 1
+[   53.461664] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   53.461666] [fg_nafg_monitor]time:53 nafg_cnt:0, now:53, last_t:0
+[   53.461668] tmp:39 65535 65535 hcar2:493 lcar2:210 time:53 sw_iavg:0 -3643 1 nafg_m:0 0 0
+[   53.461866] [fgauge_read_columb_internal] CAR=-54 r_fg_value=50 car_tune_value=1000
+[   53.463492] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   53.463494] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e28, adc_result=3977
+[   53.463697] [fgauge_read_current] final current=3790 (ratio=1000)
+[   53.463914] [fg_get_current_iavg] -3643 1
+[   53.464122] [fgauge_read_current] final current=3928 (ratio=1000)
+[   53.464123] [CH3_DBG] bat_cur = -3928
+[   53.464437] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ce, adc_result=1081
+[   53.464644] [fgauge_read_current] final current=3928 (ratio=1000)
+[   53.464645] [BattVoltToTemp] 1084 12000 2800 3
+[   53.464646] [force_get_tbat_internal] tbat_precise bat_temperature_val:393
+[   53.464647] [force_get_tbat] t:39 precise:393
+[   53.464659] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   53.464661] GM3log1 53 53 3977 -3790 -3643 0 -80 39 0 1 0 0 0
+[   53.464665] battery_get_boot_mode: boot mode=2
+[   53.464980] GM3log2 53 0 0 0 0 0 0 0 85
+[   53.464981] GM3log3 53 1 39637 -4958 0
+[   53.464983] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   53.464984] GM3log int 53 53 0 0 0 0
+[   53.464985] GM3log phone_state 0 0
+[   53.464986] GM3 car:-54 car_diff:-26
+[   53.938013] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   53.938023] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   53.938032] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   53.938033] GM3log-nint-nafg 53 53 0 0 0 0 0
+[   53.938038] battery_get_boot_mode: boot mode=2
+[   53.938039] mtk_battery boot mode =2
+[   53.938041] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   54.738025] [SCP] scp_ipi_send: SCP A not ready
+[   54.738028] [sensorHub] scp_ipi_send fail
+[   54.738039] [sensorHub] scp_sensorHub_req_send fail!
+[   55.538024] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   55.538029] last full = 0, full = 0
+[   55.539841] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   55.539842] mt635x_auxadc_read_raw: 1 callbacks suppressed
+[   55.539846] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e27, adc_result=3977
+[   55.542501] vbat_out_old=39710, vthr=682, T_curr=434, vbat_out=39755
+[   55.542502] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e25, adc_result=3976
+[   55.544134] vbat_out_old=39720, vthr=682, T_curr=434, vbat_out=39765
+[   55.544135] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e29, adc_result=3977
+[   55.544355] [fgauge_read_current] final current=3798 (ratio=1000)
+[   55.544569] [fgauge_read_current] final current=3798 (ratio=1000)
+[   55.544782] [fgauge_read_current] final current=3798 (ratio=1000)
+[   55.544782] [CH3_DBG] bat_cur = -3798
+[   55.545101] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4cd, adc_result=1080
+[   55.545331] [fgauge_read_current] final current=3798 (ratio=1000)
+[   55.545333] [BattVoltToTemp] 1083 12000 2800 3
+[   55.545334] [force_get_tbat_internal] tbat_precise bat_temperature_val:394
+[   55.545336] [force_get_tbat] t:39 precise:394
+[   55.545654] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0xe, adc_result=6
+[   55.546033] [fgauge_read_current] final current=3700 (ratio=1000)
+[   55.546246] [fgauge_read_current] final current=3700 (ratio=1000)
+[   55.546613] [fgauge_read_current] final current=3700 (ratio=1000)
+[   55.546848] [fgauge_read_current] final current=3700 (ratio=1000)
+[   57.938008] Perf order domain is not ready!
+[   58.098012] Perf order domain is not ready!
+[   61.938057] dsi_cmd: dyn_timer_fn: 
+[   63.058065] Perf order domain is not ready!
+[   63.058088] Perf order domain is not ready!
+[   63.574402] Perf order domain is not ready!
+[   63.574419] [wdtk] kick watchdog
+[   63.938172] [fg_drv_update_hw_status]=>
+[   63.938189] [fg_update_sw_iavg]diff time:62 iavg:0
+[   63.938400] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   63.938406] [fg_update_sw_iavg]time:62 car:-62 -62 iavg:-3600 ht:-600 lt:-6600 gap:3000
+[   63.938408] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   63.938612] [fgauge_read_current] final current=3028 (ratio=1000)
+[   63.938830] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   63.940145] [MDRT_ADC] OLD = 0x290b, NOW = 0x2942, CNT = 0
+[   63.940463] vbat_out_old=39760, vthr=682, T_curr=434, vbat_out=39805
+[   63.940467] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e43, adc_result=3981
+[   63.940786] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x1d, adc_result=12
+[   63.940996] [fgauge_read_current] final current=3104 (ratio=1000)
+[   63.940997] [CH3_DBG] bat_cur = -3104
+[   63.941313] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d3, adc_result=1085
+[   63.941512] [fgauge_read_current] final current=3104 (ratio=1000)
+[   63.941515] [BattVoltToTemp] 1088 12000 2800 3
+[   63.941516] [force_get_tbat_internal] tbat_precise bat_temperature_val:388
+[   63.941518] [force_get_tbat] t:38 precise:388
+[   63.941519] lbat 0 0 0 0
+[   63.941522] car[-62,246,-246,493,-210, cycle_car:0,ncar:0] c:0 3028 vbat:3981 vbus:113 soc:63 50 gm3:0 0 0 0
+[   63.941724] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   63.941940] [fg_get_current_iavg] -3635 1
+[   63.941949] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   63.941951] [fg_nafg_monitor]time:63 nafg_cnt:0, now:63, last_t:0
+[   63.941953] tmp:38 65535 65535 hcar2:493 lcar2:210 time:63 sw_iavg:-3600 -3635 1 nafg_m:0 0 0
+[   63.942149] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   63.943782] vbat_out_old=39760, vthr=682, T_curr=434, vbat_out=39805
+[   63.943783] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e45, adc_result=3981
+[   63.943981] [fgauge_read_current] final current=3264 (ratio=1000)
+[   63.944203] [fg_get_current_iavg] -3635 1
+[   63.944409] [fgauge_read_current] final current=3264 (ratio=1000)
+[   63.944410] [CH3_DBG] bat_cur = -3264
+[   63.944727] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d1, adc_result=1083
+[   63.944936] [fgauge_read_current] final current=3584 (ratio=1000)
+[   63.944937] [BattVoltToTemp] 1086 12000 2800 3
+[   63.944938] [force_get_tbat_internal] tbat_precise bat_temperature_val:390
+[   63.944939] [force_get_tbat] t:39 precise:390
+[   63.944952] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   63.944953] GM3log1 63 63 3981 -3264 -3635 0 -88 39 0 1 0 0 0
+[   63.944958] battery_get_boot_mode: boot mode=2
+[   63.945273] GM3log2 63 0 0 0 0 0 0 0 75
+[   63.945275] GM3log3 63 1 39637 -4958 0
+[   63.945276] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   63.945277] GM3log int 63 63 0 0 0 0
+[   63.945278] GM3log phone_state 0 0
+[   63.945279] GM3 car:-62 car_diff:-26
+[   64.418178] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   64.418189] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   64.418198] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   64.418200] GM3log-nint-nafg 63 63 0 0 0 0 0
+[   64.418206] battery_get_boot_mode: boot mode=2
+[   64.418207] mtk_battery boot mode =2
+[   64.418208] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   64.818226] [SCP] scp_ipi_send: SCP A not ready
+[   64.818231] [sensorHub] scp_ipi_send fail
+[   64.818293] [sensorHub] scp_sensorHub_req_send fail!
+[   65.358052] Trustonic TEE: request_send: daemon not connected after 20s, waiting
+[   65.778200] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[   65.778207] last full = 0, full = 0
+[   65.780149] vbat_out_old=39760, vthr=682, T_curr=434, vbat_out=39805
+[   65.780152] mt635x_auxadc_read_raw: 1 callbacks suppressed
+[   65.780156] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e41, adc_result=3981
+[   65.781788] vbat_out_old=39770, vthr=682, T_curr=434, vbat_out=39815
+[   65.781790] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e46, adc_result=3982
+[   65.783423] vbat_out_old=39760, vthr=683, T_curr=428, vbat_out=39803
+[   65.783424] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5e42, adc_result=3980
+[   65.783643] [fgauge_read_current] final current=3288 (ratio=1000)
+[   65.783858] [fgauge_read_current] final current=3288 (ratio=1000)
+[   65.784070] [fgauge_read_current] final current=3288 (ratio=1000)
+[   65.784071] [CH3_DBG] bat_cur = -3288
+[   65.784450] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d2, adc_result=1084
+[   65.784650] [fgauge_read_current] final current=3600 (ratio=1000)
+[   65.784653] [BattVoltToTemp] 1087 12000 2800 3
+[   65.784654] [force_get_tbat_internal] tbat_precise bat_temperature_val:389
+[   65.784655] [force_get_tbat] t:38 precise:389
+[   65.784973] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0xc, adc_result=5
+[   65.785382] [fgauge_read_current] final current=3600 (ratio=1000)
+[   65.785597] [fgauge_read_current] final current=3600 (ratio=1000)
+[   65.785961] [fgauge_read_current] final current=3600 (ratio=1000)
+[   65.786176] [fgauge_read_current] final current=3600 (ratio=1000)
+[   66.620852] Perf order domain is not ready!
+[   66.621101] Perf order domain is not ready!
+[   66.621271] Perf order domain is not ready!
+[   66.621346] ///PD dbg info 49d
+[   66.621349] <   66.621>TCPC-TCPC:Alert:0x18001, Mask:0x1067f
+[   66.621441] Perf order domain is not ready!
+[   66.621585] Perf order domain is not ready!
+[   66.621754] Perf order domain is not ready!
+[   66.621924] Perf order domain is not ready!
+[   66.622089] Perf order domain is not ready!
+[   66.622231] Perf order domain is not ready!
+[   66.622370] Perf order domain is not ready!
+[   66.622509] Perf order domain is not ready!
+[   66.636783] Perf order domain is not ready!
+[   66.636832] mt6370_pmu_irq_handler
+[   66.636961] Perf order domain is not ready!
+[   66.637004] Perf order domain is not ready!
+[   66.637131] Perf order domain is not ready!
+[   66.637152] Perf order domain is not ready!
+[   66.637328] Perf order domain is not ready!
+[   66.637347] Perf order domain is not ready!
+[   66.637500] Perf order domain is not ready!
+[   66.637519] Perf order domain is not ready!
+[   66.637669] Perf order domain is not ready!
+[   66.637689] Perf order domain is not ready!
+[   66.637837] Perf order domain is not ready!
+[   66.637855] Perf order domain is not ready!
+[   66.638035] Perf order domain is not ready!
+[   66.638185] Perf order domain is not ready!
+[   66.638203] Perf order domain is not ready!
+[   66.638354] Perf order domain is not ready!
+[   66.638521] Perf order domain is not ready!
+[   66.638689] Perf order domain is not ready!
+[   66.638859] Perf order domain is not ready!
+[   66.639026] Perf order domain is not ready!
+[   66.639193] Perf order domain is not ready!
+[   66.639360] Perf order domain is not ready!
+[   66.639528] Perf order domain is not ready!
+[   66.639693] Perf order domain is not ready!
+[   66.639858] Perf order domain is not ready!
+[   66.640024] Perf order domain is not ready!
+[   66.640191] Perf order domain is not ready!
+[   66.640358] Perf order domain is not ready!
+[   66.640524] Perf order domain is not ready!
+[   66.640690] Perf order domain is not ready!
+[   66.640858] Perf order domain is not ready!
+[   66.641025] Perf order domain is not ready!
+[   66.641190] Perf order domain is not ready!
+[   66.641357] Perf order domain is not ready!
+[   66.641524] Perf order domain is not ready!
+[   66.641692] Perf order domain is not ready!
+[   66.641857] Perf order domain is not ready!
+[   66.642024] Perf order domain is not ready!
+[   66.642191] Perf order domain is not ready!
+[   66.642358] Perf order domain is not ready!
+[   66.642523] Perf order domain is not ready!
+[   66.642690] Perf order domain is not ready!
+[   66.642857] Perf order domain is not ready!
+[   66.643024] Perf order domain is not ready!
+[   66.643189] Perf order domain is not ready!
+[   66.643355] Perf order domain is not ready!
+[   66.643521] Perf order domain is not ready!
+[   66.643688] Perf order domain is not ready!
+[   66.643853] Perf order domain is not ready!
+[   66.644018] Perf order domain is not ready!
+[   66.644184] Perf order domain is not ready!
+[   66.644351] Perf order domain is not ready!
+[   66.644517] Perf order domain is not ready!
+[   66.644682] Perf order domain is not ready!
+[   66.644848] Perf order domain is not ready!
+[   66.645013] Perf order domain is not ready!
+[   66.645179] Perf order domain is not ready!
+[   66.645346] Perf order domain is not ready!
+[   66.645513] Perf order domain is not ready!
+[   66.645679] Perf order domain is not ready!
+[   66.645845] Perf order domain is not ready!
+[   66.646013] Perf order domain is not ready!
+[   66.646153] Perf order domain is not ready!
+[   66.646174] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (8, 4)
+[   66.646324] Perf order domain is not ready!
+[   66.646492] Perf order domain is not ready!
+[   66.678021] ///PD dbg info 275d
+[   66.678023] <   66.621>TCPC-TCPC:Wakeup\x0a<   66.621>TCPC-TCPC:wakeup_timer\x0a<   66.621>TCPC-TYPEC:[CC_Alert] 0/5\x0a<   66.622>TCPC-TYPEC:typec_i
+[   66.678024] s_cc_attach: cc_attach[1]\x0a<   66.622>TCPC-TYPEC:** AttachWait.SNK\x0a<   66.637>TCPC-TCPC:Alert:0x0002, Mask:0x3067f\x0a<   66.638>TCP
+[   66.678026] C-TCPC:ps_change=2
+[   66.742642] Perf order domain is not ready!
+[   66.742824] ///PD dbg info 76d
+[   66.742828] <   66.742>TCPC-TYPEC:[CC_Change] 0/5\x0a<   66.742>TCPC-TYPEC:** Attached.SNK
+[   66.742966] Perf order domain is not ready!
+[   66.743290] Perf order domain is not ready!
+[   66.743612] Perf order domain is not ready!
+[   66.743821] Perf order domain is not ready!
+[   66.744115] Perf order domain is not ready!
+[   66.744208] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.744261] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call sink vbus 5000mV 100mA type(0x01)
+[   66.744273] mtk-extcon-usb extcon_usb: old_state=0, new_state=1
+[   66.744278] pd_tcp_notifier_call USB Plug in, pol = 1
+[   66.744295] [fg_charger_in_handler] notify daemon 0 0
+[   66.744298] battery_callback:1
+[   66.744520] [fgauge_read_columb_internal] CAR=-68 r_fg_value=50 car_tune_value=1000
+[   66.744642] [read_fg_hw_info_Iavg] fg_iavg_reg 0x3ae fg_iavg_reg_tmp 0xffffc52 27_16 0xfff 15_00 0xfc52
+[   66.744644] [read_fg_hw_info_Iavg] is_bat_charging 0 fg_iavg_ma 0xfffffffffffff1f7
+[   66.744979] [fgauge_read_columb_internal] CAR=-68 r_fg_value=50 car_tune_value=1000
+[   66.745225] [FGADC_intr_end][FG_INTR_INIT][read_fg_hw_info] curr_1 -3226 curr_2 -3088 Iavg -3593 sign 1 car -68 ncar -36504 time 65
+[   66.745229] [fg_sw_bat_cycle_accu]car[o:0 n:-68],diff_car:-68,ncar[o:0 n:68 hw:-36504] thr 0
+[   66.745241] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call Charger plug in, polarity = 1
+[   66.794221] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.798100] ///PD dbg info 135d
+[   66.798103] <   66.744>TCPC-TYPEC:Attached-> SINK\x0a<   66.744>TCPC-TCPC:usb_port_attached\x0a<   66.794>TCPC-TYPEC:type=1, ret,chg_type=-22,0, c
+[   66.798104] ount=1
+[   66.844229] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.858103] ///PD dbg info 58d
+[   66.858106] <   66.844>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=2
+[   66.894234] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.918107] ///PD dbg info 58d
+[   66.918109] <   66.894>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=3
+[   66.944240] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.994245] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   66.998092] ///PD dbg info 116d
+[   66.998095] <   66.944>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=4\x0a<   66.994>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=5
+[   67.044250] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.058104] ///PD dbg info 58d
+[   67.058106] <   67.044>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=6
+[   67.094255] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.138079] ///PD dbg info 58d
+[   67.138082] <   67.094>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=7
+[   67.144260] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.194265] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.194343] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_chg_type_det: en = 1
+[   67.194349] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_chgdet_flow: CDP free
+[   67.194350] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_enable_chgdet_flow: en = 1
+[   67.194351] mt6370_pmu_charger mt6370_pmu_charger: mt6370_set_usbsw_state: state = 0
+[   67.194435] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(1)
+[   67.194451] [MUSB]Charger_Detect_Init 119: Charger_Detect_Init
+[   67.218094] ///PD dbg info 116d
+[   67.218099] <   67.144>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=8\x0a<   67.194>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=9
+[   67.244378] Perf order domain is not ready!
+[   67.244398] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.294515] Perf order domain is not ready!
+[   67.294534] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.298106] ///PD dbg info 118d
+[   67.298109] <   67.244>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=10\x0a<   67.294>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=11
+[   67.341138] Perf order domain is not ready!
+[   67.341193] mt6370_pmu_irq_handler
+[   67.341415] Perf order domain is not ready!
+[   67.341685] Perf order domain is not ready!
+[   67.341913] Perf order domain is not ready!
+[   67.342079] Perf order domain is not ready!
+[   67.342244] Perf order domain is not ready!
+[   67.342408] Perf order domain is not ready!
+[   67.342572] Perf order domain is not ready!
+[   67.342736] Perf order domain is not ready!
+[   67.342900] Perf order domain is not ready!
+[   67.343064] Perf order domain is not ready!
+[   67.343228] Perf order domain is not ready!
+[   67.343392] Perf order domain is not ready!
+[   67.343555] Perf order domain is not ready!
+[   67.343719] Perf order domain is not ready!
+[   67.343885] Perf order domain is not ready!
+[   67.344049] Perf order domain is not ready!
+[   67.344213] Perf order domain is not ready!
+[   67.344377] Perf order domain is not ready!
+[   67.344543] Perf order domain is not ready!
+[   67.344557] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.344759] Perf order domain is not ready!
+[   67.344974] Perf order domain is not ready!
+[   67.345190] Perf order domain is not ready!
+[   67.345536] Perf order domain is not ready!
+[   67.345855] Perf order domain is not ready!
+[   67.346088] Perf order domain is not ready!
+[   67.346334] Perf order domain is not ready!
+[   67.346560] Perf order domain is not ready!
+[   67.346727] Perf order domain is not ready!
+[   67.346893] Perf order domain is not ready!
+[   67.347058] Perf order domain is not ready!
+[   67.347223] Perf order domain is not ready!
+[   67.347387] Perf order domain is not ready!
+[   67.347551] Perf order domain is not ready!
+[   67.347717] Perf order domain is not ready!
+[   67.347884] Perf order domain is not ready!
+[   67.348048] Perf order domain is not ready!
+[   67.348212] Perf order domain is not ready!
+[   67.348376] Perf order domain is not ready!
+[   67.348541] Perf order domain is not ready!
+[   67.348705] Perf order domain is not ready!
+[   67.348869] Perf order domain is not ready!
+[   67.349033] Perf order domain is not ready!
+[   67.349197] Perf order domain is not ready!
+[   67.349361] Perf order domain is not ready!
+[   67.349525] Perf order domain is not ready!
+[   67.349689] Perf order domain is not ready!
+[   67.349857] Perf order domain is not ready!
+[   67.350021] Perf order domain is not ready!
+[   67.350185] Perf order domain is not ready!
+[   67.350350] Perf order domain is not ready!
+[   67.350488] Perf order domain is not ready!
+[   67.350509] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[   67.350513] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[   67.350515] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[   67.350664] Perf order domain is not ready!
+[   67.350682] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler: __mt6370_chgdet_handler:chg_data->bc12_cnt:1
+[   67.350688] mt6370_pmu_charger mt6370_pmu_charger: mt6370_bc12_workaround
+[   67.350838] Perf order domain is not ready!
+[   67.350974] Perf order domain is not ready!
+[   67.351150] Perf order domain is not ready!
+[   67.358094] ///PD dbg info 59d
+[   67.358099] <   67.344>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=12
+[   67.361325] Perf order domain is not ready!
+[   67.361463] Perf order domain is not ready!
+[   67.361639] Perf order domain is not ready!
+[   67.394567] Perf order domain is not ready!
+[   67.394581] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.418107] ///PD dbg info 59d
+[   67.418112] <   67.394>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=13
+[   67.444593] Perf order domain is not ready!
+[   67.444610] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.478199] ///PD dbg info 59d
+[   67.478205] <   67.444>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=14
+[   67.494725] Perf order domain is not ready!
+[   67.494745] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.507884] Perf order domain is not ready!
+[   67.507947] mt6370_pmu_irq_handler
+[   67.508172] Perf order domain is not ready!
+[   67.508477] Perf order domain is not ready!
+[   67.508778] Perf order domain is not ready!
+[   67.509078] Perf order domain is not ready!
+[   67.509375] Perf order domain is not ready!
+[   67.509678] Perf order domain is not ready!
+[   67.509861] Perf order domain is not ready!
+[   67.510026] Perf order domain is not ready!
+[   67.510191] Perf order domain is not ready!
+[   67.510355] Perf order domain is not ready!
+[   67.510519] Perf order domain is not ready!
+[   67.510683] Perf order domain is not ready!
+[   67.510848] Perf order domain is not ready!
+[   67.511012] Perf order domain is not ready!
+[   67.511176] Perf order domain is not ready!
+[   67.511340] Perf order domain is not ready!
+[   67.511504] Perf order domain is not ready!
+[   67.511669] Perf order domain is not ready!
+[   67.511835] Perf order domain is not ready!
+[   67.511999] Perf order domain is not ready!
+[   67.512164] Perf order domain is not ready!
+[   67.512328] Perf order domain is not ready!
+[   67.512492] Perf order domain is not ready!
+[   67.512657] Perf order domain is not ready!
+[   67.512821] Perf order domain is not ready!
+[   67.512985] Perf order domain is not ready!
+[   67.513149] Perf order domain is not ready!
+[   67.513313] Perf order domain is not ready!
+[   67.513478] Perf order domain is not ready!
+[   67.513642] Perf order domain is not ready!
+[   67.513806] Perf order domain is not ready!
+[   67.513970] Perf order domain is not ready!
+[   67.514146] Perf order domain is not ready!
+[   67.514312] Perf order domain is not ready!
+[   67.514476] Perf order domain is not ready!
+[   67.514640] Perf order domain is not ready!
+[   67.514804] Perf order domain is not ready!
+[   67.514968] Perf order domain is not ready!
+[   67.515132] Perf order domain is not ready!
+[   67.515296] Perf order domain is not ready!
+[   67.515460] Perf order domain is not ready!
+[   67.515624] Perf order domain is not ready!
+[   67.515788] Perf order domain is not ready!
+[   67.515953] Perf order domain is not ready!
+[   67.516117] Perf order domain is not ready!
+[   67.516281] Perf order domain is not ready!
+[   67.516445] Perf order domain is not ready!
+[   67.516609] Perf order domain is not ready!
+[   67.516773] Perf order domain is not ready!
+[   67.516938] Perf order domain is not ready!
+[   67.517076] Perf order domain is not ready!
+[   67.517097] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[   67.517101] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[   67.517103] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[   67.517252] Perf order domain is not ready!
+[   67.517270] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler: __mt6370_chgdet_handler:chg_data->bc12_cnt:2
+[   67.517275] mt6370_pmu_charger mt6370_pmu_charger: mt6370_bc12_workaround
+[   67.517423] Perf order domain is not ready!
+[   67.517560] Perf order domain is not ready!
+[   67.517736] Perf order domain is not ready!
+[   67.527902] Perf order domain is not ready!
+[   67.528039] Perf order domain is not ready!
+[   67.528216] Perf order domain is not ready!
+[   67.538082] ///PD dbg info 59d
+[   67.538084] <   67.494>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=15
+[   67.544864] Perf order domain is not ready!
+[   67.544894] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.595010] Perf order domain is not ready!
+[   67.595040] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.598058] ///PD dbg info 118d
+[   67.598063] <   67.544>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=16\x0a<   67.595>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=17
+[   67.645154] Perf order domain is not ready!
+[   67.645185] mt_charger_get_property: Charger Type: CHARGER_UNKNOWN
+[   67.658103] ///PD dbg info 59d
+[   67.658108] <   67.645>TCPC-TYPEC:type=1, ret,chg_type=-22,0, count=18
+[   67.674461] Perf order domain is not ready!
+[   67.674524] mt6370_pmu_irq_handler
+[   67.674719] Perf order domain is not ready!
+[   67.674955] Perf order domain is not ready!
+[   67.675122] Perf order domain is not ready!
+[   67.675287] Perf order domain is not ready!
+[   67.675451] Perf order domain is not ready!
+[   67.675615] Perf order domain is not ready!
+[   67.675779] Perf order domain is not ready!
+[   67.675943] Perf order domain is not ready!
+[   67.676107] Perf order domain is not ready!
+[   67.676271] Perf order domain is not ready!
+[   67.676435] Perf order domain is not ready!
+[   67.676599] Perf order domain is not ready!
+[   67.676763] Perf order domain is not ready!
+[   67.676927] Perf order domain is not ready!
+[   67.677091] Perf order domain is not ready!
+[   67.677255] Perf order domain is not ready!
+[   67.677419] Perf order domain is not ready!
+[   67.677583] Perf order domain is not ready!
+[   67.677748] Perf order domain is not ready!
+[   67.677912] Perf order domain is not ready!
+[   67.678083] Perf order domain is not ready!
+[   67.678257] Perf order domain is not ready!
+[   67.678425] Perf order domain is not ready!
+[   67.678590] Perf order domain is not ready!
+[   67.678754] Perf order domain is not ready!
+[   67.678918] Perf order domain is not ready!
+[   67.679081] Perf order domain is not ready!
+[   67.679245] Perf order domain is not ready!
+[   67.679409] Perf order domain is not ready!
+[   67.679573] Perf order domain is not ready!
+[   67.679737] Perf order domain is not ready!
+[   67.679901] Perf order domain is not ready!
+[   67.680065] Perf order domain is not ready!
+[   67.680230] Perf order domain is not ready!
+[   67.680394] Perf order domain is not ready!
+[   67.680560] Perf order domain is not ready!
+[   67.680724] Perf order domain is not ready!
+[   67.680888] Perf order domain is not ready!
+[   67.681053] Perf order domain is not ready!
+[   67.681216] Perf order domain is not ready!
+[   67.681393] Perf order domain is not ready!
+[   67.681561] Perf order domain is not ready!
+[   67.681725] Perf order domain is not ready!
+[   67.681889] Perf order domain is not ready!
+[   67.682054] Perf order domain is not ready!
+[   67.682219] Perf order domain is not ready!
+[   67.682383] Perf order domain is not ready!
+[   67.682546] Perf order domain is not ready!
+[   67.682711] Perf order domain is not ready!
+[   67.682876] Perf order domain is not ready!
+[   67.683014] Perf order domain is not ready!
+[   67.683035] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[   67.683039] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[   67.683041] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[   67.683189] Perf order domain is not ready!
+[   67.683208] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_enable_chgdet_flow: en = 0
+[   67.683209] mt6370_pmu_charger mt6370_pmu_charger: mt6370_set_usbsw_state: state = 1
+[   67.683238] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(2)
+[   67.683256] [MUSB]Charger_Detect_Release 133: Charger_Detect_Release
+[   67.683404] Perf order domain is not ready!
+[   67.683541] Perf order domain is not ready!
+[   67.683559] mt6370_pmu_charger mt6370_pmu_charger: mt6370_inform_psy_changed: pwr_rdy = 1, type = 1
+[   67.683564] mt_charger_set_property
+[   67.683574] mt_charger_set_property
+[   67.683577] dump_charger_name: charger type: 1, Standard USB Host
+[   67.683578] mt_usb_connect_v1 in mtk extcon
+[   67.683585] notify charger in
+[   67.683588] battery_get_boot_mode: boot mode=2
+[   67.683589] mtk_battery boot mode =2
+[   67.683591] [wakeup_fg_algo_recovery] intr_num=0x8
+[   67.683641] mtk-extcon-usb extcon_usb: cur_dr(2) new_dr(1)
+[   67.683682] mtk_charger_int_handler, Charger Plug In
+[   67.683691] battery_callback:1
+[   67.684011] [fgauge_read_columb_internal] CAR=-68 r_fg_value=50 car_tune_value=1000
+[   67.684216] [fgauge_read_current] final current=1646 (ratio=1000)
+[   67.684430] [fgauge_read_current] final current=1646 (ratio=1000)
+[   67.684551] [read_fg_hw_info_Iavg] fg_iavg_reg 0x3ae fg_iavg_reg_tmp 0xffffc52 27_16 0xfff 15_00 0xfc52
+[   67.684554] [read_fg_hw_info_Iavg] is_bat_charging 0 fg_iavg_ma 0xfffffffffffff1f7
+[   67.684899] [fgauge_read_columb_internal] CAR=-68 r_fg_value=50 car_tune_value=1000
+[   67.685103] [FGADC_intr_end][FG_INTR_INIT][read_fg_hw_info] curr_1 1646 curr_2 876 Iavg -3593 sign 1 car -68 ncar -36504 time 66
+[   67.685106] [fg_sw_bat_cycle_accu]car[o:-68 n:-68],diff_car:0,ncar[o:68 n:68 hw:-36504] thr 0
+[   67.685314] [fgauge_read_current] final current=1762 (ratio=1000)
+[   67.685549] [fgauge_read_current] final current=1762 (ratio=1000)
+[   67.686015] [fg_charger_in_handler] notify daemon 0 1
+[   67.686021] battery_get_boot_mode: boot mode=2
+[   67.686023] mtk_battery boot mode =2
+[   67.686025] [wakeup_fg_algo_recovery] intr_num=0x8
+[   67.686140] [fgauge_read_current] final current=1762 (ratio=1000)
+[   67.686353] [fgauge_read_current] final current=1762 (ratio=1000)
+[   67.686748] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.686964] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.687106] get prop 4 is not supported in batt
+[   67.687138] mt_usb mt_usb: role_sx_set role 2, latest_role: 0
+[   67.687142] mt_usb mt_usb: mt_usb_role_sx_set: if vbus_event true
+[   67.687328] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.687485] mtk-tphy usb-phy: u2_phy_instance_set_mode mode(6)
+[   67.687494] phy phy-usb-phy.0: u2_phy_props_set, bc12:0, src:0, vrt:0, term:0, rev6:0, dis:0
+[   67.687501] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(2)
+[   67.687505] mtk-tphy usb-phy: u2_phy_instance_power_on(0)
+[   67.687517] phy phy-usb-phy.0: u2_phy_props_set, bc12:0, src:0, vrt:0, term:0, rev6:0, dis:0
+[   67.687521] musb-hdrc musb-hdrc: mailbox VBUS_VALID
+[   67.687523] [MUSB]mt_usb_connect 880: [MUSB] USB connect
+[   67.687526] [MUSB]issue_connection_work 874: issue work, ops<2>
+[   67.687541] [MUSB]do_connection_work 778: is_host<0>, power<0>, ops<2>
+[   67.687554] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.687571] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[   67.687574] [MUSB]do_connection_work 818: lock
+[   67.687576] [MUSB]musb_start 1240: start, is_host=0 is_active=0
+[   67.687579] [MUSB]mt_usb_enable 609: begin <0,0>,<2,1,1,1>
+[   67.687817] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.688030] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.688397] [fgauge_read_current] final current=1860 (ratio=1000)
+[   67.688612] [fgauge_read_current] final current=1022 (ratio=1000)
+[   67.688748] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 1
+[   67.688752] [OPLUS_CHG][mt_power_supply_type_check]charger_type[4]
+[   67.688753] [MUSB]mt_usb_connect 880: [MUSB] USB connect
+[   67.688754] [MUSB]issue_connection_work 874: issue work, ops<2>
+[   67.688758] [OPLUS_CHG][oplus_chg_turn_on_charging]-----------\x0d
+[   67.688763] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4385000 (0x30)
+[   67.688999] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4385 value=128
+[   67.689808] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:512 main_cur:512
+[   67.690166] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_ieoc: ieoc = 150000 (0x01)
+[   67.690746] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4400000 (0x05)
+[   67.691549] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[   67.695237] Perf order domain is not ready!
+[   67.695249] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   67.697585] [MUSB]mt_usb_enable 637: end, <2,1,2,1>
+[   67.697595] [MUSB]musb_start 1289: set ignore babble MUSB_ULPI_REG_DATA=89
+[   67.697596] [MUSB]musb_start 1297: add softconn
+[   67.697619] [MUSB]do_connection_work 778: is_host<0>, power<1>, ops<2>
+[   67.697621] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[   67.697623] [MUSB]do_connection_work 840: do nothing, usb_on:1, power:1
+[   67.718092] ///PD dbg info 187d
+[   67.718097] <   67.688>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   67.688>TCPC-TCPC:bat_update_work_func Battery Discharging
+[   67.718098] <   67.695>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=19
+[   67.745364] Perf order domain is not ready!
+[   67.745383] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   67.745390] Perf order domain is not ready!
+[   67.745675] Perf order domain is not ready!
+[   67.745839] Perf order domain is not ready!
+[   67.746051] Perf order domain is not ready!
+[   67.746264] Perf order domain is not ready!
+[   67.746497] Perf order domain is not ready!
+[   67.798108] ///PD dbg info 234d
+[   67.798113] <   67.745>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=20\x0a<   67.745>TCPC-PE:PD-> SNK_START\x0a<   67.746>TCPC-PE-EVT:reset_prl_do
+[   67.798115] ne\x0a<   67.746>TCPC-PE:PD-> SNK_DISC\x0a<   67.746>TCPC-PE-EVT:vbus_high\x0a<   67.746>TCPC-PE:PD-> SNK_WAIT_CAP
+[   67.856750] [MUSB]musb_stage0_irq 1106: musb_stage0_irq:1106 MUSB_INTR_RESET (b_idle)
+[   67.856756] QMU_WARN,<musb_disable_q_all 330>, disable_q_all
+[   67.856802] [MUSB]musb_stage0_irq 876: SUSPEND (b_peripheral) devctl 99
+[   67.856824] [MUSB]musb_g_suspend 2669: devctl 99
+[   67.968279] [MUSB]musb_g_ep0_queue 1049: ep0 request queued when usb not active
+[   67.972877] [MUSB]musb_stage0_irq 1106: musb_stage0_irq:1106 MUSB_INTR_RESET (b_peripheral)
+[   67.972880] QMU_WARN,<musb_disable_q_all 330>, disable_q_all
+[   68.019797] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[   68.024946] [OPLUS_CHG][bq25601d_reset_charger]rc = 0
+[   68.024947] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[   68.026001] [OPLUS_CHG][bq25601d_charging_current_write_fast]chg_cur = 512\x0d
+[   68.026353] [OPLUS_CHG][bq25601d_set_termchg_current]value=1
+[   68.028107] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[   68.094166] configfs-gadget gadget: high-speed config #1: b
+[   68.094187] ffs_func_set_alt - ffs->state:2
+[   68.094193] [MUSB]fifo_setup 1233: musb type=BULK
+[   68.094196] [MUSB]is_saving_mode 1083: 0
+[   68.094198] [MUSB]fifo_setup 1262: EP1 supports DBBUF
+[   68.094201] [MUSB]fifo_setup 1277: fifo size is 22 after 512, fifo address is 512, epnum 1,hwepnum 1
+[   68.094203] QMU_WARN,<mtk_qmu_enable 628>, enable RQ(1)
+[   68.094210] [MUSB]musb_gadget_enable 1482: musb-hdrc periph: enabled ep1out for bulk OUT, maxpacket 512
+[   68.094214] [MUSB]fifo_setup 1233: musb type=BULK
+[   68.094216] [MUSB]is_saving_mode 1083: 0
+[   68.094217] [MUSB]fifo_setup 1262: EP1 supports DBBUF
+[   68.094220] [MUSB]fifo_setup 1277: fifo size is 22 after 512, fifo address is 1536, epnum 1,hwepnum 1
+[   68.094222] QMU_WARN,<mtk_qmu_enable 706>, enable TQ(1)
+[   68.094229] [MUSB]musb_gadget_enable 1482: musb-hdrc periph: enabled ep1in for bulk IN, maxpacket 512
+[   68.094244] configfs-gadget gadget: USB_REQ_SET_CONFIGURATION: value=0
+[   68.118621] Perf order domain is not ready!
+[   68.118711] Perf order domain is not ready!
+[   68.118865] ///PD dbg info 64d
+[   68.118870] <   68.118>TCPC-PE-EVT:timer\x0a<   68.118>TCPC-PE:PD-> SNK_HRESET
+[   68.119027] Perf order domain is not ready!
+[   68.119382] Perf order domain is not ready!
+[   68.119585] Perf order domain is not ready!
+[   68.119720] Perf order domain is not ready!
+[   68.119849] Perf order domain is not ready!
+[   68.119854] Perf order domain is not ready!
+[   68.119934] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call pd state = 9
+[   68.120010] Perf order domain is not ready!
+[   68.120124] Perf order domain is not ready!
+[   68.121232] Perf order domain is not ready!
+[   68.121361] Perf order domain is not ready!
+[   68.121492] Perf order domain is not ready!
+[   68.121598] Perf order domain is not ready!
+[   68.121705] Perf order domain is not ready!
+[   68.121746] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call sink vbus 5000mV 100mA type(0x02)
+[   68.121825] Perf order domain is not ready!
+[   68.121934] Perf order domain is not ready!
+[   68.122040] Perf order domain is not ready!
+[   68.178007] Perf order domain is not ready!
+[   68.178011] Perf order domain is not ready!
+[   68.178027] ///PD dbg info 293d
+[   68.178029] <   68.119>TCPC-TCPC:Alert:0x0050, Mask:0x3067f\x0a<   68.119>TCPC-PE-EVT:hard_reset_done\x0a<   68.119>TCPC-PE:PD-> SNK_TRANS_DFT\x0a<  
+[   68.178031] 68.119>TCPC-PE:pd_state=9\x0a<   68.121>TCPC-PE-EVT:pr_at_dft\x0a<   68.121>TCPC-PE:PD-> SNK_START\x0a<   68.122>TCPC-PE-EVT:reset_prl_d
+[   68.178032] one\x0a<   68.122>TCPC-PE:PD-> SNK_DISC
+[   68.360416] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4435000 (0x35)
+[   68.360645] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[   68.360998] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:2300 main_cur:2300
+[   68.361360] [OPLUS_CHG][oplus_mt6370_input_current_limit_write]usb input max current limit=650 setting 00
+[   68.362414] [OPLUS_CHG][bq25601d_suspend_charger]rc = 0
+[   68.362741] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x498, adc_result=516
+[   68.498502] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x492, adc_result=514
+[   68.498505] [OPLUS_CHG][oplus_mt6370_input_current_limit_write]usb input max current limit aicl chg_vol=4863 i[1]=500 sw_aicl_point:4550 aicl_end
+[   68.499564] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_ieoc: ieoc = 270000 (0x03)
+[   68.501513] [MDRT_ADC] OLD = 0x2942, NOW = 0x2962, CNT = 0
+[   68.501836] vbat_out_old=40450, vthr=682, T_curr=434, vbat_out=40496
+[   68.501840] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5fe5, adc_result=4050
+[   68.503472] vbat_out_old=40430, vthr=682, T_curr=434, vbat_out=40476
+[   68.503474] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5fd7, adc_result=4048
+[   68.505095] vbat_out_old=40430, vthr=682, T_curr=434, vbat_out=40476
+[   68.505096] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5fda, adc_result=4048
+[   68.505325] [fgauge_read_current] final current=1678 (ratio=1000)
+[   68.505536] [fgauge_read_current] final current=1678 (ratio=1000)
+[   68.505748] [fgauge_read_current] final current=1678 (ratio=1000)
+[   68.505749] [CH3_DBG] bat_cur = 1678
+[   68.506270] [fgauge_read_current] final current=1678 (ratio=1000)
+[   68.506274] [BattVoltToTemp] 1087 12000 2800 -1
+[   68.506274] [force_get_tbat_internal] tbat_precise bat_temperature_val:389
+[   68.506276] [force_get_tbat] t:38 precise:389
+[   68.506605] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   68.506664] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4040 / -167 / 389 / 4891 / 0]
+[   68.506904] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4435000 (0x35)
+[   68.507134] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[   68.507489] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:2300 main_cur:2300
+[   68.507847] [OPLUS_CHG][oplus_chg_check_tbatt_normal_status]tbatt_normal_status status change, [3 160 220 340 370 400 430]
+[   68.507976] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   68.592149] Perf order domain is not ready!
+[   68.592216] Perf order domain is not ready!
+[   68.592323] ///PD dbg info 99d
+[   68.592327] <   68.592>TCPC-PE-EVT:timer\x0a<   68.592>TCPC-PE:SRC NoResp\x0a<   68.592>TCPC-PE:TYPE-C Only Charger!
+[   68.592355] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call sink vbus 5000mV 100mA type(0x04)
+[   68.592492] Perf order domain is not ready!
+[   68.592648] Perf order domain is not ready!
+[   68.593917] Perf order domain is not ready!
+[   68.594093] Perf order domain is not ready!
+[   68.594227] Perf order domain is not ready!
+[   68.594336] Perf order domain is not ready!
+[   68.594445] Perf order domain is not ready!
+[   68.594480] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call pd state = 1
+[   68.598166] get prop 4 is not supported in batt
+[   68.598404] [fgauge_read_current] final current=2128 (ratio=1000)
+[   68.598615] [fgauge_read_current] final current=2128 (ratio=1000)
+[   68.598920] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.599134] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.599533] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.599745] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.600140] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.600358] [fgauge_read_current] final current=2058 (ratio=1000)
+[   68.600719] [fgauge_read_current] final current=2242 (ratio=1000)
+[   68.600937] [fgauge_read_current] final current=2242 (ratio=1000)
+[   68.601108] Perf order domain is not ready!
+[   68.658196] ///PD dbg info 155d
+[   68.658201] <   68.594>TCPC-PE:pd_state=1\x0a<   68.601>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   68.601>TCPC-TCPC:bat_update_
+[   68.658202] work_func Battery Charging
+[   69.001416] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   69.001419] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 4045mV, VBAT = 4040mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4875mV
+[   69.001421] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   69.001423] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   70.578205] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4040 / -224 / 389 / 4891 / 0]
+[   71.744214] Perf order domain is not ready!
+[   72.658209] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4040 / -224 / 389 / 4891 / 0]
+[   73.138158] Perf order domain is not ready!
+[   73.298164] Perf order domain is not ready!
+[   73.601121] Perf order domain is not ready!
+[   73.601231] Perf order domain is not ready!
+[   73.601390] ///PD dbg info 29d
+[   73.601394] <   73.601>TCPC-PE-EVT:timer
+[   74.418334] [fg_drv_update_hw_status]=>
+[   74.418358] [fg_update_sw_iavg]diff time:10 iavg:-3600
+[   74.418361] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   74.418564] [fgauge_read_current] final current=2304 (ratio=1000)
+[   74.418774] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   74.420090] [MDRT_ADC] OLD = 0x2962, NOW = 0x2977, CNT = 0
+[   74.420409] vbat_out_old=40470, vthr=683, T_curr=428, vbat_out=40514
+[   74.420411] mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   74.420414] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5ff1, adc_result=4051
+[   74.420793] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x496, adc_result=515
+[   74.421004] [fgauge_read_current] final current=2326 (ratio=1000)
+[   74.421005] [CH3_DBG] bat_cur = 2326
+[   74.421321] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d6, adc_result=1088
+[   74.421531] [fgauge_read_current] final current=2326 (ratio=1000)
+[   74.421535] [BattVoltToTemp] 1086 12000 2800 -2
+[   74.421536] [force_get_tbat_internal] tbat_precise bat_temperature_val:390
+[   74.421537] [force_get_tbat] t:39 precise:390
+[   74.421538] lbat 0 0 0 0
+[   74.421541] car[-62,246,-246,493,-210, cycle_car:-68,ncar:68] c:1 2304 vbat:4051 vbus:4872 soc:63 50 gm3:0 0 0 0
+[   74.421766] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   74.421982] [fg_get_current_iavg] -2548 1
+[   74.421991] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   74.421993] [fg_nafg_monitor]time:74 nafg_cnt:0, now:74, last_t:0
+[   74.421995] tmp:39 65535 65535 hcar2:493 lcar2:210 time:74 sw_iavg:-3600 -2548 1 nafg_m:0 0 0
+[   74.422193] [fgauge_read_columb_internal] CAR=-62 r_fg_value=50 car_tune_value=1000
+[   74.423815] vbat_out_old=40470, vthr=683, T_curr=428, vbat_out=40514
+[   74.423817] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5ff1, adc_result=4051
+[   74.424024] [fgauge_read_current] final current=1930 (ratio=1000)
+[   74.424273] [fg_get_current_iavg] -2548 1
+[   74.424486] [fgauge_read_current] final current=1930 (ratio=1000)
+[   74.424487] [CH3_DBG] bat_cur = 1930
+[   74.424802] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d7, adc_result=1088
+[   74.425002] [fgauge_read_current] final current=1784 (ratio=1000)
+[   74.425003] [BattVoltToTemp] 1087 12000 2800 -1
+[   74.425003] [force_get_tbat_internal] tbat_precise bat_temperature_val:389
+[   74.425004] [force_get_tbat] t:38 precise:389
+[   74.425017] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   74.425019] GM3log1 74 74 4051 1930 -2548 0 -88 38 1 1 0 0 0
+[   74.425024] battery_get_boot_mode: boot mode=2
+[   74.425339] GM3log2 74 0 0 0 0 0 0 0 4872
+[   74.425340] GM3log3 74 1 39637 -4958 0
+[   74.425341] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   74.425342] GM3log int 74 74 0 0 0 0
+[   74.425343] GM3log phone_state 0 0
+[   74.425344] GM3 car:-62 car_diff:-26
+[   74.738150] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4040 / -224 / 389 / 4891 / 0]
+[   74.898141] [SCP] scp_ipi_send: SCP A not ready
+[   74.898146] [sensorHub] scp_ipi_send fail
+[   74.898204] [sensorHub] scp_sensorHub_req_send fail!
+[   74.899705] vbat_out_old=40470, vthr=683, T_curr=428, vbat_out=40514
+[   74.901338] vbat_out_old=40470, vthr=682, T_curr=434, vbat_out=40516
+[   74.902961] vbat_out_old=40480, vthr=683, T_curr=428, vbat_out=40524
+[   74.938153] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   74.938369] [fgauge_read_current] final current=2334 (ratio=1000)
+[   74.938379] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   74.938389] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   74.938391] GM3log-nint-nafg 74 74 0 0 0 0 0
+[   74.938396] battery_get_boot_mode: boot mode=2
+[   74.938397] mtk_battery boot mode =2
+[   74.938399] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   74.938613] [fgauge_read_current] final current=2372 (ratio=1000)
+[   74.938885] [fgauge_read_current] final current=2372 (ratio=1000)
+[   74.938886] [CH3_DBG] bat_cur = 2372
+[   74.939466] [fgauge_read_current] final current=2372 (ratio=1000)
+[   74.939469] [BattVoltToTemp] 1086 12000 2800 -2
+[   74.939470] [force_get_tbat_internal] tbat_precise bat_temperature_val:390
+[   74.939472] [force_get_tbat] t:39 precise:390
+[   74.939797] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   74.940596] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   74.940677] get prop 4 is not supported in batt
+[   74.940901] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.941121] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.941420] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.941633] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.942030] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.942243] [fgauge_read_current] final current=2342 (ratio=1000)
+[   74.942609] [fgauge_read_current] final current=1852 (ratio=1000)
+[   74.942822] [fgauge_read_current] final current=1852 (ratio=1000)
+[   74.943189] [fgauge_read_current] final current=1852 (ratio=1000)
+[   74.943401] [fgauge_read_current] final current=1852 (ratio=1000)
+[   74.943632] ///PD dbg info 125d
+[   74.943636] <   74.943>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   74.943>TCPC-TCPC:bat_update_work_func Battery Charging
+[   75.341498] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   75.341502] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 4050mV, VBAT = 4045mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4875mV
+[   75.341504] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   75.341505] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   75.343025] [OPLUS_CHG][bq25601d_dump_registers]bq25601d_reg: [0x80,0x0a,0x88,0x41], [0x90,0x07,0xa5,0x6c], [0x01,0x00,0x00,0x14]
+[   76.818190] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4041 / -185 / 390 / 4938 / 0]
+[   78.098121] Perf order domain is not ready!
+[   78.418089] Perf order domain is not ready!
+[   78.918065] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4041 / -185 / 390 / 4938 / 0]
+[   79.074531] Perf order domain is not ready!
+[   79.074548] [wdtk] kick watchdog
+[   80.819439] [MDRT_ADC] OLD = 0x2977, NOW = 0x298a, CNT = 0
+[   80.819758] vbat_out_old=40490, vthr=683, T_curr=428, vbat_out=40534
+[   80.819759] mt635x_auxadc_read_raw: 6 callbacks suppressed
+[   80.819764] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5ffe, adc_result=4053
+[   80.821389] vbat_out_old=40500, vthr=683, T_curr=428, vbat_out=40544
+[   80.821390] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6000, adc_result=4054
+[   80.823011] vbat_out_old=40500, vthr=683, T_curr=428, vbat_out=40544
+[   80.823013] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6000, adc_result=4054
+[   80.823224] [fgauge_read_current] final current=2212 (ratio=1000)
+[   80.823437] [fgauge_read_current] final current=2098 (ratio=1000)
+[   80.823659] [fgauge_read_current] final current=2098 (ratio=1000)
+[   80.823660] [CH3_DBG] bat_cur = 2098
+[   80.823977] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d5, adc_result=1087
+[   80.824201] [fgauge_read_current] final current=2098 (ratio=1000)
+[   80.824204] [BattVoltToTemp] 1085 12000 2800 -2
+[   80.824205] [force_get_tbat_internal] tbat_precise bat_temperature_val:392
+[   80.824207] [force_get_tbat] t:39 precise:392
+[   80.824524] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x49d, adc_result=518
+[   80.824531] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   80.825349] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   80.825429] get prop 4 is not supported in batt
+[   80.825668] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.825879] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.826185] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.826398] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.826796] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.827010] [fgauge_read_current] final current=1982 (ratio=1000)
+[   80.827375] [fgauge_read_current] final current=1868 (ratio=1000)
+[   80.827588] [fgauge_read_current] final current=1868 (ratio=1000)
+[   80.827956] [fgauge_read_current] final current=1868 (ratio=1000)
+[   80.828167] [fgauge_read_current] final current=1868 (ratio=1000)
+[   80.828400] ///PD dbg info 125d
+[   80.828404] <   80.828>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   80.828>TCPC-TCPC:bat_update_work_func Battery Charging
+[   80.978173] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4043 / -186 / 392 / 4901 / 0]
+[   81.221191] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   81.221194] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 4050mV, VBAT = 4045mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4875mV
+[   81.221196] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   81.221197] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   81.222718] [OPLUS_CHG][bq25601d_dump_registers]bq25601d_reg: [0x80,0x0a,0x88,0x41], [0x90,0x07,0xa5,0x6c], [0x01,0x00,0x00,0x14]
+[   83.058064] Perf order domain is not ready!
+[   83.058132] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4043 / -186 / 392 / 4901 / 0]
+[   83.538125] Perf order domain is not ready!
+[   84.938521] [fg_drv_update_hw_status]=>
+[   84.938537] [fg_update_sw_iavg]diff time:21 iavg:-3600
+[   84.938540] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0xca pl:0 0
+[   84.938766] [fgauge_read_current] final current=2388 (ratio=1000)
+[   84.938979] [fgauge_read_columb_internal] CAR=-56 r_fg_value=50 car_tune_value=1000
+[   84.940607] vbat_out_old=40510, vthr=683, T_curr=428, vbat_out=40554
+[   84.940611] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6009, adc_result=4055
+[   84.940927] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x492, adc_result=514
+[   84.941145] [fgauge_read_current] final current=2356 (ratio=1000)
+[   84.941146] [CH3_DBG] bat_cur = 2356
+[   84.941462] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d6, adc_result=1088
+[   84.941663] [fgauge_read_current] final current=2356 (ratio=1000)
+[   84.941666] [BattVoltToTemp] 1086 12000 2800 -2
+[   84.941667] [force_get_tbat_internal] tbat_precise bat_temperature_val:390
+[   84.941669] [force_get_tbat] t:39 precise:390
+[   84.941670] lbat 0 0 0 0
+[   84.941673] car[-56,246,-246,493,-210, cycle_car:-68,ncar:68] c:1 2388 vbat:4055 vbus:4863 soc:63 50 gm3:0 0 0 0
+[   84.941876] [fgauge_read_columb_internal] CAR=-56 r_fg_value=50 car_tune_value=1000
+[   84.942123] [fg_get_current_iavg] -1060 1
+[   84.942137] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   84.942138] [fg_nafg_monitor]time:84 nafg_cnt:0, now:84, last_t:0
+[   84.942140] tmp:39 65535 65535 hcar2:493 lcar2:210 time:84 sw_iavg:-3600 -1060 1 nafg_m:0 0 0
+[   84.942364] [fgauge_read_columb_internal] CAR=-56 r_fg_value=50 car_tune_value=1000
+[   84.943986] vbat_out_old=40500, vthr=683, T_curr=428, vbat_out=40544
+[   84.943987] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6005, adc_result=4054
+[   84.944197] [fgauge_read_current] final current=2136 (ratio=1000)
+[   84.944474] [fg_get_current_iavg] -1060 1
+[   84.944686] [fgauge_read_current] final current=1884 (ratio=1000)
+[   84.944686] [CH3_DBG] bat_cur = 1884
+[   84.945001] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d7, adc_result=1088
+[   84.945209] [fgauge_read_current] final current=1884 (ratio=1000)
+[   84.945210] [BattVoltToTemp] 1087 12000 2800 -1
+[   84.945211] [force_get_tbat_internal] tbat_precise bat_temperature_val:389
+[   84.945212] [force_get_tbat] t:38 precise:389
+[   84.945224] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   84.945226] GM3log1 84 84 4054 2136 -1060 0 -82 38 1 1 0 0 0
+[   84.945231] battery_get_boot_mode: boot mode=2
+[   84.945547] GM3log2 84 0 0 0 0 0 0 0 4948
+[   84.945548] GM3log3 84 1 39637 -4958 0
+[   84.945549] GM3log4 1 74 0 0 0 0 0 1 1 1 63
+[   84.945551] GM3log int 84 84 0 0 0 0
+[   84.945551] GM3log phone_state 0 0
+[   84.945552] GM3 car:-56 car_diff:-26
+[   84.978232] [SCP] scp_ipi_send: SCP A not ready
+[   84.978236] [sensorHub] scp_ipi_send fail
+[   84.978324] [sensorHub] scp_sensorHub_req_send fail!
+[   85.138094] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4043 / -186 / 392 / 4901 / 0]
+[   85.438121] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   85.438132] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   85.438142] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   85.438144] GM3log-nint-nafg 84 84 0 0 0 0 0
+[   85.438150] battery_get_boot_mode: boot mode=2
+[   85.438151] mtk_battery boot mode =2
+[   85.438152] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   86.899489] [MDRT_ADC] OLD = 0x298a, NOW = 0x299a, CNT = 0
+[   86.899809] vbat_out_old=40510, vthr=683, T_curr=428, vbat_out=40554
+[   86.899810] mt635x_auxadc_read_raw: 1 callbacks suppressed
+[   86.899814] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x600b, adc_result=4055
+[   86.902469] vbat_out_old=40520, vthr=683, T_curr=428, vbat_out=40564
+[   86.902470] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x600d, adc_result=4056
+[   86.904091] vbat_out_old=40510, vthr=683, T_curr=428, vbat_out=40554
+[   86.904093] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x600b, adc_result=4055
+[   86.904310] [fgauge_read_current] final current=2044 (ratio=1000)
+[   86.904525] [fgauge_read_current] final current=2044 (ratio=1000)
+[   86.904737] [fgauge_read_current] final current=2044 (ratio=1000)
+[   86.904738] [CH3_DBG] bat_cur = 2044
+[   86.905058] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d8, adc_result=1089
+[   86.905349] [fgauge_read_current] final current=2044 (ratio=1000)
+[   86.905352] [BattVoltToTemp] 1087 12000 2800 -2
+[   86.905353] [force_get_tbat_internal] tbat_precise bat_temperature_val:389
+[   86.905354] [force_get_tbat] t:38 precise:389
+[   86.905682] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x4a1, adc_result=520
+[   86.905689] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   86.906357] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   86.906425] get prop 4 is not supported in batt
+[   86.906660] [fgauge_read_current] final current=2052 (ratio=1000)
+[   86.906873] [fgauge_read_current] final current=2052 (ratio=1000)
+[   86.907208] [fgauge_read_current] final current=2052 (ratio=1000)
+[   86.907421] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.907817] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.908033] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.908398] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.908616] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.908999] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.909222] [fgauge_read_current] final current=2142 (ratio=1000)
+[   86.909439] ///PD dbg info 125d
+[   86.909442] <   86.909>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   86.909>TCPC-TCPC:bat_update_work_func Battery Charging
+[   87.218187] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4045 / -214 / 389 / 4920 / 0]
+[   87.301394] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   87.301397] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 4050mV, VBAT = 4050mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4875mV
+[   87.301400] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   87.301401] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   87.302922] [OPLUS_CHG][bq25601d_dump_registers]bq25601d_reg: [0x80,0x0a,0x88,0x41], [0x90,0x07,0xa5,0x6c], [0x01,0x00,0x00,0x14]
+[   88.178161] Perf order domain is not ready!
+[   88.658097] Perf order domain is not ready!
+[   89.298211] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4045 / -214 / 389 / 4920 / 0]
+[   91.398198] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4045 / -214 / 389 / 4920 / 0]
+[   92.819518] [MDRT_ADC] OLD = 0x299a, NOW = 0x29ab, CNT = 0
+[   92.819838] vbat_out_old=40530, vthr=683, T_curr=428, vbat_out=40574
+[   92.819842] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6016, adc_result=4057
+[   92.821471] vbat_out_old=40530, vthr=683, T_curr=428, vbat_out=40574
+[   92.821473] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6017, adc_result=4057
+[   92.823094] vbat_out_old=40530, vthr=683, T_curr=428, vbat_out=40574
+[   92.823095] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6013, adc_result=4057
+[   92.823316] [fgauge_read_current] final current=2310 (ratio=1000)
+[   92.823530] [fgauge_read_current] final current=2028 (ratio=1000)
+[   92.823774] [fgauge_read_current] final current=2028 (ratio=1000)
+[   92.823775] [CH3_DBG] bat_cur = 2028
+[   92.824091] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4d9, adc_result=1090
+[   92.824303] [fgauge_read_current] final current=2028 (ratio=1000)
+[   92.824306] [BattVoltToTemp] 1088 12000 2800 -2
+[   92.824307] [force_get_tbat_internal] tbat_precise bat_temperature_val:388
+[   92.824309] [force_get_tbat] t:38 precise:388
+[   92.824632] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x4a3, adc_result=521
+[   92.824639] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   92.825343] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   92.825428] get prop 4 is not supported in batt
+[   92.825730] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.825941] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.826245] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.826460] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.826858] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.827070] [fgauge_read_current] final current=2058 (ratio=1000)
+[   92.827438] [fgauge_read_current] final current=1960 (ratio=1000)
+[   92.827652] [fgauge_read_current] final current=1960 (ratio=1000)
+[   92.828017] [fgauge_read_current] final current=1960 (ratio=1000)
+[   92.828229] [fgauge_read_current] final current=1960 (ratio=1000)
+[   92.828466] ///PD dbg info 125d
+[   92.828470] <   92.828>TCPC-TCPC:bat_update_work_func battery update soc = 74\x0a<   92.828>TCPC-TCPC:bat_update_work_func Battery Charging
+[   93.138086] Perf order domain is not ready!
+[   93.221433] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   93.221437] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 4055mV, VBAT = 4050mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4875mV
+[   93.221439] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   93.221440] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   93.222963] [OPLUS_CHG][bq25601d_dump_registers]bq25601d_reg: [0x80,0x0a,0x88,0x41], [0x90,0x07,0xa5,0x6c], [0x01,0x00,0x00,0x14]
+[   93.458090] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[74 / 74 / 74 / 4047 / -196 / 388 / 4929 / 0]

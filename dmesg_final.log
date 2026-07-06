@@ -1,0 +1,1658 @@
+[    1.699306] [sensor_devinfo] get_msensor_parameter 1435 : [oem] get /odm/msensor_2 offset fail
+[    1.699573] [sensor_devinfo] get_msensor_parameter 1435 : [oem] get /odm/msensor_3 offset fail
+[    1.699839] [sensor_devinfo] get_new_arch_info 295 : get cali_arch fail
+[    1.700104] [sensor_devinfo] is_support_lb_algo 247 : get /odm/light_1 fail
+[    1.700368] [sensor_devinfo] get_mtk_cali_origin_info 325 : get cali_arch fail
+[    1.700632] [sensor_devinfo] get_lb_max_brightness 273 : get lb_bri_max fail
+[    1.700650] initcall sensor_devinfo_init+0x0/0xb80 returned 0 after 1845 usecs
+[    1.700653] calling  virtual_sensor_init+0x0/0x258 @ 1
+[    1.700655] <VIRTUAL_SENSOR> virtual_sensor handle:74 register control path start
+[    1.700658] <VIRTUAL_SENSOR> handle_to_index\x09handle:74, index:2
+[    1.700673] <VIRTUAL_SENSOR> virtual_sensor handle:74 register control path done
+[    1.700683] <VIRTUAL_SENSOR> virtual_sensor handle:81 register control path start
+[    1.700685] <VIRTUAL_SENSOR> handle_to_index\x09handle:81, index:6
+[    1.700694] <VIRTUAL_SENSOR> virtual_sensor handle:81 register control path done
+[    1.700728] initcall virtual_sensor_init+0x0/0x258 returned 0 after 70 usecs
+[    1.700732] calling  dramc_apxgpt3_init+0x0/0x150 @ 1
+[    1.700828] [DRAMC]base=0xffffff800add5000, irq=0
+[    1.700830] [DRAMC]apxgpt3 request irq Failed
+[    1.700833] initcall dramc_apxgpt3_init+0x0/0x150 returned -1 after 95 usecs
+[    1.700835] calling  cmdq_sec_late_init+0x0/0x70 @ 1
+[    1.700933] probe of debug-kinfo returned 0 after 11 usecs
+[    1.701010] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.701013] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.701016] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.701017] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.701019] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.701023] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.701024] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.701027] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.701094] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.701108] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.701117] probe of sound returned 0 after 112 usecs
+[    1.701133] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.701142] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.701151] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.701192] initcall cmdq_sec_late_init+0x0/0x70 returned 1604312320 after 344 usecs
+[    1.701194] calling  cmdq_util_init+0x0/0x7c @ 1
+[    1.701195] [cmdq] cmdq_util_init begin
+[    1.701337] [cmdq][err] debugfs_create_file cmdq-status failed:-19 @cmdq_util_init,522
+[    1.701340] initcall cmdq_util_init+0x0/0x7c returned -19 after 139 usecs
+[    1.701341] calling  mdp_late_init+0x0/0x18 @ 1
+[    1.701349] initcall mdp_late_init+0x0/0x18 returned 0 after 5 usecs
+[    1.701351] calling  cmdq_core_late_init+0x0/0x8 @ 1
+[    1.701352] initcall cmdq_core_late_init+0x0/0x8 returned 0 after 0 usecs
+[    1.701355] calling  post_sspm_set_emi_mpu+0x0/0x94 @ 1
+[    1.701366] initcall post_sspm_set_emi_mpu+0x0/0x94 returned 0 after 9 usecs
+[    1.701368] calling  smi_late_init+0x0/0x1f4 @ 1
+[    1.701418] [MTK_SMI]debugfs_create_file failed: -19
+[    1.701432] initcall smi_late_init+0x0/0x1f4 returned 0 after 60 usecs
+[    1.701433] calling  mmqos_late_init+0x0/0x44 @ 1
+[    1.701436] initcall mmqos_late_init+0x0/0x44 returned 0 after 1 usecs
+[    1.701437] calling  mmdvfs_late_init+0x0/0x34 @ 1
+[    1.701448] [mmdvfs]err vcore 750000 < 825000
+[    1.701637] [mmdvfs]force flip step0 when late_init
+[    1.701639] initcall mmdvfs_late_init+0x0/0x34 returned 0 after 195 usecs
+[    1.701640] calling  oplus_tempntc_init+0x0/0x4c @ 1
+[    1.701920] initcall oplus_tempntc_init+0x0/0x4c returned 0 after 271 usecs
+[    1.701921] calling  mtktscharger_init+0x0/0x84 @ 1
+[    1.702202] probe of mtktscharger returned 1 after 110 usecs
+[    1.702210] initcall mtktscharger_init+0x0/0x84 returned 0 after 278 usecs
+[    1.702212] calling  mtkcooler_bcct_late_init+0x0/0x98 @ 1
+[    1.702213] [Thermal/TC/bcct]mtkcooler_bcct_late_init
+[    1.702346] [Thermal/TC/bcct]mtkcooler_bcct_pdrv_probe
+[    1.702350] probe of mtk-cooler-bcct returned 1 after 13 usecs
+[    1.702356] initcall mtkcooler_bcct_late_init+0x0/0x98 returned 0 after 138 usecs
+[    1.702365] CPU6: update max cpu_capacity 1024
+[    1.702380] calling  plt_lastbus_init+0x0/0x20 @ 1
+[    1.702382] initcall plt_lastbus_init+0x0/0x20 returned 0 after 0 usecs
+[    1.702384] calling  mtk_leds_init+0x0/0x6c @ 1
+[    1.702385] leds_mtk_i2c mtk_leds_init(631) :Leds init
+[    1.702543] mtk-i2c-leds i2c_leds: begin probe i2c leds
+[    1.702548] mtk-i2c-leds i2c_leds: parse 0 leds dt: lcd-backlight, 8, 11, 2047
+[    1.702570] mtk-i2c-leds i2c_leds: lcd-backlight devm_led_classdev_register ok, set brightness: 302!
+[    1.702572] original_level:1390 value_a:0 value_b:0 level_temp:0 remapped_level:1390
+[    1.702574] leds lcd-backlight: [Light] Set lcd-backlight directly T:1.702,  B:255 L:1390,  L:6 H:ad    
+[    1.702575] mt6370: _gate_ic_backlight_set, 1390
+[    1.702577] mt6370: mt6370_pmu_reg_a3, 9
+[    1.710294] probe of debug-kinfo returned 0 after 11 usecs
+[    1.710370] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.710372] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.710377] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.710378] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.710379] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.710383] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.710384] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.710388] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.710455] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.710470] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.710481] probe of sound returned 0 after 116 usecs
+[    1.710497] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.710506] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.710517] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.745804] mtk-i2c-leds i2c_leds: mtk_leds_parse_dt: load dts ok, num = 1!
+[    1.745805] mtk-i2c-leds i2c_leds: probe i2c leds end
+[    1.745883] probe of debug-kinfo returned 0 after 11 usecs
+[    1.745951] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.745954] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.745957] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.745958] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.745959] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.745962] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.745964] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.745967] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.746032] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.746046] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.746055] probe of sound returned 0 after 108 usecs
+[    1.746069] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.746078] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.746087] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.746100] probe of i2c_leds returned 1 after 43566 usecs
+[    1.746218] initcall mtk_leds_init+0x0/0x6c returned 0 after 42803 usecs
+[    1.746220] calling  imgsensor_init+0x0/0x38 @ 1
+[    1.747212] ERROR: gpio_init : pinctrl err, cam0_pnd1
+[    1.747214] ERROR: gpio_init : pinctrl err, cam0_pnd0
+[    1.747217] ERROR: gpio_init : pinctrl err, cam0_ldo_vcama_1
+[    1.747219] ERROR: gpio_init : pinctrl err, cam0_ldo_vcama_0
+[    1.747220] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamd_1
+[    1.747222] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamd_0
+[    1.747223] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamio_1
+[    1.747225] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamio_0
+[    1.747227] ERROR: gpio_init : pinctrl err, cam0_ldo_vcama1_1
+[    1.747228] ERROR: gpio_init : pinctrl err, cam0_ldo_vcama1_0
+[    1.747229] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamd1_1
+[    1.747231] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamd1_0
+[    1.747232] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso_1
+[    1.747234] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso_0
+[    1.747236] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso1_1
+[    1.747237] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso1_0
+[    1.747238] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso1_0
+[    1.747239] ERROR: gpio_init : pinctrl err, cam0_ldo_vcamiso1_0
+[    1.747241] ERROR: gpio_init : pinctrl err, cam1_pnd1
+[    1.747242] ERROR: gpio_init : pinctrl err, cam1_pnd0
+[    1.747245] ERROR: gpio_init : pinctrl err, cam1_ldo_vcama_1
+[    1.747246] ERROR: gpio_init : pinctrl err, cam1_ldo_vcama_0
+[    1.747247] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamd_1
+[    1.747249] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamd_0
+[    1.747251] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamio_1
+[    1.747252] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamio_0
+[    1.747253] ERROR: gpio_init : pinctrl err, cam1_ldo_vcama1_1
+[    1.747255] ERROR: gpio_init : pinctrl err, cam1_ldo_vcama1_0
+[    1.747256] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamd1_1
+[    1.747257] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamd1_0
+[    1.747259] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso_1
+[    1.747260] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso_0
+[    1.747262] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso1_1
+[    1.747263] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso1_0
+[    1.747264] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso1_0
+[    1.747265] ERROR: gpio_init : pinctrl err, cam1_ldo_vcamiso1_0
+[    1.747267] ERROR: gpio_init : pinctrl err, cam2_pnd1
+[    1.747268] ERROR: gpio_init : pinctrl err, cam2_pnd0
+[    1.747271] ERROR: gpio_init : pinctrl err, cam2_ldo_vcama_1
+[    1.747272] ERROR: gpio_init : pinctrl err, cam2_ldo_vcama_0
+[    1.747274] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamd_1
+[    1.747275] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamd_0
+[    1.747277] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamio_1
+[    1.747278] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamio_0
+[    1.747279] ERROR: gpio_init : pinctrl err, cam2_ldo_vcama1_1
+[    1.747281] ERROR: gpio_init : pinctrl err, cam2_ldo_vcama1_0
+[    1.747282] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamd1_1
+[    1.747284] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamd1_0
+[    1.747285] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso_1
+[    1.747287] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso_0
+[    1.747288] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso1_1
+[    1.747289] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso1_0
+[    1.747290] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso1_0
+[    1.747291] ERROR: gpio_init : pinctrl err, cam2_ldo_vcamiso1_0
+[    1.747293] ERROR: gpio_init : pinctrl err, cam3_pnd1
+[    1.747294] ERROR: gpio_init : pinctrl err, cam3_pnd0
+[    1.747297] ERROR: gpio_init : pinctrl err, cam3_ldo_vcama_1
+[    1.747299] ERROR: gpio_init : pinctrl err, cam3_ldo_vcama_0
+[    1.747300] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamd_1
+[    1.747301] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamd_0
+[    1.747303] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamio_1
+[    1.747304] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamio_0
+[    1.747305] ERROR: gpio_init : pinctrl err, cam3_ldo_vcama1_1
+[    1.747307] ERROR: gpio_init : pinctrl err, cam3_ldo_vcama1_0
+[    1.747308] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamd1_1
+[    1.747310] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamd1_0
+[    1.747311] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso_1
+[    1.747312] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso_0
+[    1.747314] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso1_1
+[    1.747315] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso1_0
+[    1.747316] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso1_0
+[    1.747317] ERROR: gpio_init : pinctrl err, cam3_ldo_vcamiso1_0
+[    1.747319] ERROR: gpio_init : pinctrl err, cam4_pnd1
+[    1.747320] ERROR: gpio_init : pinctrl err, cam4_pnd0
+[    1.747321] ERROR: gpio_init : pinctrl err, cam4_rst1
+[    1.747323] ERROR: gpio_init : pinctrl err, cam4_rst0
+[    1.747324] ERROR: gpio_init : pinctrl err, cam4_ldo_vcama_1
+[    1.747326] ERROR: gpio_init : pinctrl err, cam4_ldo_vcama_0
+[    1.747327] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamd_1
+[    1.747328] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamd_0
+[    1.747330] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamio_1
+[    1.747331] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamio_0
+[    1.747332] ERROR: gpio_init : pinctrl err, cam4_ldo_vcama1_1
+[    1.747334] ERROR: gpio_init : pinctrl err, cam4_ldo_vcama1_0
+[    1.747335] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamd1_1
+[    1.747336] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamd1_0
+[    1.747338] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso_1
+[    1.747339] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso_0
+[    1.747341] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso1_1
+[    1.747342] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso1_0
+[    1.747343] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso1_0
+[    1.747344] ERROR: gpio_init : pinctrl err, cam4_ldo_vcamiso1_0
+[    1.747345] ERROR: gpio_init : pinctrl err, cam5_pnd1
+[    1.747347] ERROR: gpio_init : pinctrl err, cam5_pnd0
+[    1.747348] ERROR: gpio_init : pinctrl err, cam5_rst1
+[    1.747349] ERROR: gpio_init : pinctrl err, cam5_rst0
+[    1.747351] ERROR: gpio_init : pinctrl err, cam5_ldo_vcama_1
+[    1.747352] ERROR: gpio_init : pinctrl err, cam5_ldo_vcama_0
+[    1.747353] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamd_1
+[    1.747355] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamd_0
+[    1.747356] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamio_1
+[    1.747358] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamio_0
+[    1.747359] ERROR: gpio_init : pinctrl err, cam5_ldo_vcama1_1
+[    1.747360] ERROR: gpio_init : pinctrl err, cam5_ldo_vcama1_0
+[    1.747362] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamd1_1
+[    1.747363] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamd1_0
+[    1.747364] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso_1
+[    1.747366] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso_0
+[    1.747367] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso1_1
+[    1.747369] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso1_0
+[    1.747370] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso1_0
+[    1.747371] ERROR: gpio_init : pinctrl err, cam5_ldo_vcamiso1_0
+[    1.747372] ERROR: gpio_init : pinctrl err, cam6_pnd1
+[    1.747373] ERROR: gpio_init : pinctrl err, cam6_pnd0
+[    1.747375] ERROR: gpio_init : pinctrl err, cam6_rst1
+[    1.747376] ERROR: gpio_init : pinctrl err, cam6_rst0
+[    1.747378] ERROR: gpio_init : pinctrl err, cam6_ldo_vcama_1
+[    1.747379] ERROR: gpio_init : pinctrl err, cam6_ldo_vcama_0
+[    1.747380] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamd_1
+[    1.747382] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamd_0
+[    1.747383] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamio_1
+[    1.747384] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamio_0
+[    1.747386] ERROR: gpio_init : pinctrl err, cam6_ldo_vcama1_1
+[    1.747387] ERROR: gpio_init : pinctrl err, cam6_ldo_vcama1_0
+[    1.747389] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamd1_1
+[    1.747390] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamd1_0
+[    1.747392] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso_1
+[    1.747393] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso_0
+[    1.747395] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso1_1
+[    1.747396] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso1_0
+[    1.747397] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso1_0
+[    1.747398] ERROR: gpio_init : pinctrl err, cam6_ldo_vcamiso1_0
+[    1.747399] ERROR: gpio_init : pinctrl err, cam7_pnd1
+[    1.747401] ERROR: gpio_init : pinctrl err, cam7_pnd0
+[    1.747402] ERROR: gpio_init : pinctrl err, cam7_rst1
+[    1.747403] ERROR: gpio_init : pinctrl err, cam7_rst0
+[    1.747405] ERROR: gpio_init : pinctrl err, cam7_ldo_vcama_1
+[    1.747406] ERROR: gpio_init : pinctrl err, cam7_ldo_vcama_0
+[    1.747408] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamd_1
+[    1.747409] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamd_0
+[    1.747410] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamio_1
+[    1.747412] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamio_0
+[    1.747413] ERROR: gpio_init : pinctrl err, cam7_ldo_vcama1_1
+[    1.747414] ERROR: gpio_init : pinctrl err, cam7_ldo_vcama1_0
+[    1.747416] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamd1_1
+[    1.747417] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamd1_0
+[    1.747419] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso_1
+[    1.747420] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso_0
+[    1.747421] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso1_1
+[    1.747423] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso1_0
+[    1.747424] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso1_0
+[    1.747424] ERROR: gpio_init : pinctrl err, cam7_ldo_vcamiso1_0
+[    1.747426] ERROR: gpio_init : pinctrl err, cam8_pnd1
+[    1.747427] ERROR: gpio_init : pinctrl err, cam8_pnd0
+[    1.747429] ERROR: gpio_init : pinctrl err, cam8_rst1
+[    1.747430] ERROR: gpio_init : pinctrl err, cam8_rst0
+[    1.747431] ERROR: gpio_init : pinctrl err, cam8_ldo_vcama_1
+[    1.747433] ERROR: gpio_init : pinctrl err, cam8_ldo_vcama_0
+[    1.747434] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamd_1
+[    1.747435] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamd_0
+[    1.747437] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamio_1
+[    1.747438] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamio_0
+[    1.747440] ERROR: gpio_init : pinctrl err, cam8_ldo_vcama1_1
+[    1.747441] ERROR: gpio_init : pinctrl err, cam8_ldo_vcama1_0
+[    1.747442] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamd1_1
+[    1.747444] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamd1_0
+[    1.747445] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso_1
+[    1.747446] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso_0
+[    1.747448] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso1_1
+[    1.747449] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso1_0
+[    1.747450] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso1_0
+[    1.747451] ERROR: gpio_init : pinctrl err, cam8_ldo_vcamiso1_0
+[    1.747452] ERROR: gpio_init : pinctrl err, cam9_pnd1
+[    1.747454] ERROR: gpio_init : pinctrl err, cam9_pnd0
+[    1.747455] ERROR: gpio_init : pinctrl err, cam9_rst1
+[    1.747456] ERROR: gpio_init : pinctrl err, cam9_rst0
+[    1.747458] ERROR: gpio_init : pinctrl err, cam9_ldo_vcama_1
+[    1.747459] ERROR: gpio_init : pinctrl err, cam9_ldo_vcama_0
+[    1.747460] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamd_1
+[    1.747462] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamd_0
+[    1.747463] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamio_1
+[    1.747464] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamio_0
+[    1.747466] ERROR: gpio_init : pinctrl err, cam9_ldo_vcama1_1
+[    1.747467] ERROR: gpio_init : pinctrl err, cam9_ldo_vcama1_0
+[    1.747469] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamd1_1
+[    1.747470] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamd1_0
+[    1.747471] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso_1
+[    1.747473] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso_0
+[    1.747474] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso1_1
+[    1.747475] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso1_0
+[    1.747476] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso1_0
+[    1.747478] ERROR: gpio_init : pinctrl err, cam9_ldo_vcamiso1_0
+[    1.747479] ERROR: gpio_init : pinctrl err, cam10_pnd1
+[    1.747480] ERROR: gpio_init : pinctrl err, cam10_pnd0
+[    1.747482] ERROR: gpio_init : pinctrl err, cam10_rst1
+[    1.747483] ERROR: gpio_init : pinctrl err, cam10_rst0
+[    1.747484] ERROR: gpio_init : pinctrl err, cam10_ldo_vcama_1
+[    1.747486] ERROR: gpio_init : pinctrl err, cam10_ldo_vcama_0
+[    1.747487] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamd_1
+[    1.747489] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamd_0
+[    1.747490] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamio_1
+[    1.747491] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamio_0
+[    1.747493] ERROR: gpio_init : pinctrl err, cam10_ldo_vcama1_1
+[    1.747494] ERROR: gpio_init : pinctrl err, cam10_ldo_vcama1_0
+[    1.747495] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamd1_1
+[    1.747497] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamd1_0
+[    1.747498] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso_1
+[    1.747500] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso_0
+[    1.747501] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso1_1
+[    1.747502] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso1_0
+[    1.747503] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso1_0
+[    1.747504] ERROR: gpio_init : pinctrl err, cam10_ldo_vcamiso1_0
+[    1.747506] ERROR: gpio_init : pinctrl err, cam11_pnd1
+[    1.747507] ERROR: gpio_init : pinctrl err, cam11_pnd0
+[    1.747508] ERROR: gpio_init : pinctrl err, cam11_rst1
+[    1.747510] ERROR: gpio_init : pinctrl err, cam11_rst0
+[    1.747511] ERROR: gpio_init : pinctrl err, cam11_ldo_vcama_1
+[    1.747513] ERROR: gpio_init : pinctrl err, cam11_ldo_vcama_0
+[    1.747514] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamd_1
+[    1.747515] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamd_0
+[    1.747517] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamio_1
+[    1.747518] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamio_0
+[    1.747520] ERROR: gpio_init : pinctrl err, cam11_ldo_vcama1_1
+[    1.747521] ERROR: gpio_init : pinctrl err, cam11_ldo_vcama1_0
+[    1.747522] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamd1_1
+[    1.747524] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamd1_0
+[    1.747525] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso_1
+[    1.747526] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso_0
+[    1.747528] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso1_1
+[    1.747529] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso1_0
+[    1.747530] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso1_0
+[    1.747531] ERROR: gpio_init : pinctrl err, cam11_ldo_vcamiso1_0
+[    1.747534] gpio_init : pinctrl err, cam_mipi_switch_en_1
+[    1.747538] gpio_init : pinctrl err, cam_mipi_switch_en_0
+[    1.747540] gpio_init : pinctrl err, cam_mipi_switch_sel_1
+[    1.747542] gpio_init : pinctrl err, cam_mipi_switch_sel_0
+[    1.747544] oplus_imgsensor_custom_config Selected
+[    1.747545] oplus_imgsensor_custom_config Selected
+[    1.747546] oplus_imgsensor_custom_config Selected
+[    1.747547] oplus_imgsensor_custom_config Selected
+[    1.747547] oplus_imgsensor_custom_config Selected
+[    1.747548] oplus_imgsensor_custom_config Selected
+[    1.747549] oplus_imgsensor_custom_config Selected
+[    1.747549] oplus_imgsensor_custom_config Selected
+[    1.747550] oplus_imgsensor_custom_config Selected
+[    1.747550] oplus_imgsensor_custom_config Selected
+[    1.747551] oplus_imgsensor_custom_config Selected
+[    1.747551] oplus_imgsensor_custom_config Selected
+[    1.747673] probe of debug-kinfo returned 0 after 9 usecs
+[    1.747745] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.747747] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.747751] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.747752] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.747753] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.747756] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.747758] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.747762] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.747825] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.747838] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.747847] probe of sound returned 0 after 107 usecs
+[    1.747861] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.747870] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.747879] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.747893] probe of 4-0036 returned 1 after 313 usecs
+[    1.748005] probe of debug-kinfo returned 0 after 7 usecs
+[    1.748072] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.748073] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.748077] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.748078] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.748079] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.748082] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.748083] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.748086] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.748145] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.748157] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.748164] probe of sound returned 0 after 96 usecs
+[    1.748177] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.748186] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.748194] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.748207] probe of 8-001a returned 1 after 272 usecs
+[    1.748304] probe of debug-kinfo returned 0 after 6 usecs
+[    1.748368] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.748370] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.748373] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.748375] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.748376] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.748379] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.748380] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.748383] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.748433] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.748445] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.748452] probe of sound returned 0 after 87 usecs
+[    1.748464] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.748472] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.748481] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.748490] probe of 8-006e returned 1 after 250 usecs
+[    1.748576] probe of debug-kinfo returned 0 after 6 usecs
+[    1.748645] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.748647] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.748649] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.748650] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.748651] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.748653] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.748654] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.748657] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.748717] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.748728] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.748736] probe of sound returned 0 after 95 usecs
+[    1.748748] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.748756] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.748765] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.748781] probe of 9-001a returned 1 after 267 usecs
+[    1.748859] probe of debug-kinfo returned 0 after 5 usecs
+[    1.748922] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.748923] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.748926] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.748927] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.748928] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.748930] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.748931] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.748933] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.748980] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.748991] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.748998] probe of sound returned 0 after 80 usecs
+[    1.749011] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.749019] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.749027] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.749036] probe of 2-0010 returned 1 after 240 usecs
+[    1.749165] oplus_gimgsensor_sensor_list Selected
+[    1.749236] probe of debug-kinfo returned 0 after 9 usecs
+[    1.749301] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.749303] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.749306] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.749307] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.749308] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.749310] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.749311] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.749314] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.749365] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.749375] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.749385] probe of sound returned 0 after 87 usecs
+[    1.749398] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.749407] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.749415] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.749428] probe of kd_camera_hw1@1a004000 returned 1 after 3158 usecs
+[    1.749669] initcall imgsensor_init+0x0/0x38 returned 0 after 3362 usecs
+[    1.749671] calling  flashlight_mt6370_init+0x0/0x4c @ 1
+[    1.749835] flashlights_mt6370: mt6370_parse_dt: Channel number(2).
+[    1.749837] flashlights_mt6370: mt6370_parse_dt: Parse dt (type,ct,part,name,channel,decouple)=(0,0,0,flashlights-mt6370,0,1).
+[    1.749839] flashlights_mt6370: mt6370_parse_dt: Parse dt (type,ct,part,name,channel,decouple)=(0,1,0,flashlights-mt6370,1,1).
+[    1.749962] flashlight: flashlight_dev_register_by_device_id: Register device (0,0,0)
+[    1.749963] flashlight: flashlight_dev_register_by_device_id: Register device (0,1,0)
+[    1.750049] probe of debug-kinfo returned 0 after 9 usecs
+[    1.750120] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.750122] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.750126] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.750127] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.750128] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.750132] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.750133] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.750136] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.750194] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.750205] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.750215] probe of sound returned 0 after 100 usecs
+[    1.750228] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.750237] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.750245] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.750257] probe of flashlights_mt6370 returned 1 after 430 usecs
+[    1.750328] initcall flashlight_mt6370_init+0x0/0x4c returned 0 after 637 usecs
+[    1.750330] calling  mtk_usb_extcon_init+0x0/0x20 @ 1
+[    1.750586] mtk-extcon-usb extcon_usb: extcon_usb supply vbus not found, using dummy regulator
+[    1.750592] mtk-extcon-usb extcon_usb: Linked as a consumer to regulator.0
+[    1.750594] mtk-extcon-usb extcon_usb: vbus-current=1500000
+[    1.750747] mtk_usb_extcon_set_vbus_v1: is_on=0
+[    1.750749] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_otg: en = 0
+[    1.750755] mtk-extcon-usb extcon_usb: cur_dr(1) new_dr(2)
+[    1.750760] mt_usb mt_usb: role_sx_set role 0, latest_role: 0
+[    1.751169] mt6370_pmu_charger mt6370_pmu_charger: mt6370_set_otg_current_limit: ilimit = 500000 (0x00)
+[    1.751640] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_otg: reg0x33 = 0x73
+[    1.764107] mtk-msdc externdevice: mmc0: clock 0Hz busmode 2 powermode 2 cs 0 Vdd 17 width 1 timing 0
+[    1.777706] mtk-msdc externdevice: mmc0: clock 400000Hz busmode 2 powermode 2 cs 0 Vdd 17 width 1 timing 0
+[    1.778722] mtk-msdc externdevice: [msdc_set_mclk]:enable clk free run 1ms+ for switch to 1.8v
+[    1.780227] mtk-msdc externdevice: sclk: 399999, timing: 0
+[    1.789456] mmc0: host does not support reading read-only switch, assuming write-enable
+[    1.790087] mtk-msdc externdevice: mmc0: clock 400000Hz busmode 2 powermode 2 cs 0 Vdd 17 width 4 timing 0
+[    1.793975] mtk-msdc externdevice: mmc0: clock 400000Hz busmode 2 powermode 2 cs 0 Vdd 17 width 4 timing 6
+[    1.794980] mtk-msdc externdevice: sclk: 399999, timing: 6
+[    1.794982] mtk-msdc externdevice: mmc0: clock 200000000Hz busmode 2 powermode 2 cs 0 Vdd 17 width 4 timing 6
+[    1.796015] mtk-msdc externdevice: sclk: 191999939, timing: 6
+[    1.796016] mtk-msdc externdevice: msdc_execute_tuning
+[    1.797285] mtk-msdc externdevice: phase: [map:ffffffc0] [maxlen:26] [final:19]
+[    1.797289] mmc0 autok pass
+[    1.797296] mmc0: new ultra high speed SDR104 SDXC card at address aaaa
+[    1.797343] mmc_blk_probe unknown card->cid.manfid is 3
+[    1.798035] mmcblk0: mmc0:aaaa SB64G 59.5 GiB 
+[    1.800817] mmcblk0: p1
+[    1.800920] probe of mmc0:aaaa returned 1 after 3594 usecs
+[    1.801075] probe of debug-kinfo returned 0 after 16 usecs
+[    1.801159] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.801162] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.801166] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.801167] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.801168] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.801172] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.801174] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.801178] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.801253] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.801267] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.801278] probe of sound returned 0 after 125 usecs
+[    1.801297] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.801306] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.801316] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.802414] [sensor_devinfo] read_oplus_custom 432 : failed to open file /dev/block/by-name/oplus_custom 000000008fbd8693 -1
+[    1.802417] [sensor_devinfo] sensor_read_oplus_custom 492 : read_oplus_custom error = -1
+[    1.802419] [sensor_devinfo] sensor_devinfo_work 1274 : try 10
+[    1.802501] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_wdt: en = 0
+[    1.802848] mtk-extcon-usb extcon_usb: failed to get id gpio
+[    1.802852] mtk-extcon-usb extcon_usb: failed to init id pin
+[    1.802948] mtk-extcon-usb extcon_usb: fail to get usb_psy
+[    1.802950] mtk-extcon-usb extcon_usb: failed to init psy
+[    1.802971] probe of extcon_usb returned 1 after 52445 usecs
+[    1.803012] initcall mtk_usb_extcon_init+0x0/0x20 returned 0 after 51442 usecs
+[    1.803014] calling  log_store_late_init+0x0/0x278 @ 1
+[    1.803016] log_store: set boot phase, last boot phase is 0.
+[    1.803016] log_store: not boot up, don't store log to expdb  
+[    1.803018] log store:sram_dram_buff addr 0x7ebc0000, size 0x40000.
+[    1.803119] [PHY layout]log_store_mem:0x7ebc0000-0x7ebfffff (0x40000)
+[    1.803121] buff 000000004b88b63a, sig cdab3412 size 40000 pl 400, sz a258 lk a658, sz 156fa p c, l c
+[    1.803126] initcall log_store_late_init+0x0/0x278 returned 0 after 107 usecs
+[    1.803128] calling  meta_usb_init+0x0/0x1cc @ 1
+[    1.803135] bootmode: 0x2 boottype: 0x2
+[    1.803142] cannot find "androidboot.usbconfig="
+[    1.803144] initcall meta_usb_init+0x0/0x1cc returned 0 after 13 usecs
+[    1.803146] calling  gt9896s_spi_init+0x0/0x38 @ 1
+[    1.803148] [GT9896s-INF][gt9896s_spi_init:1507] GT9896S SPI driver init
+[    1.803160] initcall gt9896s_spi_init+0x0/0x38 returned 0 after 11 usecs
+[    1.803161] calling  gt9896s_fwu_module_init+0x0/0x50 @ 1
+[    1.803163] [GT9896s-INF][gt9896s_fwu_module_init:1642] gt9896s_fwupdate_module_ini IN
+[    1.803164] [GT9896s-INF][gt9896s_register_ext_module:146] gt9896s_register_ext_module IN
+[    1.803165] [GT9896s-INF][gt9896s_register_ext_module:151] gt9896s_register_ext_module OUT
+[    1.803167] initcall gt9896s_fwu_module_init+0x0/0x50 returned 0 after 3 usecs
+[    1.803168] calling  gf_init+0x0/0x1b4 @ 1
+[    1.803238] input: qwerty as /devices/virtual/input/input4
+[    1.803254] gf_tee:  register goodix_fp_ok
+[    1.803255] gf_tee: version V1.2.04
+[    1.803261] probe of spi5.0 returned 1 after 79 usecs
+[    1.803276] gf_tee: status = 0x0
+[    1.803278] initcall gf_init+0x0/0x1b4 returned 0 after 104 usecs
+[    1.803279] calling  mt_charger_det_notifier_call_init+0x0/0xdc @ 1
+[    1.803284] mt_charger_det_notifier_call_init done
+[    1.803285] initcall mt_charger_det_notifier_call_init+0x0/0xdc returned 0 after 4 usecs
+[    1.803287] calling  mtk_charger_init+0x0/0x20 @ 1
+[    1.803675] [OPLUS_CHG][oplus_chg_parse_svooc_dt]oplus_parse_svooc_dt, chip->vbatt_num = 1,chip->vooc_project = 0.
+[    1.803685] [OPLUS_CHG][oplus_get_chg_ops_name_from_dt]chg_ops_name: plat-pmic
+[    1.803700] [OPLUS_CHG][oplus_step_charging_parse_dt]use step1_current_ma: 3400mA
+[    1.803706] [OPLUS_CHG][oplus_step_charging_parse_dt]use step2_time: 900s
+[    1.803712] [OPLUS_CHG][oplus_step_charging_parse_dt]use step2_current_ma: 3200mA
+[    1.803717] [OPLUS_CHG][oplus_step_charging_parse_dt]use step3_current_ma: 3000mA
+[    1.803720] [OPLUS_CHG][oplus_step_charging_parse_dt]step1_time: 600, step1_current: 3400, step2_time: 900, step2_current: 3200, step3_current: 3000
+[    1.803724] [OPLUS_CHG][mtk_charger_probe]found primary charger [mt6370_chg]
+[    1.803768] writeable prop 4 is not supported in usb
+[    1.803771] writeable prop 8 is not supported in usb
+[    1.803773] writeable prop 16 is not supported in usb
+[    1.803852] [OPLUS_CHG][oplus_power_supply_init]oplus_power_supply_init OK
+[    1.803861] [OPLUS_CHG][oplus_chg_chargerid_parse_dt]Couldn't read chargerid_switch-gpio rc=0, chargerid_switch-gpio:-2
+[    1.803869] [OPLUS_CHG][oplus_chg_shipmode_parse_dt]Couldn't read qcom,ship-gpio rc = 0, qcom,ship-gpio:-2
+[    1.803877] [OPLUS_CHG][oplus_chg_shortc_hw_parse_dt]Couldn't read qcom,shortc-gpio rc=0, qcom,shortc-gpio:-2
+[    1.803961] [OPLUS_CHG][oplus_chg_usbtemp_parse_dt]dischg-gpio:61
+[    1.803970] [OPLUS_CHG][oplus_chg_ccdetect_parse_dt]Couldn't read qcom,ccdetect-gpio rc=0, qcom,ccdetect-gpio:-2
+[    1.804006] [OPLUS_CHG][oplus_chg_parse_charger_dt]usb_high_than_bat_decidegc:168
+[    1.804010] [OPLUS_CHG][oplus_chg_parse_charger_dt] CONFIG_HIGH_TEMP_VERSION disabled
+[    1.804043] [OPLUS_CHG][oplus_chg_parse_charger_dt] temp_freeze_fastchg_current_ma fail
+[    1.804066] [OPLUS_CHG][oplus_chg_parse_charger_dt] freeze current [-20, 0, 0, 0]
+[    1.804168] [OPLUS_CHG][oplus_chg_parse_charger_dt]qcom,smart_chg_bcc_support is 0
+[    1.804172] [OPLUS_CHG][oplus_chg_parse_charger_dt]qcom,smart_chg_soh_support is 0
+[    1.804560] [OPLUS_CHG][oplus_chg_parse_charger_dt]get full-pre-ffc-mv property error, rc=-22
+[    1.804563] [OPLUS_CHG][oplus_chg_parse_charger_dt]full-pre-ffc-mv=4455, full_pre_ffc_judge:0
+[    1.804586] [OPLUS_CHG][oplus_chg_smooth_switch_v2_parse_dt]read from dts 0 0 0
+[    1.804589] [OPLUS_CHG][oplus_chg_smooth_switch_v2_parse_dt]smooth_switch_v2 0 reserve_chg_soc 0 reserve_dis_soc 0
+[    1.804600] [OPLUS_CHG][oplus_chg_parse_charger_dt]pdqc_9v_voltage_adaptive false
+[    1.804603] [OPLUS_CHG][oplus_chg_parse_charger_dt]support_check_usbin_status false
+[    1.804614] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4385000 (0x30)
+[    1.804776] probe of debug-kinfo returned 0 after 32 usecs
+[    1.804864] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4385 value=128
+[    1.804878] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    1.804881] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    1.804885] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    1.804886] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    1.804887] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    1.804891] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    1.804893] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    1.804897] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    1.804981] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    1.805010] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    1.805020] probe of sound returned 0 after 167 usecs
+[    1.805037] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    1.805046] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    1.805055] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    1.805057] [GT9896s-INF][__do_register_ext_module:51] __do_register_ext_module IN
+[    1.805696] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:0 main_cur:0
+[    1.806062] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_ieoc: ieoc = 150000 (0x01)
+[    1.806652] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4400000 (0x05)
+[    1.807471] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[    2.143314] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    2.148547] [OPLUS_CHG][bq25601d_reset_charger]rc = 0
+[    2.148548] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    2.149621] [OPLUS_CHG][bq25601d_charging_current_write_fast]chg_cur = 512\x0d
+[    2.149980] [OPLUS_CHG][bq25601d_set_termchg_current]value=1
+[    2.151767] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[    2.483476] [battery_type_check]: ret = 1,ret_value[292]
+[    2.483476] [battery_value= 292
+[    2.483478] [battery_type_check]: adc_value[292], battery_type[8],g_fg_battery_id[2]
+[    2.483481] [OPLUS_CHG][oplus_chg_variables_init]use get_oplus_high_battery_status
+[    2.483508] [battery_type_check]: ret = 1,ret_value[292]
+[    2.483509] [battery_value= 292
+[    2.483510] [battery_type_check]: adc_value[292], battery_type[8],g_fg_battery_id[2]
+[    2.483512] [OPLUS_CHG][oplus_get_smooth_soc_switch]smooth_switch = 0
+[    2.485147] vbat_out_old=37300, vthr=691, T_curr=380, vbat_out=37330
+[    2.485150] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x586c, adc_result=3733
+[    2.487823] vbat_out_old=37290, vthr=691, T_curr=380, vbat_out=37320
+[    2.487825] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5868, adc_result=3732
+[    2.489446] vbat_out_old=37310, vthr=691, T_curr=380, vbat_out=37340
+[    2.489655] [fgauge_read_current] final current=434 (ratio=1000)
+[    2.489929] [fgauge_read_current] final current=434 (ratio=1000)
+[    2.490247] [OPLUS_CHG][oplus_chg_get_battery_data][soc ui_soc soc_load smooth_soc smooth_switch] = [18 18 18 18 0]
+[    2.490427] [OPLUS_CHG][oplus_get_pps_ops_name_from_dt]pps_ops_name: mcu-op10
+[    2.490431] charger charger: battery psy not found
+[    2.490433] [OPLUS_CHG][oplus_pps_ops_desc_get]pps_ops_list_head list_empty
+[    2.490436] [OPLUS_CHG][oplus_quirks_init]start
+[    2.490450] [OPLUS_CHG][oplus_quirks_init]0
+[    2.490451] [OPLUS_CHG][oplus_quirks_init]1
+[    2.490453] [OPLUS_CHG][oplus_quirks_init]2
+[    2.490455] [OPLUS_CHG][oplus_quirks_init]3
+[    2.490456] [OPLUS_CHG][oplus_quirks_init]4
+[    2.490458] [OPLUS_CHG][oplus_quirks_init]5
+[    2.490460] [OPLUS_CHG][oplus_quirks_init]6
+[    2.490462] [OPLUS_CHG][oplus_quirks_init]7
+[    2.490464] [OPLUS_CHG][oplus_quirks_init]8
+[    2.490465] [OPLUS_CHG][oplus_quirks_init]9
+[    2.490467] [OPLUS_CHG][oplus_quirks_init]10
+[    2.490469] [OPLUS_CHG][oplus_quirks_init]11
+[    2.490473] [OPLUS_CHG][oplus_chg_debug_info_reset]enter
+[    2.490784] [fgauge_read_current] final current=220 (ratio=1000)
+[    2.490785] [CH3_DBG] bat_cur = 220
+[    2.491303] [fgauge_read_current] final current=220 (ratio=1000)
+[    2.491304] mtk_bif_is_hw_exist: do not have bif driver
+[    2.491307] [BattVoltToTemp] 1141 12000 2800 0
+[    2.491307] [force_get_tbat_internal] tbat_precise bat_temperature_val:330
+[    2.491308] [force_get_tbat] t:33 precise:330
+[    2.491355] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 0
+[    2.491358] last full = 0, full = 0
+[    2.491374] [OPLUS_CHG][mtk_charger_probe]Couldn't get charger_id_chan...
+[    2.491383] [OPLUS_CHG][oplus_ccdetect_support_check]not support, return false
+[    2.491410] [oplus_usbtemp_monitor_common]:run first chip->usbtemp_max_temp_thr[57], chip->usbtemp_temp_up_time_thr[30]!
+[    2.491495] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:0 main_cur:0
+[    2.491541] probe of charger returned 1 after 687992 usecs
+[    2.491583] initcall mtk_charger_init+0x0/0x20 returned 0 after 672160 usecs
+[    2.491587] calling  of_fdt_raw_init+0x0/0x7c @ 1
+[    2.491791] initcall of_fdt_raw_init+0x0/0x7c returned 0 after 196 usecs
+[    2.491794] calling  devfreq_boost_init+0x0/0xc4 @ 1
+[    2.491835] initcall devfreq_boost_init+0x0/0xc4 returned 0 after 36 usecs
+[    2.491838] calling  tcp_congestion_default+0x0/0x24 @ 1
+[    2.491841] initcall tcp_congestion_default+0x0/0x24 returned 0 after 1 usecs
+[    2.491844] calling  ip_auto_config+0x0/0x38c @ 1
+[    2.491852] initcall ip_auto_config+0x0/0x38c returned 0 after 5 usecs
+[    2.491854] calling  regulatory_init_db+0x0/0xa4 @ 1
+[    2.491861] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.491978] probe of debug-kinfo returned 0 after 17 usecs
+[    2.492064] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    2.492066] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    2.492071] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    2.492072] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    2.492073] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    2.492078] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    2.492080] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    2.492084] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    2.492162] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    2.492177] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    2.492187] probe of sound returned 0 after 130 usecs
+[    2.492208] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    2.492217] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    2.492227] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    2.492367] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.492376] initcall regulatory_init_db+0x0/0xa4 returned 0 after 506 usecs
+[    2.492379] calling  clear_boot_tracer+0x0/0x3c @ 1
+[    2.492381] initcall clear_boot_tracer+0x0/0x3c returned 0 after 0 usecs
+[    2.492384] calling  fb_logo_late_init+0x0/0x14 @ 1
+[    2.492386] initcall fb_logo_late_init+0x0/0x14 returned 0 after 0 usecs
+[    2.492390] calling  clk_disable_unused+0x0/0x1f0 @ 1
+[    2.492391] clk: Not disabling unused clocks
+[    2.492393] initcall clk_disable_unused+0x0/0x1f0 returned 0 after 1 usecs
+[    2.492395] calling  regulator_init_complete+0x0/0x64 @ 1
+[    2.492405] initcall regulator_init_complete+0x0/0x64 returned 0 after 8 usecs
+[    2.492407] calling  emimpu_ap_region_init+0x0/0x68 @ 1
+[    2.492408] emimpu_ap_region_init: enable AP region
+[    2.492418] initcall emimpu_ap_region_init+0x0/0x68 returned 0 after 9 usecs
+[    2.492421] calling  mt6781_lpm_trace_init+0x0/0x5c @ 1
+[    2.492582] initcall mt6781_lpm_trace_init+0x0/0x5c returned 0 after 154 usecs
+[    2.492583] calling  mt6781_init+0x0/0x1c @ 1
+[    2.492632] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    2.492634] platform regulatory.0: Falling back to syfs fallback for: regulatory.db
+[    2.493457] initcall mt6781_init+0x0/0x1c returned 0 after 851 usecs
+[    2.493462] calling  init_perf_common+0x0/0x80 @ 1
+[    2.493468] initcall init_perf_common+0x0/0x80 returned 0 after 4 usecs
+[    2.493470] calling  lastbus_init+0x0/0x40 @ 1
+[    2.493627] probe of 10001000.lastbus returned 1 after 106 usecs
+[    2.493878] initcall lastbus_init+0x0/0x40 returned 0 after 396 usecs
+[    2.493880] calling  tcpc_class_complete_init+0x0/0x38 @ 1
+[    2.493883] __tcpc_class_complete_work = type_c_port0
+[    2.494024] probe of debug-kinfo returned 0 after 14 usecs
+[    2.494099] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    2.494102] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    2.494105] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    2.494107] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    2.494108] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    2.494111] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    2.494113] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    2.494116] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    2.494186] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    2.494200] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    2.494210] probe of sound returned 0 after 116 usecs
+[    2.494224] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    2.494233] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    2.494241] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    2.497780] ///PD dbg info 38d
+[    2.497781] <    2.497>TCPC-TYPEC:typec_init: SNK
+[    2.500516] Perf order domain is not ready!
+[    2.500518] tcpc_device_irq_enable : tcpc irq enable OK!
+[    2.500522] initcall tcpc_class_complete_init+0x0/0x38 returned 0 after 6482 usecs
+[    2.500523] calling  rt_pd_manager_init+0x0/0x20 @ 1
+[    2.500680] Perf order domain is not ready!
+[    2.500796] rt-pd-manager rt-pd-manager: rt_pd_manager_probe (1.0.8_MTK)
+[    2.500824] Perf order domain is not ready!
+[    2.500831] rt-pd-manager rt-pd-manager: rt_pd_manager_probe OK!!
+[    2.500841] probe of rt-pd-manager returned 1 after 53 usecs
+[    2.500873] initcall rt_pd_manager_init+0x0/0x20 returned 0 after 339 usecs
+[    2.500876] calling  of_platform_sync_state_init+0x0/0x18 @ 1
+[    2.500956] initcall of_platform_sync_state_init+0x0/0x18 returned 0 after 76 usecs
+[    2.500959] calling  helio_dvfsrc_init+0x0/0x20 @ 1
+[    2.500963] Perf order domain is not ready!
+[    2.501033] SPM FIRMWARE IS NOT READY
+[    2.501038] probe of 10012000.dvfsrc returned 0 after 18 usecs
+[    2.501100] Perf order domain is not ready!
+[    2.501242] Perf order domain is not ready!
+[    2.501249] initcall helio_dvfsrc_init+0x0/0x20 returned 0 after 280 usecs
+[    2.501251] calling  alsa_sound_last_init+0x0/0x8c @ 1
+[    2.501252] ALSA device list:
+[    2.501253] No soundcards found.
+[    2.501255] initcall alsa_sound_last_init+0x0/0x8c returned 0 after 1 usecs
+[    2.501272] Warning: unable to open an initial console.
+[    2.501380] Perf order domain is not ready!
+[    2.501498] Freeing unused kernel memory: 1280K
+[    2.501503] Perf order domain is not ready!
+[    2.501580] Run /init as init process
+[    2.501616] Perf order domain is not ready!
+[    2.501776] Perf order domain is not ready!
+[    2.501918] Perf order domain is not ready!
+[    2.533670] get prop 4 is not supported in batt
+[    2.533903] [fgauge_read_current] final current=4980 (ratio=1000)
+[    2.534125] [fgauge_read_current] final current=4980 (ratio=1000)
+[    2.542383] ///PD dbg info 290d
+[    2.542385] <    2.498>TCPC-TYPEC:PowerOffCharge\x0a<    2.498>TCPC-TYPEC:** Unattached.SNK\x0a<    2.500>TCPC-TCPC:Alert:0x0003, Mask:0x1067f\x0a<  
+[    2.542386] 2.501>TCPC-TYPEC:[CC_Alert] 5/0\x0a<    2.501>TCPC-TYPEC:typec_is_cc_attach: cc_attach[1]\x0a<    2.501>TCPC-TYPEC:** AttachWait.SNK
+[    2.542387] \x0a<    2.501>TCPC-TCPC:ps_change=2
+[    2.542451] get prop 4 is not supported in batt
+[    2.542728] [fgauge_read_current] final current=5812 (ratio=1000)
+[    2.542938] [fgauge_read_current] final current=5812 (ratio=1000)
+[    2.546740] probe of debug-kinfo returned 0 after 22 usecs
+[    2.546864] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), ++
+[    2.546867] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_i2s_mck no use
+[    2.546871] mt6781-mt6366 sound: mtk_spk_update_info(), mtk_spk_type 0, spk_out_dai_link_idx 30, spk_out_dai_link_idx 29, mck: -1
+[    2.546872] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update spk dai
+[    2.546873] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update platform dai
+[    2.546878] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), update audio-codec dai
+[    2.546879] mt6781-mt6366 sound: mt6781_mt6366_dev_probe(), devm_snd_soc_register_card
+[    2.546884] [debug][soc_sia81xx_init] : aux_dev = sia81xx.0 \x0d
+[    2.546960] mt6781-mt6366 sound: ASoC: CPU DAI audio_task_offload_dai not registered
+[    2.546976] mt6781-mt6366 sound: mt6781_mt6366_dev_probe snd_soc_register_card fail -517
+[    2.546988] probe of sound returned 0 after 135 usecs
+[    2.547016] probe of odm:rt5133-gpio1 returned -517 after 0 usecs
+[    2.547026] probe of odm:rt5133-gpio2 returned -517 after 0 usecs
+[    2.547035] probe of odm:rt5133-gpio3 returned -517 after 0 usecs
+[    2.602365] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:0 main_cur:0
+[    2.621676] ///PD dbg info 76d
+[    2.621678] <    2.621>TCPC-TYPEC:[CC_Change] 5/0\x0a<    2.621>TCPC-TYPEC:** Attached.SNK
+[    2.621815] Perf order domain is not ready!
+[    2.621854] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call sink vbus 5000mV 100mA type(0x01)
+[    2.621862] mtk-extcon-usb extcon_usb: old_state=0, new_state=1
+[    2.621867] pd_tcp_notifier_call USB Plug in, pol = 0
+[    2.621875] [fg_charger_in_handler] notify daemon 0 0
+[    2.621878] battery_callback:1
+[    2.622105] [fgauge_read_columb_internal] CAR=0 r_fg_value=50 car_tune_value=1000
+[    2.622217] [read_fg_hw_info_Iavg] fg_iavg_reg 0x0 fg_iavg_reg_tmp 0x0 27_16 0x0 15_00 0x0
+[    2.622219] [read_fg_hw_info_Iavg] is_bat_charging 0 fg_iavg_ma 0x0
+[    2.622223] [gauge_enable_interrupt]do nothing, intr_number:88 361 en = 0, depth:1 1
+[    2.622225] [gauge_enable_interrupt]do nothing, intr_number:89 362 en = 0, depth:1 1
+[    2.622591] [fgauge_read_columb_internal] CAR=0 r_fg_value=50 car_tune_value=1000
+[    2.622806] [FGADC_intr_end][FG_INTR_INIT][read_fg_hw_info] curr_1 372 curr_2 -82 Iavg 372 sign 0 car 0 ncar -25872 time 1
+[    2.622809] [fg_sw_bat_cycle_accu]car[o:0 n:0],diff_car:0,ncar[o:0 n:0 hw:-25872] thr 0
+[    2.622821] rt-pd-manager rt-pd-manager: pd_tcp_notifier_call Charger plug in, polarity = 0
+[    2.662385] ///PD dbg info 77d
+[    2.662387] <    2.621>TCPC-TYPEC:Attached-> SINK\x0a<    2.621>TCPC-TCPC:usb_port_attached
+[    2.704941] vbat_out_old=37170, vthr=691, T_curr=380, vbat_out=37200
+[    2.704943] mt635x_auxadc_read_raw: 3 callbacks suppressed
+[    2.704946] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x581d, adc_result=3720
+[    2.706575] vbat_out_old=37220, vthr=691, T_curr=380, vbat_out=37250
+[    2.706576] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x583b, adc_result=3725
+[    2.708197] vbat_out_old=37220, vthr=691, T_curr=380, vbat_out=37250
+[    2.708198] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x583c, adc_result=3725
+[    2.708405] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.708617] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.708836] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.708836] [CH3_DBG] bat_cur = 244
+[    2.709173] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x515, adc_result=1143
+[    2.709379] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.709382] [BattVoltToTemp] 1143 12000 2800 0
+[    2.709383] [force_get_tbat_internal] tbat_precise bat_temperature_val:328
+[    2.709384] [force_get_tbat] t:32 precise:328
+[    2.709703] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x491, adc_result=513
+[    2.709726] oplus_custome_sync_work is called
+[    2.709734] oplus_custome_sync_work: file /dev/block/by-name/oplus_custom is no exit
+[    2.709749] get prop 4 is not supported in batt
+[    2.709993] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.710203] [fgauge_read_current] final current=244 (ratio=1000)
+[    2.842374] [sensor_devinfo] read_oplus_custom 432 : failed to open file /dev/block/by-name/oplus_custom 000000008fbd8693 -1
+[    2.842378] [sensor_devinfo] sensor_read_oplus_custom 492 : read_oplus_custom error = -1
+[    2.842380] [sensor_devinfo] sensor_devinfo_work 1274 : try 9
+[    3.071880] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_chg_type_det: en = 1
+[    3.071884] mt6370_pmu_charger mt6370_pmu_charger: mt6370_enable_chgdet_flow: CDP free
+[    3.071886] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_enable_chgdet_flow: en = 1
+[    3.071887] mt6370_pmu_charger mt6370_pmu_charger: mt6370_set_usbsw_state: state = 0
+[    3.071944] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(1)
+[    3.071947] [MUSB]Charger_Detect_Init 119: Charger_Detect_Init
+[    3.218391] Perf order domain is not ready!
+[    3.218404] mt6370_pmu_irq_handler
+[    3.218514] Perf order domain is not ready!
+[    3.218655] Perf order domain is not ready!
+[    3.218796] Perf order domain is not ready!
+[    3.218934] Perf order domain is not ready!
+[    3.219071] Perf order domain is not ready!
+[    3.219209] Perf order domain is not ready!
+[    3.219345] Perf order domain is not ready!
+[    3.219480] Perf order domain is not ready!
+[    3.219618] Perf order domain is not ready!
+[    3.219756] Perf order domain is not ready!
+[    3.219892] Perf order domain is not ready!
+[    3.220029] Perf order domain is not ready!
+[    3.220165] Perf order domain is not ready!
+[    3.220301] Perf order domain is not ready!
+[    3.220437] Perf order domain is not ready!
+[    3.220573] Perf order domain is not ready!
+[    3.220708] Perf order domain is not ready!
+[    3.220842] Perf order domain is not ready!
+[    3.220980] Perf order domain is not ready!
+[    3.221119] Perf order domain is not ready!
+[    3.221255] Perf order domain is not ready!
+[    3.221391] Perf order domain is not ready!
+[    3.221527] Perf order domain is not ready!
+[    3.221665] Perf order domain is not ready!
+[    3.221801] Perf order domain is not ready!
+[    3.221937] Perf order domain is not ready!
+[    3.222072] Perf order domain is not ready!
+[    3.222208] Perf order domain is not ready!
+[    3.222344] Perf order domain is not ready!
+[    3.222494] Perf order domain is not ready!
+[    3.222632] Perf order domain is not ready!
+[    3.222768] Perf order domain is not ready!
+[    3.222905] Perf order domain is not ready!
+[    3.223040] Perf order domain is not ready!
+[    3.223177] Perf order domain is not ready!
+[    3.223313] Perf order domain is not ready!
+[    3.223449] Perf order domain is not ready!
+[    3.223586] Perf order domain is not ready!
+[    3.223722] Perf order domain is not ready!
+[    3.223858] Perf order domain is not ready!
+[    3.223996] Perf order domain is not ready!
+[    3.224132] Perf order domain is not ready!
+[    3.224268] Perf order domain is not ready!
+[    3.224404] Perf order domain is not ready!
+[    3.224541] Perf order domain is not ready!
+[    3.224676] Perf order domain is not ready!
+[    3.224812] Perf order domain is not ready!
+[    3.224946] Perf order domain is not ready!
+[    3.225080] Perf order domain is not ready!
+[    3.225218] Perf order domain is not ready!
+[    3.225328] Perf order domain is not ready!
+[    3.225343] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[    3.225348] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[    3.225351] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[    3.225480] Perf order domain is not ready!
+[    3.225493] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler: __mt6370_chgdet_handler:chg_data->bc12_cnt:1
+[    3.225499] mt6370_pmu_charger mt6370_pmu_charger: mt6370_bc12_workaround
+[    3.225628] Perf order domain is not ready!
+[    3.225737] Perf order domain is not ready!
+[    3.225886] Perf order domain is not ready!
+[    3.236022] Perf order domain is not ready!
+[    3.236130] Perf order domain is not ready!
+[    3.236278] Perf order domain is not ready!
+[    3.382478] Perf order domain is not ready!
+[    3.382487] mt6370_pmu_irq_handler
+[    3.382592] Perf order domain is not ready!
+[    3.382732] Perf order domain is not ready!
+[    3.382869] Perf order domain is not ready!
+[    3.383006] Perf order domain is not ready!
+[    3.383144] Perf order domain is not ready!
+[    3.383282] Perf order domain is not ready!
+[    3.383419] Perf order domain is not ready!
+[    3.383555] Perf order domain is not ready!
+[    3.383691] Perf order domain is not ready!
+[    3.383825] Perf order domain is not ready!
+[    3.383959] Perf order domain is not ready!
+[    3.384096] Perf order domain is not ready!
+[    3.384232] Perf order domain is not ready!
+[    3.384368] Perf order domain is not ready!
+[    3.384504] Perf order domain is not ready!
+[    3.384640] Perf order domain is not ready!
+[    3.384776] Perf order domain is not ready!
+[    3.384912] Perf order domain is not ready!
+[    3.385049] Perf order domain is not ready!
+[    3.385187] Perf order domain is not ready!
+[    3.385323] Perf order domain is not ready!
+[    3.385459] Perf order domain is not ready!
+[    3.385595] Perf order domain is not ready!
+[    3.385733] Perf order domain is not ready!
+[    3.385869] Perf order domain is not ready!
+[    3.386005] Perf order domain is not ready!
+[    3.386141] Perf order domain is not ready!
+[    3.386277] Perf order domain is not ready!
+[    3.386413] Perf order domain is not ready!
+[    3.386549] Perf order domain is not ready!
+[    3.386685] Perf order domain is not ready!
+[    3.386821] Perf order domain is not ready!
+[    3.386956] Perf order domain is not ready!
+[    3.387094] Perf order domain is not ready!
+[    3.387230] Perf order domain is not ready!
+[    3.387366] Perf order domain is not ready!
+[    3.387502] Perf order domain is not ready!
+[    3.387638] Perf order domain is not ready!
+[    3.387774] Perf order domain is not ready!
+[    3.387909] Perf order domain is not ready!
+[    3.388045] Perf order domain is not ready!
+[    3.388184] Perf order domain is not ready!
+[    3.388320] Perf order domain is not ready!
+[    3.388456] Perf order domain is not ready!
+[    3.388592] Perf order domain is not ready!
+[    3.388727] Perf order domain is not ready!
+[    3.388863] Perf order domain is not ready!
+[    3.388999] Perf order domain is not ready!
+[    3.389135] Perf order domain is not ready!
+[    3.389272] Perf order domain is not ready!
+[    3.389382] Perf order domain is not ready!
+[    3.389394] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[    3.389398] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[    3.389401] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[    3.389530] Perf order domain is not ready!
+[    3.389542] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler: __mt6370_chgdet_handler:chg_data->bc12_cnt:2
+[    3.389548] mt6370_pmu_charger mt6370_pmu_charger: mt6370_bc12_workaround
+[    3.389676] Perf order domain is not ready!
+[    3.389786] Perf order domain is not ready!
+[    3.389934] Perf order domain is not ready!
+[    3.400070] Perf order domain is not ready!
+[    3.400179] Perf order domain is not ready!
+[    3.400327] Perf order domain is not ready!
+[    3.546544] Perf order domain is not ready!
+[    3.546552] mt6370_pmu_irq_handler
+[    3.546657] Perf order domain is not ready!
+[    3.546796] Perf order domain is not ready!
+[    3.546935] Perf order domain is not ready!
+[    3.547071] Perf order domain is not ready!
+[    3.547208] Perf order domain is not ready!
+[    3.547344] Perf order domain is not ready!
+[    3.547480] Perf order domain is not ready!
+[    3.547616] Perf order domain is not ready!
+[    3.547752] Perf order domain is not ready!
+[    3.547888] Perf order domain is not ready!
+[    3.548025] Perf order domain is not ready!
+[    3.548162] Perf order domain is not ready!
+[    3.548296] Perf order domain is not ready!
+[    3.548430] Perf order domain is not ready!
+[    3.548567] Perf order domain is not ready!
+[    3.548704] Perf order domain is not ready!
+[    3.548840] Perf order domain is not ready!
+[    3.548976] Perf order domain is not ready!
+[    3.549114] Perf order domain is not ready!
+[    3.549252] Perf order domain is not ready!
+[    3.549388] Perf order domain is not ready!
+[    3.549524] Perf order domain is not ready!
+[    3.549660] Perf order domain is not ready!
+[    3.549797] Perf order domain is not ready!
+[    3.549933] Perf order domain is not ready!
+[    3.550067] Perf order domain is not ready!
+[    3.550204] Perf order domain is not ready!
+[    3.550341] Perf order domain is not ready!
+[    3.550477] Perf order domain is not ready!
+[    3.550613] Perf order domain is not ready!
+[    3.550748] Perf order domain is not ready!
+[    3.550884] Perf order domain is not ready!
+[    3.551020] Perf order domain is not ready!
+[    3.551157] Perf order domain is not ready!
+[    3.551293] Perf order domain is not ready!
+[    3.551429] Perf order domain is not ready!
+[    3.551565] Perf order domain is not ready!
+[    3.551701] Perf order domain is not ready!
+[    3.551836] Perf order domain is not ready!
+[    3.551972] Perf order domain is not ready!
+[    3.552108] Perf order domain is not ready!
+[    3.552246] Perf order domain is not ready!
+[    3.552382] Perf order domain is not ready!
+[    3.552518] Perf order domain is not ready!
+[    3.552653] Perf order domain is not ready!
+[    3.552789] Perf order domain is not ready!
+[    3.552925] Perf order domain is not ready!
+[    3.553060] Perf order domain is not ready!
+[    3.553196] Perf order domain is not ready!
+[    3.553334] Perf order domain is not ready!
+[    3.553444] Perf order domain is not ready!
+[    3.553457] mt6370_pmu 5-0034: mt6370_pmu_irq_handler: handler irq_domain = (6, 0)
+[    3.553461] mt6370_pmu_charger mt6370_pmu_charger: mt6370_pmu_attachi_irq_handler
+[    3.553463] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_chgdet_handler
+[    3.553593] Perf order domain is not ready!
+[    3.553605] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_enable_chgdet_flow: en = 0
+[    3.553608] mt6370_pmu_charger mt6370_pmu_charger: mt6370_set_usbsw_state: state = 1
+[    3.553615] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(2)
+[    3.553621] [MUSB]Charger_Detect_Release 133: Charger_Detect_Release
+[    3.553750] Perf order domain is not ready!
+[    3.553859] Perf order domain is not ready!
+[    3.553872] mt6370_pmu_charger mt6370_pmu_charger: mt6370_inform_psy_changed: pwr_rdy = 1, type = 1
+[    3.553876] mt_charger_set_property
+[    3.553891] mt_charger_set_property
+[    3.553895] dump_charger_name: charger type: 1, Standard USB Host
+[    3.553896] mt_usb_connect_v1 in mtk extcon
+[    3.553907] notify charger in
+[    3.553911] battery_get_boot_mode: boot mode=2
+[    3.553913] mtk_battery boot mode =2
+[    3.553915] [wakeup_fg_algo_recovery] intr_num=0x8
+[    3.553919] mtk-extcon-usb extcon_usb: cur_dr(2) new_dr(1)
+[    3.553930] mtk_charger_int_handler, Charger Plug In
+[    3.553936] battery_callback:1
+[    3.553944] mt_usb mt_usb: role_sx_set role 2, latest_role: 0
+[    3.553947] mt_usb mt_usb: mt_usb_role_sx_set: if vbus_event true
+[    3.554139] [fgauge_read_columb_internal] CAR=0 r_fg_value=50 car_tune_value=1000
+[    3.554256] [read_fg_hw_info_Iavg] fg_iavg_reg 0x0 fg_iavg_reg_tmp 0x0 27_16 0x0 15_00 0x0
+[    3.554258] [read_fg_hw_info_Iavg] is_bat_charging 0 fg_iavg_ma 0x0
+[    3.554262] [gauge_enable_interrupt]do nothing, intr_number:88 361 en = 0, depth:1 1
+[    3.554264] [gauge_enable_interrupt]do nothing, intr_number:89 362 en = 0, depth:1 1
+[    3.554303] mtk-tphy usb-phy: u2_phy_instance_set_mode mode(6)
+[    3.554311] phy phy-usb-phy.0: u2_phy_props_set, bc12:0, src:0, vrt:0, term:0, rev6:0, dis:0
+[    3.554318] mtk-tphy usb-phy: u2_phy_instance_set_mode_ext submode(2)
+[    3.554322] mtk-tphy usb-phy: u2_phy_instance_power_on(0)
+[    3.554345] phy phy-usb-phy.0: u2_phy_props_set, bc12:0, src:0, vrt:0, term:0, rev6:0, dis:0
+[    3.554348] musb-hdrc musb-hdrc: mailbox VBUS_VALID
+[    3.554351] [MUSB]mt_usb_connect 880: [MUSB] USB connect
+[    3.554353] [MUSB]issue_connection_work 874: issue work, ops<2>
+[    3.554365] [MUSB]do_connection_work 778: is_host<0>, power<0>, ops<2>
+[    3.554370] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[    3.554372] [MUSB]do_connection_work 818: lock
+[    3.554375] [MUSB]musb_start 1240: start, is_host=0 is_active=0
+[    3.554378] [MUSB]mt_usb_enable 609: begin <0,0>,<2,1,1,1>
+[    3.554598] [fgauge_read_columb_internal] CAR=0 r_fg_value=50 car_tune_value=1000
+[    3.554812] [FGADC_intr_end][FG_INTR_INIT][read_fg_hw_info] curr_1 44 curr_2 -22 Iavg 44 sign 0 car 0 ncar -25872 time 2
+[    3.554815] [fg_sw_bat_cycle_accu]car[o:0 n:0],diff_car:0,ncar[o:0 n:0 hw:-25872] thr 0
+[    3.554887] get prop 4 is not supported in batt
+[    3.555096] [fg_charger_in_handler] notify daemon 0 1
+[    3.555101] battery_get_boot_mode: boot mode=2
+[    3.555102] mtk_battery boot mode =2
+[    3.555104] [wakeup_fg_algo_recovery] intr_num=0x8
+[    3.555116] [fgauge_read_current] final current=14 (ratio=1000)
+[    3.555330] [fgauge_read_current] final current=14 (ratio=1000)
+[    3.555362] [OPLUS_CHG][oplus_chg_variables_reset]charger detect is 1
+[    3.555368] [OPLUS_CHG][mt_power_supply_type_check]charger_type[4]
+[    3.555369] [MUSB]mt_usb_connect 880: [MUSB] USB connect
+[    3.555371] [MUSB]issue_connection_work 874: issue work, ops<2>
+[    3.555382] [OPLUS_CHG][oplus_chg_turn_on_charging]-----------\x0d
+[    3.555389] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4385000 (0x30)
+[    3.555640] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4385 value=128
+[    3.564383] [MUSB]mt_usb_enable 637: end, <2,1,2,1>
+[    3.564393] [MUSB]musb_start 1289: set ignore babble MUSB_ULPI_REG_DATA=89
+[    3.564426] [MUSB]do_connection_work 778: is_host<0>, power<1>, ops<2>
+[    3.564429] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[    3.564431] [MUSB]do_connection_work 840: do nothing, usb_on:1, power:1
+[    3.565021] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:512 main_cur:512
+[    3.565417] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_ieoc: ieoc = 150000 (0x01)
+[    3.566043] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4400000 (0x05)
+[    3.566905] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[    3.702380] [sensor_devinfo] sync_utc2scp_work 586 : kernel_ts: 1783329658.715390, 1783329658.715390
+[    3.702393] sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+[    3.702395] [SCP] scp_ipi_send: SCP A not ready
+[    3.702397] [sensorHub] scp_ipi_send fail
+[    3.702423] [sensor_devinfo] sync_utc2scp_work 594 : fail! err -1
+[    3.722367] oplus_custome_sync_work is called
+[    3.722374] oplus_custome_sync_work: file /dev/block/by-name/oplus_custom is no exit
+[    3.882371] [sensor_devinfo] read_oplus_custom 432 : failed to open file /dev/block/by-name/oplus_custom 000000008fbd8693 -1
+[    3.882374] [sensor_devinfo] sensor_read_oplus_custom 492 : read_oplus_custom error = -1
+[    3.882376] [sensor_devinfo] sensor_devinfo_work 1274 : try 8
+[    3.903379] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    3.908835] [OPLUS_CHG][bq25601d_reset_charger]rc = 0
+[    3.908837] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    3.909955] [OPLUS_CHG][bq25601d_charging_current_write_fast]chg_cur = 512\x0d
+[    3.910329] [OPLUS_CHG][bq25601d_set_termchg_current]value=1
+[    3.912185] [OPLUS_CHG][bq25601d_unsuspend_charger]rc = 0
+[    4.182383] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[    4.182394] sd 0:0:0:1: [sdb] Synchronizing SCSI cache
+[    4.190060] regulator regulator.38: regulator ext_pmic2 disable
+[    4.190123] ufshcd-mtk 11270000.ufshci: rs,ret 0,7541 us
+[    4.243760] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4435000 (0x35)
+[    4.244007] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    4.244384] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:2300 main_cur:2300
+[    4.244774] [OPLUS_CHG][oplus_mt6370_input_current_limit_write]usb input max current limit=650 setting 00
+[    4.245896] [OPLUS_CHG][bq25601d_suspend_charger]rc = 0
+[    4.246235] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x498, adc_result=516
+[    4.342376] [SCP] scp_ipi_send: SCP A not ready
+[    4.342379] [sensorHub] scp_ipi_send fail
+[    4.342387] [sensorHub] scp_sensorHub_req_send fail!
+[    4.382697] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x49b, adc_result=518
+[    4.382701] [OPLUS_CHG][oplus_mt6370_input_current_limit_write]usb input max current limit aicl chg_vol=4901 i[1]=500 sw_aicl_point:4550 aicl_end
+[    4.383197] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_ieoc: ieoc = 270000 (0x03)
+[    4.385216] vbat_out_old=37370, vthr=691, T_curr=380, vbat_out=37400
+[    4.385220] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5898, adc_result=3740
+[    4.386851] vbat_out_old=37380, vthr=691, T_curr=380, vbat_out=37410
+[    4.386854] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x58a0, adc_result=3741
+[    4.389534] vbat_out_old=37360, vthr=691, T_curr=380, vbat_out=37390
+[    4.389538] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5892, adc_result=3739
+[    4.389741] [fgauge_read_current] final current=1068 (ratio=1000)
+[    4.389953] [fgauge_read_current] final current=1068 (ratio=1000)
+[    4.390167] [fgauge_read_current] final current=1068 (ratio=1000)
+[    4.390168] [CH3_DBG] bat_cur = 1068
+[    4.390716] [fgauge_read_current] final current=1068 (ratio=1000)
+[    4.390721] [BattVoltToTemp] 1140 12000 2800 -1
+[    4.390723] [force_get_tbat_internal] tbat_precise bat_temperature_val:331
+[    4.390726] [force_get_tbat] t:33 precise:331
+[    4.391066] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[    4.391120] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[18 / 18 / 18 / 3730 / -106 / 331 / 4834 / 0]
+[    4.391322] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_cv: bat voreg = 4435000 (0x35)
+[    4.391568] [OPLUS_CHG][bq25601d_float_voltage_write]bq25601d_set_float_voltage vfloat_mv = 4435 value=144
+[    4.391945] [OPLUS_CHG][oplus_mt6370_charging_current_write_fast]set fast charge current:2300 main_cur:2300
+[    4.392332] [OPLUS_CHG][oplus_chg_check_tbatt_normal_status]tbatt_normal_status status change, [1 160 220 340 370 400 430]
+[    4.392471] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[    4.482434] get prop 4 is not supported in batt
+[    4.482667] [fgauge_read_current] final current=1136 (ratio=1000)
+[    4.482882] [fgauge_read_current] final current=1196 (ratio=1000)
+[    4.625251] SELinux:  Permission nlmsg_getneigh in class netlink_route_socket not defined in policy.
+[    4.625450] SELinux: the above unknown classes and permissions will be denied
+[    4.625492] SELinux:  policy capability network_peer_controls=1
+[    4.625494] SELinux:  policy capability open_perms=1
+[    4.625495] SELinux:  policy capability extended_socket_class=1
+[    4.625497] SELinux:  policy capability always_check_network=0
+[    4.625498] SELinux:  policy capability cgroup_seclabel=0
+[    4.625500] SELinux:  policy capability nnp_nosuid_transition=1
+[    4.742364] oplus_custome_sync_work is called
+[    4.742395] oplus_custome_sync_work: file /dev/block/by-name/oplus_custom is no exit
+[    4.764221] audit: type=1403 audit(1783329659.760:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    4.822429] mtk-msdc externdevice: mmc0: clock 0Hz busmode 2 powermode 0 cs 0 Vdd 0 width 1 timing 0
+[    4.824754] mmc0: [SDLOCK] sdcard is unlocked on suspend and set auto_unlock = true. 
+[    4.884836] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[    4.884841] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 3735mV, VBAT = 3725mV, IBAT = 0mA, IBUS = 450mA, VBUS = 4850mV
+[    4.884845] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[    4.884847] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[    4.922374] [sensor_devinfo] read_oplus_custom 432 : failed to open file /dev/block/by-name/oplus_custom 000000008fbd8693 -1
+[    4.922378] [sensor_devinfo] sensor_read_oplus_custom 492 : read_oplus_custom error = -1
+[    4.922380] [sensor_devinfo] sensor_devinfo_work 1274 : try 7
+[    4.974178] audit: type=1400 audit(1783329659.960:3): avc:  denied  { write } for  pid=1 comm="init" name="kernel_init_done" dev="sysfs" ino=19467 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    4.974183] audit: type=1400 audit(1783329659.960:4): avc:  denied  { open } for  pid=1 comm="init" path="/sys/module/musb_hdrc/parameters/kernel_init_done" dev="sysfs" ino=19467 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    5.003341] audit: type=1400 audit(1783329660.000:5): avc:  denied  { sys_nice } for  pid=385 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=1
+[    5.008244] get prop 4 is not supported in batt
+[    5.008482] [fgauge_read_current] final current=1234 (ratio=1000)
+[    5.008697] [fgauge_read_current] final current=1234 (ratio=1000)
+[    5.124304] bootmode: 0x2 boottype: 0x2
+[    5.124312] cannot find "androidboot.usbconfig="
+[    5.125087] file system registered
+[    5.127256] Mass Storage Function, version: 2009/09/11
+[    5.127259] LUN: removable file: (no medium)
+[    5.128814] audit: type=1400 audit(1783329660.120:6): avc:  denied  { read } for  pid=400 comm="vndservicemanag" name="vndbinder" dev="binder" ino=6 scontext=u:r:recovery:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    5.134803] binder: 399:399 ioctl 40046210 7fe23af604 returned -22
+[    5.137304] audit: type=1400 audit(1783329660.120:7): avc:  denied  { create } for  pid=399 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+[    5.137332] audit: type=1400 audit(1783329660.120:8): avc:  denied  { bind } for  pid=399 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+[    5.137405] audit: type=1400 audit(1783329660.120:9): avc:  denied  { read } for  pid=399 comm="servicemanager" name="perms" dev="selinuxfs" ino=67112490 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+[    5.137420] audit: type=1400 audit(1783329660.120:10): avc:  denied  { open } for  pid=399 comm="servicemanager" path="/sys/fs/selinux/class/service_manager/perms" dev="selinuxfs" ino=67112490 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+[    5.137547] audit: type=1400 audit(1783329660.120:11): avc:  denied  { write } for  pid=399 comm="servicemanager" name="access" dev="selinuxfs" ino=6 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=1
+[    5.137586] audit: type=1400 audit(1783329660.120:12): avc:  denied  { compute_av } for  pid=399 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[    5.137671] audit: type=1400 audit(1783329660.120:13): avc:  denied  { entrypoint } for  pid=397 comm="init" path="/system/bin/logd" dev="rootfs" ino=7455 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.137751] audit: type=1400 audit(1783329660.120:14): avc:  denied  { set_context_mgr } for  pid=399 comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=binder permissive=1
+[    5.138290] audit: type=1400 audit(1783329660.120:15): avc:  denied  { map } for  pid=397 comm="logd" path="/system/bin/logd" dev="rootfs" ino=7455 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[    5.139746] ffs_data_put(): freeing
+[    5.141641] [OPLUS_CHG][oplus_set_otg_switch_status]: otg switch[1]
+[    5.141684] ///PD dbg info 42d
+[    5.141686] <    5.141>TCPC-TYPEC:typec_new_role: DRP
+[    5.143174] binder: 400:400 ioctl 40046210 7ff4dc8b34 returned -22
+[    5.164063] binder: 398:398 ioctl 40046210 7ff85054d4 returned -22
+[    5.165781] binder: 401:401 ioctl 40046210 7ff4b82344 returned -22
+[    5.169954] binder: 401:401 ioctl 40046210 7ff4b81864 returned -22
+[    5.172981] binder: 407:407 ioctl 40046210 7fc0ec74f4 returned -22
+[    5.190384] cfg80211: failed to load regulatory.db
+[    5.191110] aw87319_speaker_cfg_loaded: failed to read aw87319_spk.bin
+[    5.245006] original_level:1200 value_a:239 value_b:2065 level_temp:37 remapped_level:803
+[    5.245011] leds lcd-backlight: [Light] Set lcd-backlight directlyT:5.245,  B:1200 L:803,  L:3 H:64    
+[    5.245013] mt6370: _gate_ic_backlight_set, 803
+[    5.245015] mt6370: mt6370_pmu_reg_a3, 9
+[    5.319871] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.327510] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.443605] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.451059] EXT4-fs (dm-4): mounted filesystem without journal. Opts: 
+[    5.603360] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.609148] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    5.609472] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    5.762364] oplus_custome_sync_work is called
+[    5.764032] opluscustom_read OPLUS_CUSTOM partition is illegal nMagicNum1:0x0!
+[    5.764034] opluscustom_read OPLUS_CUSTOM partition with error config magic number nMagicNum2:0x0!
+[    5.764035] oplus_custome_sync_work:rc = 0
+[    5.803308] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.809183] EXT4-fs (dm-2): mounted filesystem without journal. Opts: 
+[    5.883088] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    5.888871] erofs: (device dm-3): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    5.888887] erofs: (device dm-3): mounted with opts: , root inode @ nid 41.
+[    5.963769] [sensor_devinfo] read_oplus_custom 477 : read success = 336
+[    5.963777] [sensor_devinfo] sensor_read_oplus_custom 527 : acc[-61,69,-124],gyro[23,-19,4],ps[0,0,316,0,0,0],als[896], bar[0]
+[    5.963779] [sensorHub] scp power down, we can not access scp
+[    5.963782] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    5.963784] [sensorHub] scp power down, we can not access scp
+[    5.963786] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    5.963788] [sensorHub] scp power down, we can not access scp
+[    5.963789] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    5.963791] [sensorHub] scp power down, we can not access scp
+[    5.963793] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    5.963795] [sensorHub] scp power down, we can not access scp
+[    5.963797] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    5.963798] [sensorHub] scp power down, we can not access scp
+[    5.963800] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    5.963802] [sensorHub] scp power down, we can not access scp
+[    5.963804] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    5.963806] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 5
+[    6.009684] EXT4-fs (sdc17): recovery complete
+[    6.009887] EXT4-fs (sdc17): mounted filesystem with ordered data mode. Opts: 
+[    6.010144] SELinux:  Context u:object_r:persist_data_file:s0 is not valid (left unmapped).
+[    6.177553] [fgauge_read_current] final current=1456 (ratio=1000)
+[    6.177765] [fgauge_read_current] final current=1456 (ratio=1000)
+[    6.178252] [fgauge_read_current] final current=1922 (ratio=1000)
+[    6.178466] [fgauge_read_current] final current=1922 (ratio=1000)
+[    6.205623] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.209705] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.209719] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    6.210238] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.214659] erofs: (device dm-3): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.214668] erofs: (device dm-3): mounted with opts: , root inode @ nid 41.
+[    6.422372] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[18 / 18 / 18 / 3730 / -192 / 331 / 4834 / 0]
+[    6.645144] [drm:mtk_drm_gem_create] cookie = 000000002760f7da dma_addr = 0x00000000fd2d0000 size = 10420224
+[    6.647517] [drm:mtk_drm_gem_create] cookie = 00000000ecfdaf0e dma_addr = 0x00000000fc8e0000 size = 10420224
+[    6.647953] debug for display power status:mtk_output_dsi_enable, = 2, dsi->output_en=1
+[    6.651554] original_level:0 value_a:0 value_b:0 level_temp:0 remapped_level:0
+[    6.651558] leds lcd-backlight: [Light] Set lcd-backlight directlyT:6.651,  B:0 L:0,  L:0 H:0    
+[    6.651560] mt6370: _gate_ic_backlight_set, 0
+[    6.651562] mt6370: mt6370_pmu_reg_a3, 10
+[    6.651999] mt6370: mt6370_pmu_reg_a3, 0
+[    6.652102] mt6370: mt6370_pmu_reg_a0,   bled_en = 0
+[    6.652108] original_level:1200 value_a:239 value_b:2065 level_temp:37 remapped_level:803
+[    6.652110] mt6370: _gate_ic_backlight_set, 803
+[    6.652111] mt6370: mt6370_pmu_reg_a3, 9
+[    6.694584] EXT4-fs (sdc48): recovery complete
+[    6.694764] EXT4-fs (sdc48): mounted filesystem with ordered data mode. Opts: 
+[    6.698368] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.698370] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.698472] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.698475] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.698642] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.698643] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.698740] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.698743] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.701278] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.701279] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.701378] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.701382] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.701540] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0x9ff5d791)
+[    6.701541] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 1th superblock
+[    6.701632] F2FS-fs (sdc49): Magic Mismatch, valid(0xf2f52010) - read(0xd08d0718)
+[    6.701633] F2FS-fs (sdc49): Can't find valid F2FS filesystem in 2th superblock
+[    6.703230] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.707983] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    6.708591] ufshcd-mtk 11270000.ufshci: ufshcd_ioctl: user buffer is NULL
+[    6.712631] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    6.712640] erofs: (device dm-1): mounted with opts: , root inode @ nid 45.
+[    6.742363] Perf order domain is not ready!
+[    6.926191] EXT4-fs: Warning: mounting with data=journal disables delayed allocation and O_DIRECT support!
+[    6.927141] EXT4-fs (sdc16): mounted filesystem with journalled data mode. Opts: discard,data=journal,commit=1
+[    7.002368] [sensorHub] scp power down, we can not access scp
+[    7.002374] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    7.002376] [sensorHub] scp power down, we can not access scp
+[    7.002378] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    7.002380] [sensorHub] scp power down, we can not access scp
+[    7.002382] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    7.002384] [sensorHub] scp power down, we can not access scp
+[    7.002386] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    7.002388] [sensorHub] scp power down, we can not access scp
+[    7.002389] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    7.002391] [sensorHub] scp power down, we can not access scp
+[    7.002393] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    7.002395] [sensorHub] scp power down, we can not access scp
+[    7.002396] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    7.002399] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 4
+[    7.621851] Perf order domain is not ready!
+[    7.702359] Perf order domain is not ready!
+[    7.931902] binder: 406:406 ioctl 40046210 7fe90262d4 returned -22
+[    8.042364] [sensorHub] scp power down, we can not access scp
+[    8.042370] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    8.042372] [sensorHub] scp power down, we can not access scp
+[    8.042374] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    8.042376] [sensorHub] scp power down, we can not access scp
+[    8.042378] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    8.042379] [sensorHub] scp power down, we can not access scp
+[    8.042381] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    8.042383] [sensorHub] scp power down, we can not access scp
+[    8.042385] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    8.042387] [sensorHub] scp power down, we can not access scp
+[    8.042388] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    8.042390] [sensorHub] scp power down, we can not access scp
+[    8.042392] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    8.042395] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 3
+[    8.172441] Some other process 401:Binder:401_2 want to send sig:6 from default to pid:401 tgid:401 comm:Binder:401_2  
+[    8.173900] critical svc 441:Binder:401_2 exit with 256 !
+[    8.174370] Some other process 401:Binder:401_2 want to send sig:6 from default to pid:401 tgid:401 comm:Binder:401_2  
+[    8.174407] critical svc 401:Binder:401_2 exit with 6 !
+[    8.175237] Some other process 1:init want to send sig:9 from default to pid:441 tgid:441 comm:Binder:401_2  
+[    8.175240] Some other process 1:init want to send sig:9 from default to pid:401 tgid:401 comm:Binder:401_2  
+[    8.180322] Some other process 1:init want to send sig:9 from default to pid:441 tgid:441 comm:Binder:401_2  
+[    8.180324] Some other process 1:init want to send sig:9 from default to pid:401 tgid:401 comm:Binder:401_2  
+[    8.342358] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[    8.502367] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[18 / 18 / 18 / 3730 / -192 / 331 / 4834 / 0]
+[    8.822367] sd 0:0:0:1: [sdb] Synchronizing SCSI cache
+[    9.082364] [sensorHub] scp power down, we can not access scp
+[    9.082370] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[    9.082372] [sensorHub] scp power down, we can not access scp
+[    9.082374] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[    9.082376] [sensorHub] scp power down, we can not access scp
+[    9.082377] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[    9.082379] [sensorHub] scp power down, we can not access scp
+[    9.082381] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[    9.082383] [sensorHub] scp power down, we can not access scp
+[    9.082385] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[    9.082386] [sensorHub] scp power down, we can not access scp
+[    9.082388] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[    9.082390] [sensorHub] scp power down, we can not access scp
+[    9.082392] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[    9.082394] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 2
+[    9.142386] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[   10.103739] [MDRT_ADC] OLD = 0x30ef, NOW = 0x30bb, CNT = 0
+[   10.104064] vbat_out_old=37490, vthr=691, T_curr=380, vbat_out=37520
+[   10.104067] mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   10.104074] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x58e2, adc_result=3752
+[   10.105726] vbat_out_old=37520, vthr=692, T_curr=374, vbat_out=37548
+[   10.105730] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x58f1, adc_result=3755
+[   10.107359] vbat_out_old=37490, vthr=692, T_curr=374, vbat_out=37518
+[   10.107363] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x58e1, adc_result=3752
+[   10.107576] [fgauge_read_current] final current=2006 (ratio=1000)
+[   10.107789] [fgauge_read_current] final current=2006 (ratio=1000)
+[   10.108002] [fgauge_read_current] final current=1998 (ratio=1000)
+[   10.108004] [CH3_DBG] bat_cur = 1998
+[   10.108328] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x517, adc_result=1145
+[   10.108553] [fgauge_read_current] final current=1998 (ratio=1000)
+[   10.108558] [BattVoltToTemp] 1144 12000 2800 -1
+[   10.108560] [force_get_tbat_internal] tbat_precise bat_temperature_val:327
+[   10.108563] [force_get_tbat] t:32 precise:327
+[   10.108892] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x49f, adc_result=519
+[   10.108903] mt6370_pmu_charger mt6370_pmu_charger: __mt6370_set_mivr: mivr = 4500000 (0x06)
+[   10.109321] [OPLUS_CHG][oplus_mt6370_registers_read_full]registers read full
+[   10.109732] [fgauge_read_current] final current=1998 (ratio=1000)
+[   10.109963] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.110382] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.110596] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.110747] get prop 4 is not supported in batt
+[   10.110993] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.111205] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.111479] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.111696] [fgauge_read_current] final current=2066 (ratio=1000)
+[   10.112059] [fgauge_read_current] final current=1930 (ratio=1000)
+[   10.112274] [fgauge_read_current] final current=1930 (ratio=1000)
+[   10.122375] [sensorHub] scp power down, we can not access scp
+[   10.122383] [sensor_devinfo] init_sensorlist_info 794 : sensor(0) not register
+[   10.122389] [sensorHub] scp power down, we can not access scp
+[   10.122395] [sensor_devinfo] init_sensorlist_info 794 : sensor(3) not register
+[   10.122400] [sensorHub] scp power down, we can not access scp
+[   10.122404] [sensor_devinfo] init_sensorlist_info 794 : sensor(1) not register
+[   10.122408] [sensorHub] scp power down, we can not access scp
+[   10.122412] [sensor_devinfo] init_sensorlist_info 794 : sensor(4) not register
+[   10.122416] [sensorHub] scp power down, we can not access scp
+[   10.122420] [sensor_devinfo] init_sensorlist_info 794 : sensor(7) not register
+[   10.122424] [sensorHub] scp power down, we can not access scp
+[   10.122428] [sensor_devinfo] init_sensorlist_info 794 : sensor(5) not register
+[   10.122433] [sensorHub] scp power down, we can not access scp
+[   10.122437] [sensor_devinfo] init_sensorlist_info 794 : sensor(98) not register
+[   10.122441] [sensor_devinfo] sensor_devinfo_work 1290 : scp access err , try 1
+[   10.162134] binder: 444:444 ioctl 40046210 7fe81e0154 returned -22
+[   10.166012] binder: 444:444 ioctl 40046210 7fe81df674 returned -22
+[   10.192306] read descriptors
+[   10.192311] read strings
+[   10.193004] usb_get_function usb_function name=Function FS Gadget
+[   10.193077] composite_dev_prepare 00000000977da7c7
+[   10.193090] composite_os_desc_req_prepare 000000009598b652
+[   10.193093] [MUSB]musb_gadget_start 2488: musb_gadget_start
+[   10.193101] [MUSB]musb_gadget_pullup 2269: is_on=1, softconnect=0 ++
+[   10.193103] [MUSB]musb_gadget_pullup 2281: is_on=1, softconnect=0 ++
+[   10.193104] [MUSB]musb_pullup 2221: MUSB: gadget pull up 1 start, musb->power:1
+[   10.193106] [MUSB]musb_pullup 2230: MUSB: gadget pull up 1 end
+[   10.193107] [MUSB]musb_gadget_pullup 2295: mt_usb_reconnect() on is_ready begin
+[   10.193108] [MUSB]mt_usb_reconnect 893: [MUSB] USB reconnect
+[   10.193109] [MUSB]issue_connection_work 874: issue work, ops<1>
+[   10.193127] [MUSB]do_connection_work 778: is_host<0>, power<1>, ops<1>
+[   10.193134] [MUSB]cmode_effect_on 765: cable_mode=1, effect=0
+[   10.193136] [MUSB]do_connection_work 840: do nothing, usb_on:1, power:1
+[   10.350575] [MUSB]musb_stage0_irq 1106: musb_stage0_irq:1106 MUSB_INTR_RESET (b_idle)
+[   10.350579] QMU_WARN,<musb_disable_q_all 330>, disable_q_all
+[   10.350604] [MUSB]musb_stage0_irq 876: SUSPEND (b_peripheral) devctl 99
+[   10.350616] [MUSB]musb_g_suspend 2669: devctl 99
+[   10.461963] [MUSB]musb_g_ep0_queue 1049: ep0 request queued when usb not active
+[   10.466454] [MUSB]musb_stage0_irq 1106: musb_stage0_irq:1106 MUSB_INTR_RESET (b_peripheral)
+[   10.466456] QMU_WARN,<musb_disable_q_all 330>, disable_q_all
+[   10.524839] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: ICHG = 2300mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA, CV = 4430mV
+[   10.524843] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: VSYS = 3730mV, VBAT = 3745mV, IBAT = 200mA, IBUS = 450mA, VBUS = 4850mV
+[   10.524847] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_EN = 1, CHG_STATUS = progress, CHG_STAT = 0xA0
+[   10.524849] mt6370_pmu_charger mt6370_pmu_charger: mt6370_dump_register: CHG_CTRL1 = 0x10, CHG_CTRL2 = 0x1B
+[   10.526460] [OPLUS_CHG][bq25601d_dump_registers]bq25601d_reg: [0x80,0x0a,0x88,0x41], [0x90,0x07,0xa5,0x6c], [0x01,0x00,0x00,0x14]
+[   10.582365] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[18 / 18 / 18 / 3742 / -193 / 327 / 4910 / 0]
+[   10.586778] configfs-gadget gadget: high-speed config #1: b
+[   10.586788] ffs_func_set_alt - ffs->state:2
+[   10.586794] [MUSB]fifo_setup 1233: musb type=BULK
+[   10.586796] [MUSB]is_saving_mode 1083: 0
+[   10.586799] [MUSB]fifo_setup 1262: EP1 supports DBBUF
+[   10.586801] [MUSB]fifo_setup 1277: fifo size is 22 after 512, fifo address is 512, epnum 1,hwepnum 1
+[   10.586804] QMU_WARN,<mtk_qmu_enable 628>, enable RQ(1)
+[   10.586811] [MUSB]musb_gadget_enable 1482: musb-hdrc periph: enabled ep1out for bulk OUT, maxpacket 512
+[   10.586815] [MUSB]fifo_setup 1233: musb type=BULK
+[   10.586816] [MUSB]is_saving_mode 1083: 0
+[   10.586818] [MUSB]fifo_setup 1262: EP1 supports DBBUF
+[   10.586820] [MUSB]fifo_setup 1277: fifo size is 22 after 512, fifo address is 1536, epnum 1,hwepnum 1
+[   10.586822] QMU_WARN,<mtk_qmu_enable 706>, enable TQ(1)
+[   10.586829] [MUSB]musb_gadget_enable 1482: musb-hdrc periph: enabled ep1in for bulk IN, maxpacket 512
+[   10.586838] configfs-gadget gadget: USB_REQ_SET_CONFIGURATION: value=0
+[   11.162470] [SCP] scp_ipi_send: SCP A not ready
+[   11.162483] [SCP] scp_ipi_send: SCP A not ready
+[   11.162494] [SCP] scp_ipi_send: SCP A not ready
+[   11.162506] [SCP] scp_ipi_send: SCP A not ready
+[   11.162517] [SCP] scp_ipi_send: SCP A not ready
+[   11.162528] [SCP] scp_ipi_send: SCP A not ready
+[   11.162540] [SCP] scp_ipi_send: SCP A not ready
+[   11.162551] [SCP] scp_ipi_send: SCP A not ready
+[   11.162563] [SCP] scp_ipi_send: SCP A not ready
+[   11.162574] [SCP] scp_ipi_send: SCP A not ready
+[   11.162585] [SCP] scp_ipi_send: SCP A not ready
+[   11.162587] [sensorHub] failed cfg data handle:0, cmd:3
+[   11.162593] [sensor_devinfo] sensor_devinfo_work 1305 : send acc config fail
+[   11.162597] [SCP] scp_ipi_send: SCP A not ready
+[   11.162608] [SCP] scp_ipi_send: SCP A not ready
+[   11.162619] [SCP] scp_ipi_send: SCP A not ready
+[   11.162631] [SCP] scp_ipi_send: SCP A not ready
+[   11.162642] [SCP] scp_ipi_send: SCP A not ready
+[   11.162653] [SCP] scp_ipi_send: SCP A not ready
+[   11.162665] [SCP] scp_ipi_send: SCP A not ready
+[   11.162676] [SCP] scp_ipi_send: SCP A not ready
+[   11.162688] [SCP] scp_ipi_send: SCP A not ready
+[   11.162699] [SCP] scp_ipi_send: SCP A not ready
+[   11.162711] [SCP] scp_ipi_send: SCP A not ready
+[   11.162711] [sensorHub] failed cfg data handle:3, cmd:3
+[   11.162714] [sensor_devinfo] sensor_devinfo_work 1319 : send gyro config fail
+[   11.162717] [SCP] scp_ipi_send: SCP A not ready
+[   11.162728] [SCP] scp_ipi_send: SCP A not ready
+[   11.162740] [SCP] scp_ipi_send: SCP A not ready
+[   11.162751] [SCP] scp_ipi_send: SCP A not ready
+[   11.162763] [SCP] scp_ipi_send: SCP A not ready
+[   11.162774] [SCP] scp_ipi_send: SCP A not ready
+[   11.162785] [SCP] scp_ipi_send: SCP A not ready
+[   11.162797] [SCP] scp_ipi_send: SCP A not ready
+[   11.162808] [SCP] scp_ipi_send: SCP A not ready
+[   11.162819] [SCP] scp_ipi_send: SCP A not ready
+[   11.162831] [SCP] scp_ipi_send: SCP A not ready
+[   11.162832] [sensorHub] failed cfg data handle:7, cmd:3
+[   11.162834] [sensor_devinfo] sensor_devinfo_work 1331 : send ps config fail
+[   11.162838] [SCP] scp_ipi_send: SCP A not ready
+[   11.162849] [SCP] scp_ipi_send: SCP A not ready
+[   11.162860] [SCP] scp_ipi_send: SCP A not ready
+[   11.162872] [SCP] scp_ipi_send: SCP A not ready
+[   11.162883] [SCP] scp_ipi_send: SCP A not ready
+[   11.162895] [SCP] scp_ipi_send: SCP A not ready
+[   11.162906] [SCP] scp_ipi_send: SCP A not ready
+[   11.162917] [SCP] scp_ipi_send: SCP A not ready
+[   11.162929] [SCP] scp_ipi_send: SCP A not ready
+[   11.162940] [SCP] scp_ipi_send: SCP A not ready
+[   11.162951] [SCP] scp_ipi_send: SCP A not ready
+[   11.162952] [sensorHub] failed cfg data handle:4, cmd:3
+[   11.162955] [sensor_devinfo] sensor_devinfo_work 1341 : send light config fail
+[   11.162956] [sensorHub] invalid handle 98
+[   11.162958] [sensor_devinfo] sensor_devinfo_work 1352 : send light config fail
+[   11.162960] [sensorHub] invalid handle 97
+[   11.162962] [sensor_devinfo] sensor_devinfo_work 1360 : send rear als config fail
+[   11.162965] [SCP] scp_ipi_send: SCP A not ready
+[   11.162976] [SCP] scp_ipi_send: SCP A not ready
+[   11.162988] [SCP] scp_ipi_send: SCP A not ready
+[   11.162999] [SCP] scp_ipi_send: SCP A not ready
+[   11.163010] [SCP] scp_ipi_send: SCP A not ready
+[   11.163022] [SCP] scp_ipi_send: SCP A not ready
+[   11.163033] [SCP] scp_ipi_send: SCP A not ready
+[   11.163045] [SCP] scp_ipi_send: SCP A not ready
+[   11.163056] [SCP] scp_ipi_send: SCP A not ready
+[   11.163067] [SCP] scp_ipi_send: SCP A not ready
+[   11.163079] [SCP] scp_ipi_send: SCP A not ready
+[   11.163079] [sensorHub] failed cfg data handle:5, cmd:3
+[   11.163082] [sensor_devinfo] sensor_devinfo_work 1368 : send baro cali config fail
+[   11.163084] [sensor_devinfo] oplus_als_cali_data_init 983 : call 
+[   11.163368] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/light_1 fail
+[   11.163369] [sensor_devinfo] oplus_als_cali_data_init 1002 : row_coe = 1000
+[   11.163637] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/light_1 fail
+[   11.163638] [sensor_devinfo] oplus_als_cali_data_init 1010 : gold_als_factor = 1001
+[   11.163904] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/rear_cct_1 fail
+[   11.163905] [sensor_devinfo] oplus_als_cali_data_init 1018 : gold_rear_als_factor = 1001
+[   11.164176] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/gsensor_1 fail
+[   11.164177] [sensor_devinfo] get_accgyro_cali_version 961 : gyro_cali_version = 1
+[   11.164441] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/gsensor_1 fail
+[   11.164705] [sensor_devinfo] oplus_get_dts_feature 209 : get /odm/rear_cct_1 fail
+[   11.164969] [sensor_devinfo] get_acc_gyro_cali_nv_adapt_q_flag 355 : get cali_nv_adapt_q fail
+[   11.164971] oplus_mag_para_init call
+[   11.164975] [sensor_devinfo] sensor_devinfo_work 1378 : success 
+[   11.222359] delay_init_timerhandler()  now init accdet!
+[   11.225376] accdet_init() done.
+[   11.225425] accdet_init_once() done.
+[   11.542361] [mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   11.542377] ufshpb_init_handler:3096 HPB_INIT_START
+[   11.542380] ufshpb_find_lu_qd:2444 lu 2 queue_depth 32
+[   11.542383] ufshpb_init_lu_constant:2530 ===== From Device Descriptor! =====
+[   11.542385] ufshpb_init_lu_constant:2533 hpb_region_size = 15, hpb_subregion_size = 15
+[   11.542386] ufshpb_init_lu_constant:2534 =====   Constant Values(LU)   =====
+[   11.542388] ufshpb_init_lu_constant:2536 region_unit_size = 16777216, region_mem_size 32768
+[   11.542390] ufshpb_init_lu_constant:2538 subregion_unit_size = 16777216, subregion_mem_size 32768
+[   11.542392] ufshpb_init_lu_constant:2540 lu_num_blocks = 31240192
+[   11.542394] ufshpb_init_lu_constant:2542 regions_per_lu = 7627, subregions_per_lu = 7627
+[   11.542396] ufshpb_init_lu_constant:2544 subregions_per_region = 1
+[   11.542398] ufshpb_init_lu_constant:2547 entries_per_region 4096 shift 12 mask 0xFFF
+[   11.542400] ufshpb_init_lu_constant:2550 entries_per_subregion 4096 shift 12 mask 0xFFF
+[   11.542402] ufshpb_init_lu_constant:2551 mpages_per_subregion : 8
+[   11.542403] ufshpb_init_lu_constant:2552 ===================================\x0a
+[   11.542442] ufshpb_lu_hpb_init:2573 active_region_table bytes: 427112
+[   11.546609] [fg_drv_update_hw_status]=>
+[   11.546626] [fg_update_sw_iavg]diff time:9 iavg:0
+[   11.546629] [read_boot_battery_plug_out_status] rtc_invalid 0 plugout 0 bat_plug_out_time 0 sp3:0x92 pl:0 0
+[   11.546845] [fgauge_read_current] final current=1976 (ratio=1000)
+[   11.547087] [fgauge_read_columb_internal] CAR=2 r_fg_value=50 car_tune_value=1000
+[   11.548719] vbat_out_old=37200, vthr=691, T_curr=380, vbat_out=37230
+[   11.548725] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5832, adc_result=3723
+[   11.549053] mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x4ba, adc_result=531
+[   11.549314] [fgauge_read_current] final current=274 (ratio=1000)
+[   11.549315] [CH3_DBG] bat_cur = -274
+[   11.549631] mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x516, adc_result=1144
+[   11.549838] [fgauge_read_current] final current=274 (ratio=1000)
+[   11.549842] [BattVoltToTemp] 1144 12000 2800 0
+[   11.549844] [force_get_tbat_internal] tbat_precise bat_temperature_val:327
+[   11.549845] [force_get_tbat] t:32 precise:327
+[   11.549847] lbat 0 0 0 0
+[   11.549849] car[2,246,-246,493,-205, cycle_car:0,ncar:0] c:1 1976 vbat:3723 vbus:5024 soc:15 50 gm3:0 0 0 0
+[   11.550049] [fgauge_read_columb_internal] CAR=2 r_fg_value=50 car_tune_value=1000
+[   11.550156] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -274, current_1 -274
+[   11.550287] [fg_get_current_iavg] -274 0
+[   11.550297] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   11.550298] [fg_nafg_monitor]time:11 nafg_cnt:0, now:11, last_t:0
+[   11.550300] tmp:32 65535 65535 hcar2:493 lcar2:205 time:11 sw_iavg:0 -274 0 nafg_m:0 0 0
+[   11.550664] mt635x-auxadc mt635x-auxadc: name:VBIF, channel=11, adc_out=0xc7b, adc_result=2808
+[   11.550685] [fg_bat_plugout_int_handler]Dig 0 1 1 0x0 0x2
+[   11.550718] [fg_bat_plugout_int_handler]Ana 0 0 1 1 1 1 1 bif:2808
+[   11.550719] 1st chr_zcv:0 pmic_zcv:0 0 pmic_in_zcv:0 swocv:0 zcv_from:0 tmp:0
+[   11.550721] chr_zcv:0 pmic_zcv:0 0 pmic_in_zcv:0 swocv:0 zcv_from:0 tmp:0
+[   11.550953] [iavg_check] iavg:0 cic2:2014 offset:1304 0x504 0x0 1 0\x0d
+[   11.551176] [fgauge_read_columb_internal] CAR=2 r_fg_value=50 car_tune_value=1000
+[   11.552800] vbat_out_old=37210, vthr=691, T_curr=380, vbat_out=37240
+[   11.552801] mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x5835, adc_result=3724
+[   11.553008] [fgauge_read_current] final current=616 (ratio=1000)
+[   11.553115] [fg_get_current_iavg] PMIC_FG_IAVG_VLD != 1, avg -930, current_1 -930
+[   11.553226] [fg_get_current_iavg] -930 0
+[   11.553436] [fgauge_read_current] final current=930 (ratio=1000)
+[   11.553437] [CH3_DBG] bat_cur = -930
+[   11.553997] [fgauge_read_current] final current=930 (ratio=1000)
+[   11.553998] [BattVoltToTemp] 1142 12000 2800 0
+[   11.553999] [force_get_tbat_internal] tbat_precise bat_temperature_val:329
+[   11.554000] [force_get_tbat] t:32 precise:329
+[   11.554012] [fg_is_battery_exist] PMIC_RGS_BATON_UNDET = 1
+[   11.554014] GM3log1 11 11 3724 -616 -930 0 4 32 1 1 0 0 0
+[   11.554022] battery_get_boot_mode: boot mode=2
+[   11.554337] GM3log2 11 0 0 0 0 0 0 0 4787
+[   11.554338] GM3log3 11 0 37248 -160 0
+[   11.554339] GM3log4 1 18 0 0 0 0 0 1 1 1 15
+[   11.554341] GM3log int 11 11 0 0 0 0
+[   11.554342] GM3log phone_state 0 0
+[   11.554342] GM3 car:2 car_diff:2
+[   11.602473] ufshpb_table_mempool_init:2301 The number of mctx = 7627. debug_free_table 7627
+[   11.602477] ufshpb_lu_hpb_init:2612 total_subregion_count: 7627
+[   11.604064] ufshpb_create_sysfs:3735 ufshpb creates sysfs lu 2 000000004a726c03 dev->kobj 000000002090cf68
+[   11.604082] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hpb_read_disable
+[   11.604086] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: map_cmd_disable
+[   11.604090] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: throttle_map_req
+[   11.604093] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: throttle_pre_req
+[   11.604096] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_min_tr_len
+[   11.604099] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_max_tr_len
+[   11.604101] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: debug
+[   11.604104] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hpb_version
+[   11.604107] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: hit_count
+[   11.604110] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: miss_count
+[   11.604112] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: map_req_count
+[   11.604115] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: pre_req_count
+[   11.604118] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: region_stat_count
+[   11.604120] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: count_reset
+[   11.604123] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: get_info_from_lba
+[   11.604125] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: get_info_from_region
+[   11.604128] ufshpb_create_sysfs:3743 ufshpb_lu2 sysfs attr creates: release
+[   11.604131] ufshpb_create_sysfs:3747 ufshpb_lu2 sysfs adds uevent
+[   11.604134] ufshpb_init:2862 UFSHPB LU 2 working
+[   11.862360] Perf order domain is not ready!
+[   11.862365] [cmdq] g_cmdq_cnt:1 g_cmdq:0 pa:0x000000001022c000
+[   11.862374] [cmdq] cmdq_sec_mtee_setup_context a0:0x1 cmdq_mtee:1
+[   11.862380] [port_lookup_tid] find last_token com, tee id 0
+[   11.862492] [port_lookup_tid] find last_token com, tee id 0
+[   11.862609] [port_lookup_tid] find last_token com, tee id 0
+[   12.022366] [fg_bat_nafg][fgauge_get_nafg_dltv] mV:Reg [0:0]
+[   12.022377] [fg_bat_nafg][fgauge_get_nafg_cnt] 0 [25_16 0 15_0 0]
+[   12.022387] [fg_bat_nafg][fgauge_get_nafg_c_dltv] mV:Reg[0:0] [b10:0][26_16(0x0000) 15_00(0x0000)]
+[   12.022389] GM3log-nint-nafg 11 11 0 0 0 0 0
+[   12.022394] battery_get_boot_mode: boot mode=2
+[   12.022395] mtk_battery boot mode =2
+[   12.022396] [wakeup_fg_algo_recovery] intr_num=0x2000000
+[   12.202387] sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+[   12.203508] ufshpb_suspend:3111 ufshpb_lu 2 goto suspend
+[   12.210919] regulator regulator.38: regulator ext_pmic2 disable
+[   12.210979] ufshcd-mtk 11270000.ufshci: rs,ret 0,7471 us
+[   12.502442] tcpc_event_init_work typec attach new = 1
+[   12.502444] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   12.552449] Perf order domain is not ready!
+[   12.552463] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   12.552483] ///PD dbg info 58d
+[   12.552486] <   12.552>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=1
+[   12.602483] Perf order domain is not ready!
+[   12.602495] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   12.602510] ///PD dbg info 58d
+[   12.602513] <   12.602>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=2
+[   12.652512] Perf order domain is not ready!
+[   12.652524] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   12.662366] [OPLUS_CHG][oplus_chg_print_bcc_log]BCC[18 / 18 / 18 / 3742 / -193 / 327 / 4910 / 0]
+[   12.662384] ///PD dbg info 58d
+[   12.662386] <   12.652>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=3
+[   12.702536] Perf order domain is not ready!
+[   12.702548] mt_charger_get_property: Charger Type: STANDARD_HOST
+[   12.722404] ///PD dbg info 58d
+[   12.722408] <   12.702>TCPC-TYPEC:type=1, ret,chg_type=-22,1, count=4
+[   12.752570] Perf order domain is not ready!
+[   12.752608] mt_charger_get_property: Charger Type: STANDARD_HOST
