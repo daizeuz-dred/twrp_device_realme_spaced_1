@@ -73,9 +73,9 @@ service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 
 on property:hwservicemanager.ready=true
     # start hal_cryptoeng_oppo
-    # start mobicore
-    # start keymaster-4-0
-    # start gatekeeper-1-0
+    start mobicore
+    start keymaster-4-0
+    start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     # stop hal_cryptoeng_oppo
@@ -102,6 +102,3 @@ on post-fs-data
 
 on boot
     start health-hal-2-1
-    stop mobicore
-    stop keymaster-4-0
-    stop gatekeeper-1-0
