@@ -134,6 +134,12 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
+# OrangeFox specific build flags
+OF_USE_LEGACY_BATTERY_SERVICES := true
+OF_SKIP_FBE_DECRYPTION := true
+OF_FORCE_USE_RECOVERY_FSTAB := true
+OF_FIX_DECRYPTION_ON_DATA_MEDIA := true
+
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
